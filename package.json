@@ -1,24 +1,34 @@
 {
-  "name": "squarescape",
-  "version": "1.0.0",
-  "description": "Just a rip from built version of my very first game - squarescape. Made during Global Game Jam 2015 https://globalgamejam.org/2015/games/squarescape.",
-  "main": "index.js",
-  "dependencies": {
-    "http-server": "^0.10.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/hs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tiriana/squarescape-rip.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tiriana/squarescape-rip/issues"
-  },
-  "homepage": "https://github.com/tiriana/squarescape-rip#readme"
+    "name": "squarescape",
+    "version": "1.0.0",
+    "description": "Just a rip from built version of my very first game - squarescape. Made during Global Game Jam 2015 https://globalgamejam.org/2015/games/squarescape.",
+    "main": "index.js",
+    "dependencies": {
+        "http-server": "^0.10.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "./node_modules/.bin/hs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tiriana/squarescape-rip.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/tiriana/squarescape-rip/issues"
+    },
+    "contributors": [
+        {
+            "name": "Radomir Wojtera",
+            "email": "radomir.wojtera@gmail.com",
+            "url": "https://github.com/tiriana"
+        },
+        {
+            "name": "Łukasz Wójciak",
+            "url": "https://github.com/wojciak"
+        }
+    ]"homepage": "https://github.com/tiriana/squarescape-rip#readme"
 }
