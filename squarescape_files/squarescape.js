@@ -39,7 +39,7 @@ var Stats = function() {
     var e = document.createElement("div");
     e.id = "msGraph";
     e.style.cssText = "position:relative;width:74px;height:30px;background-color:#0f0";
-    for (d.appendChild(e); 74 > e.children.length; ) j = document.createElement("span"), 
+    for (d.appendChild(e); 74 > e.children.length; ) j = document.createElement("span"),
     j.style.cssText = "width:1px;height:30px;float:left;background-color:#131", e.appendChild(j);
     var t = function(b) {
         s = b;
@@ -69,8 +69,8 @@ var Stats = function() {
             var a = Math.min(30, 30 - 30 * (g / 200));
             e.appendChild(e.firstChild).style.height = a + "px";
             r++;
-            b > m + 1e3 && (h = Math.round(1e3 * r / (b - m)), p = Math.min(p, h), q = Math.max(q, h), 
-            i.textContent = h + " FPS (" + p + "-" + q + ")", a = Math.min(30, 30 - 30 * (h / 100)), 
+            b > m + 1e3 && (h = Math.round(1e3 * r / (b - m)), p = Math.min(p, h), q = Math.max(q, h),
+            i.textContent = h + " FPS (" + p + "-" + q + ")", a = Math.min(30, 30 - 30 * (h / 100)),
             c.appendChild(c.firstChild).style.height = a + "px", m = b, r = 0);
             return b;
         },
@@ -8087,7 +8087,7 @@ if (!window.performance) {
 !function(e) {
     if ("object" == typeof exports) module.exports = e(); else if ("function" == typeof define && define.amd) define(e); else {
         var f;
-        "undefined" != typeof window ? f = window : "undefined" != typeof global ? f = global : "undefined" != typeof self && (f = self), 
+        "undefined" != typeof window ? f = window : "undefined" != typeof global ? f = global : "undefined" != typeof self && (f = self),
         f.p2 = e();
     }
 }(function() {
@@ -14484,18 +14484,18 @@ if (!window.performance) {
         bd._super_.call(this), this.x = a, this.y = b;
     }
     function bc(a, b, c) {
-        bc._super_.call(this), this.x = a, this.y = b, this.radius = c, this.angle = 0, 
+        bc._super_.call(this), this.x = a, this.y = b, this.radius = c, this.angle = 0,
         this.center = {
             x: this.x,
             y: this.y
         };
     }
     function bb(a, b, d, e, f) {
-        bb._super_.call(this), d - a >= 0 ? (this.x1 = a, this.y1 = b, this.x2 = d, this.y2 = e) : (this.x1 = d, 
-        this.y1 = e, this.x2 = a, this.y2 = b), this.dx = this.x2 - this.x1, this.dy = this.y2 - this.y1, 
-        this.minx = Math.min(this.x1, this.x2), this.miny = Math.min(this.y1, this.y2), 
-        this.maxx = Math.max(this.x1, this.x2), this.maxy = Math.max(this.y1, this.y2), 
-        this.dot = this.x2 * this.y1 - this.x1 * this.y2, this.xxyy = this.dx * this.dx + this.dy * this.dy, 
+        bb._super_.call(this), d - a >= 0 ? (this.x1 = a, this.y1 = b, this.x2 = d, this.y2 = e) : (this.x1 = d,
+        this.y1 = e, this.x2 = a, this.y2 = b), this.dx = this.x2 - this.x1, this.dy = this.y2 - this.y1,
+        this.minx = Math.min(this.x1, this.x2), this.miny = Math.min(this.y1, this.y2),
+        this.maxx = Math.max(this.x1, this.x2), this.maxy = Math.max(this.y1, this.y2),
+        this.dot = this.x2 * this.y1 - this.x1 * this.y2, this.xxyy = this.dx * this.dx + this.dy * this.dy,
         this.gradient = this.getGradient(), this.length = this.getLength(), this.direction = c.Util.initValue(f, ">");
     }
     function ba() {
@@ -14506,16 +14506,16 @@ if (!window.performance) {
             antialias: !0,
             stencil: !1,
             depth: !1
-        }), this.gl || alert("Sorry your browser do not suppest WebGL!"), this.initVar(), 
-        this.setMaxRadius(), this.initShaders(), this.initBuffers(), this.gl.blendEquation(this.gl.FUNC_ADD), 
+        }), this.gl || alert("Sorry your browser do not suppest WebGL!"), this.initVar(),
+        this.setMaxRadius(), this.initShaders(), this.initBuffers(), this.gl.blendEquation(this.gl.FUNC_ADD),
         this.gl.blendFunc(this.gl.SRC_ALPHA, this.gl.ONE_MINUS_SRC_ALPHA), this.gl.enable(this.gl.BLEND);
     }
     function $(a, b, c) {
-        $._super_.call(this, a, b), this.context = this.element.getContext("2d"), this.imageData = null, 
+        $._super_.call(this, a, b), this.context = this.element.getContext("2d"), this.imageData = null,
         this.rectangle = null, this.rectangle = c, this.createImageData(c);
     }
     function Z(a, b) {
-        Z._super_.call(this, a, b), this.stroke = null, this.context = this.element.getContext("2d"), 
+        Z._super_.call(this, a, b), this.stroke = null, this.context = this.element.getContext("2d"),
         this.bufferCache = {};
     }
     function Y(a, b, c) {
@@ -14531,19 +14531,19 @@ if (!window.performance) {
         this.element = d, this.type = c.Util.initValue(a, "canvas"), this.proton = b, this.renderer = this.getRenderer();
     }
     function T(b, d, e) {
-        this.mouseTarget = c.Util.initValue(b, a), this.ease = c.Util.initValue(d, .7), 
+        this.mouseTarget = c.Util.initValue(b, a), this.ease = c.Util.initValue(d, .7),
         this._allowEmitting = !1, this.initEventHandler(), T._super_.call(this, e);
     }
     function S(a) {
         this.selfBehaviours = [], S._super_.call(this, a);
     }
     function R(a) {
-        this.initializes = [], this.particles = [], this.behaviours = [], this.emitTime = 0, 
-        this.emitTotalTimes = -1, this.damping = .006, this.bindEmitter = !0, this.rate = new c.Rate(1, .1), 
+        this.initializes = [], this.particles = [], this.behaviours = [], this.emitTime = 0,
+        this.emitTotalTimes = -1, this.damping = .006, this.bindEmitter = !0, this.rate = new c.Rate(1, .1),
         R._super_.call(this, a), this.id = "emitter_" + R.ID++;
     }
     function Q(a, b, d, e) {
-        Q._super_.call(this, d, e), this.distanceVec = new c.Vector2D(), this.centerPoint = c.Util.initValue(a, new c.Vector2D()), 
+        Q._super_.call(this, d, e), this.distanceVec = new c.Vector2D(), this.centerPoint = c.Util.initValue(a, new c.Vector2D()),
         this.force = c.Util.initValue(this.normalizeValue(b), 100), this.name = "GravityWell";
     }
     function P(a, b, c, d) {
@@ -14574,17 +14574,17 @@ if (!window.performance) {
         H._super_.call(this, d, e), this.reset(a, b, c), this.time = 0, this.name = "RandomDrift";
     }
     function G(a, b, d, e, f) {
-        G._super_.call(this, e, f), this.targetPosition = c.Util.initValue(a, new c.Vector2D()), 
-        this.radius = c.Util.initValue(d, 1e3), this.force = c.Util.initValue(this.normalizeValue(b), 100), 
-        this.radiusSq = this.radius * this.radius, this.attractionForce = new c.Vector2D(), 
+        G._super_.call(this, e, f), this.targetPosition = c.Util.initValue(a, new c.Vector2D()),
+        this.radius = c.Util.initValue(d, 1e3), this.force = c.Util.initValue(this.normalizeValue(b), 100),
+        this.radiusSq = this.radius * this.radius, this.attractionForce = new c.Vector2D(),
         this.lengthSq = 0, this.name = "Attraction";
     }
     function F(a, b, d, e) {
-        F._super_.call(this, d, e), this.force = this.normalizeForce(new c.Vector2D(a, b)), 
+        F._super_.call(this, d, e), this.force = this.normalizeForce(new c.Vector2D(a, b)),
         this.name = "Force";
     }
     function E(a, b, d) {
-        E._super_.call(this), this.image = this.setSpanValue(a), this.w = c.Util.initValue(b, 20), 
+        E._super_.call(this), this.image = this.setSpanValue(a), this.w = c.Util.initValue(b, 20),
         this.h = c.Util.initValue(d, this.w);
     }
     function D(a, b, d) {
@@ -14594,7 +14594,7 @@ if (!window.performance) {
         C._super_.call(this), this.massPan = c.Util.setSpanValue(a, b, d);
     }
     function B(a, b, d) {
-        B._super_.call(this), this.rPan = c.Util.setSpanValue(a), this.thaPan = c.Util.setSpanValue(b), 
+        B._super_.call(this), this.rPan = c.Util.setSpanValue(a), this.thaPan = c.Util.setSpanValue(b),
         this.type = c.Util.initValue(d, "vector");
     }
     function A(a) {
@@ -14605,27 +14605,27 @@ if (!window.performance) {
     }
     function x() {}
     function w(a, b) {
-        this.numPan = c.Util.initValue(a, 1), this.timePan = c.Util.initValue(b, 1), this.numPan = c.Util.setSpanValue(this.numPan), 
-        this.timePan = c.Util.setSpanValue(this.timePan), this.startTime = 0, this.nextTime = 0, 
+        this.numPan = c.Util.initValue(a, 1), this.timePan = c.Util.initValue(b, 1), this.numPan = c.Util.setSpanValue(this.numPan),
+        this.timePan = c.Util.setSpanValue(this.timePan), this.startTime = 0, this.nextTime = 0,
         this.init();
     }
     function v(a, b) {
-        this.id = "Behaviour_" + v.id++, this.life = c.Util.initValue(a, Infinity), this.easing = c.ease.setEasingByName(b), 
+        this.id = "Behaviour_" + v.id++, this.life = c.Util.initValue(a, Infinity), this.easing = c.ease.setEasingByName(b),
         this.age = 0, this.energy = 1, this.dead = !1, this.parents = [], this.name = "Behaviour";
     }
     function t(a, b, c, d) {
-        this.x = a, this.y = b, this.width = c, this.height = d, this.bottom = this.y + this.height, 
+        this.x = a, this.y = b, this.width = c, this.height = d, this.bottom = this.y + this.height,
         this.right = this.x + this.width;
     }
     function s(a) {
         c.Util.isArray(a) ? this.colorArr = a : this.colorArr = [ a ];
     }
     function r(a, b, d) {
-        this.isArray = !1, c.Util.isArray(a) ? (this.isArray = !0, this.a = a) : (this.a = c.Util.initValue(a, 1), 
+        this.isArray = !1, c.Util.isArray(a) ? (this.isArray = !0, this.a = a) : (this.a = c.Util.initValue(a, 1),
         this.b = c.Util.initValue(b, this.a), this.center = c.Util.initValue(d, !1));
     }
     function l(a, b) {
-        this.proParticleCount = c.Util.initValue(a, 0), this.releaseTime = c.Util.initValue(b, -1), 
+        this.proParticleCount = c.Util.initValue(a, 0), this.releaseTime = c.Util.initValue(b, -1),
         this.poolList = [], this.timeoutID = 0;
         for (var d = 0; d < this.proParticleCount; d++) this.add();
         this.releaseTime > 0 && (this.timeoutID = setTimeout(this.release, this.releaseTime / 1e3));
@@ -14644,15 +14644,15 @@ if (!window.performance) {
         this.initialize();
     }
     function c(a, b) {
-        this.proParticleCount = c.Util.initValue(a, c.POOL_MAX), this.integrationType = c.Util.initValue(b, c.EULER), 
-        this.emitters = [], this.renderers = [], this.time = 0, this.oldTime = 0, c.pool = new c.ParticlePool(this.proParticleCount), 
+        this.proParticleCount = c.Util.initValue(a, c.POOL_MAX), this.integrationType = c.Util.initValue(b, c.EULER),
+        this.emitters = [], this.renderers = [], this.time = 0, this.oldTime = 0, c.pool = new c.ParticlePool(this.proParticleCount),
         c.integrator = new c.NumericalIntegration(this.integrationType);
     }
-    c.POOL_MAX = 1e3, c.TIME_STEP = 60, c.MEASURE = 100, c.EULER = "euler", c.RK2 = "runge-kutta2", 
-    c.RK4 = "runge-kutta4", c.VERLET = "verlet", c.PARTICLE_CREATED = "partilcleCreated", 
-    c.PARTICLE_UPDATE = "partilcleUpdate", c.PARTICLE_SLEEP = "particleSleep", c.PARTICLE_DEAD = "partilcleDead", 
-    c.PROTON_UPDATE = "protonUpdate", c.PROTON_UPDATE_AFTER = "protonUpdateAfter", c.EMITTER_ADDED = "emitterAdded", 
-    c.EMITTER_REMOVED = "emitterRemoved", c.amendChangeTabsBug = !0, c.TextureBuffer = {}, 
+    c.POOL_MAX = 1e3, c.TIME_STEP = 60, c.MEASURE = 100, c.EULER = "euler", c.RK2 = "runge-kutta2",
+    c.RK4 = "runge-kutta4", c.VERLET = "verlet", c.PARTICLE_CREATED = "partilcleCreated",
+    c.PARTICLE_UPDATE = "partilcleUpdate", c.PARTICLE_SLEEP = "particleSleep", c.PARTICLE_DEAD = "partilcleDead",
+    c.PROTON_UPDATE = "protonUpdate", c.PROTON_UPDATE_AFTER = "protonUpdateAfter", c.EMITTER_ADDED = "emitterAdded",
+    c.EMITTER_REMOVED = "emitterRemoved", c.amendChangeTabsBug = !0, c.TextureBuffer = {},
     c.TextureCanvasBuffer = {}, c.prototype = {
         addRender: function(a) {
             a.proton = this, this.renderers.push(a.proton);
@@ -14675,7 +14675,7 @@ if (!window.performance) {
                 type: c.PROTON_UPDATE
             })), this.oldTime || (this.oldTime = new Date().getTime());
             var a = new Date().getTime();
-            this.elapsed = (a - this.oldTime) / 1e3, c.amendChangeTabsBug && this.amendChangeTabsBug(), 
+            this.elapsed = (a - this.oldTime) / 1e3, c.amendChangeTabsBug && this.amendChangeTabsBug(),
             this.oldTime = a;
             if (this.elapsed > 0) for (var b = 0; b < this.emitters.length; b++) this.emitters[b].update(this.elapsed);
             this.dispatchEvent(new c.Event({
@@ -14698,8 +14698,8 @@ if (!window.performance) {
     }, a.Proton = c;
     var e = d.prototype;
     d.initialize = function(a) {
-        a.addEventListener = e.addEventListener, a.removeEventListener = e.removeEventListener, 
-        a.removeAllEventListeners = e.removeAllEventListeners, a.hasEventListener = e.hasEventListener, 
+        a.addEventListener = e.addEventListener, a.removeEventListener = e.removeEventListener,
+        a.removeAllEventListeners = e.removeAllEventListeners, a.hasEventListener = e.hasEventListener,
         a.dispatchEvent = e.dispatchEvent;
     }, e._listeners = null, e.initialize = function() {}, e.addEventListener = function(a, b) {
         var c = this._listeners;
@@ -14762,11 +14762,11 @@ if (!window.performance) {
             return b;
         },
         setVector2DByObject: function(a, b) {
-            b.hasOwnProperty("x") && (a.p.x = b.x), b.hasOwnProperty("y") && (a.p.y = b.y), 
-            b.hasOwnProperty("vx") && (a.v.x = b.vx), b.hasOwnProperty("vy") && (a.v.y = b.vy), 
-            b.hasOwnProperty("ax") && (a.a.x = b.ax), b.hasOwnProperty("ay") && (a.a.y = b.ay), 
-            b.hasOwnProperty("p") && particle.p.copy(b.p), b.hasOwnProperty("v") && particle.v.copy(b.v), 
-            b.hasOwnProperty("a") && particle.a.copy(b.a), b.hasOwnProperty("position") && particle.p.copy(b.position), 
+            b.hasOwnProperty("x") && (a.p.x = b.x), b.hasOwnProperty("y") && (a.p.y = b.y),
+            b.hasOwnProperty("vx") && (a.v.x = b.vx), b.hasOwnProperty("vy") && (a.v.y = b.vy),
+            b.hasOwnProperty("ax") && (a.a.x = b.ax), b.hasOwnProperty("ay") && (a.a.y = b.ay),
+            b.hasOwnProperty("p") && particle.p.copy(b.p), b.hasOwnProperty("v") && particle.v.copy(b.v),
+            b.hasOwnProperty("a") && particle.a.copy(b.a), b.hasOwnProperty("position") && particle.p.copy(b.position),
             b.hasOwnProperty("velocity") && particle.v.copy(b.velocity), b.hasOwnProperty("accelerate") && particle.a.copy(b.accelerate);
         },
         addPrototypeByObject: function(a, b, d) {
@@ -14862,23 +14862,23 @@ if (!window.performance) {
     var i = i || {
         createCanvas: function(a, b, c, d) {
             var e = document.createElement("canvas"), f = d ? d : "absolute";
-            e.id = a, e.width = b, e.height = c, e.style.position = f, e.style.opacity = 0, 
+            e.id = a, e.width = b, e.height = c, e.style.position = f, e.style.opacity = 0,
             this.transformDom(e, -500, -500, 0, 0);
             return e;
         },
         transformDom: function(a, b, c, d, e) {
-            a.style.WebkitTransform = "translate(" + b + "px, " + c + "px) " + "scale(" + d + ") " + "rotate(" + e + "deg)", 
-            a.style.MozTransform = "translate(" + b + "px, " + c + "px) " + "scale(" + d + ") " + "rotate(" + e + "deg)", 
-            a.style.OTransform = "translate(" + b + "px, " + c + "px) " + "scale(" + d + ") " + "rotate(" + e + "deg)", 
-            a.style.msTransform = "translate(" + b + "px, " + c + "px) " + "scale(" + d + ") " + "rotate(" + e + "deg)", 
+            a.style.WebkitTransform = "translate(" + b + "px, " + c + "px) " + "scale(" + d + ") " + "rotate(" + e + "deg)",
+            a.style.MozTransform = "translate(" + b + "px, " + c + "px) " + "scale(" + d + ") " + "rotate(" + e + "deg)",
+            a.style.OTransform = "translate(" + b + "px, " + c + "px) " + "scale(" + d + ") " + "rotate(" + e + "deg)",
+            a.style.msTransform = "translate(" + b + "px, " + c + "px) " + "scale(" + d + ") " + "rotate(" + e + "deg)",
             a.style.transform = "translate(" + b + "px, " + c + "px) " + "scale(" + d + ") " + "rotate(" + e + "deg)";
         }
     };
     c.DomUtil = i, j.prototype.set = function(a, b) {
-        b == 0 ? c.Mat3.set(a, this.mats[0]) : c.Mat3.multiply(this.mats[b - 1], a, this.mats[b]), 
+        b == 0 ? c.Mat3.set(a, this.mats[0]) : c.Mat3.multiply(this.mats[b - 1], a, this.mats[b]),
         this.size = Math.max(this.size, b + 1);
     }, j.prototype.push = function(a) {
-        this.size == 0 ? c.Mat3.set(a, this.mats[0]) : c.Mat3.multiply(this.mats[this.size - 1], a, this.mats[this.size]), 
+        this.size == 0 ? c.Mat3.set(a, this.mats[0]) : c.Mat3.multiply(this.mats[this.size - 1], a, this.mats[this.size]),
         this.size++;
     }, j.prototype.pop = function() {
         this.size > 0 && this.size--;
@@ -14889,16 +14889,16 @@ if (!window.performance) {
             return Math.atan2(this.v.x, -this.v.y) * (180 / Math.PI);
         },
         reset: function(a) {
-            this.life = Infinity, this.age = 0, this.energy = 1, this.dead = !1, this.sleep = !1, 
-            this.target = null, this.sprite = null, this.parent = null, this.mass = 1, this.radius = 10, 
-            this.alpha = 1, this.scale = 1, this.rotation = 0, this.color = null, this.easing = c.ease.setEasingByName(c.easeLinear), 
-            a ? (this.transform = {}, this.p = new c.Vector2D(), this.v = new c.Vector2D(), 
+            this.life = Infinity, this.age = 0, this.energy = 1, this.dead = !1, this.sleep = !1,
+            this.target = null, this.sprite = null, this.parent = null, this.mass = 1, this.radius = 10,
+            this.alpha = 1, this.scale = 1, this.rotation = 0, this.color = null, this.easing = c.ease.setEasingByName(c.easeLinear),
+            a ? (this.transform = {}, this.p = new c.Vector2D(), this.v = new c.Vector2D(),
             this.a = new c.Vector2D(), this.old = {
                 p: new c.Vector2D(),
                 v: new c.Vector2D(),
                 a: new c.Vector2D()
-            }, this.behaviours = []) : (c.Util.destroyObject(this.transform), this.p.set(0, 0), 
-            this.v.set(0, 0), this.a.set(0, 0), this.old.p.set(0, 0), this.old.v.set(0, 0), 
+            }, this.behaviours = []) : (c.Util.destroyObject(this.transform), this.p.set(0, 0),
+            this.v.set(0, 0), this.a.set(0, 0), this.old.p.set(0, 0), this.old.v.set(0, 0),
             this.old.a.set(0, 0), this.removeAllBehaviours()), this.transform.rgb = {
                 r: 255,
                 g: 255,
@@ -14954,7 +14954,7 @@ if (!window.performance) {
             if (this.poolList.length < c.POOL_MAX) return this.poolList.push(a);
         },
         release: function() {
-            for (var a = 0; a < this.poolList.length; a++) this.poolList[a].destory && this.poolList[a].destory(), 
+            for (var a = 0; a < this.poolList.length; a++) this.poolList[a].destory && this.poolList[a].destory(),
             delete this.poolList[a];
             this.poolList = [];
         }
@@ -14986,8 +14986,8 @@ if (!window.performance) {
             this.eulerIntegrate(a, b, c);
         },
         eulerIntegrate: function(a, b, c) {
-            a.sleep || (a.old.p.copy(a.p), a.old.v.copy(a.v), a.a.multiplyScalar(1 / a.mass), 
-            a.v.add(a.a.multiplyScalar(b)), a.p.add(a.old.v.multiplyScalar(b)), c && a.v.multiplyScalar(c), 
+            a.sleep || (a.old.p.copy(a.p), a.old.v.copy(a.v), a.a.multiplyScalar(1 / a.mass),
+            a.v.add(a.a.multiplyScalar(b)), a.p.add(a.old.v.multiplyScalar(b)), c && a.v.multiplyScalar(c),
             a.a.clear());
         }
     }, c.NumericalIntegration = o;
@@ -15210,13 +15210,13 @@ if (!window.performance) {
         },
         multiply: function(a, b, c) {
             var d = a[0], e = a[1], f = a[2], g = a[3], h = a[4], i = a[6], j = a[7], k = b[0], l = b[1], m = b[2], n = b[3], o = b[4], p = b[6], q = b[7];
-            c[0] = k * d + l * g, c[1] = k * e + l * h, c[2] = f * m, c[3] = n * d + o * g, 
+            c[0] = k * d + l * g, c[1] = k * e + l * h, c[2] = f * m, c[3] = n * d + o * g,
             c[4] = n * e + o * h, c[6] = p * d + q * g + i, c[7] = p * e + q * h + j;
             return c;
         },
         inverse: function(a, b) {
             var c = a[0], d = a[1], e = a[3], f = a[4], g = a[6], h = a[7], i = f, j = -e, k = h * e - f * g, l = c * i + d * j, m;
-            m = 1 / l, b[0] = i * m, b[1] = -d * m, b[3] = j * m, b[4] = c * m, b[6] = k * m, 
+            m = 1 / l, b[0] = i * m, b[1] = -d * m, b[3] = j * m, b[4] = c * m, b[6] = k * m,
             b[7] = (-h * c + d * g) * m;
             return b;
         },
@@ -15312,58 +15312,58 @@ if (!window.performance) {
     }, F.prototype.applyBehaviour = function(a, b, c) {
         F._super_.prototype.applyBehaviour.call(this, a, b, c), a.a.add(this.force);
     }, c.Force = F, c.F = F, c.Util.inherits(G, c.Behaviour), G.prototype.reset = function(a, b, d, e, f) {
-        this.targetPosition = c.Util.initValue(a, new c.Vector2D()), this.radius = c.Util.initValue(d, 1e3), 
-        this.force = c.Util.initValue(this.normalizeValue(b), 100), this.radiusSq = this.radius * this.radius, 
+        this.targetPosition = c.Util.initValue(a, new c.Vector2D()), this.radius = c.Util.initValue(d, 1e3),
+        this.force = c.Util.initValue(this.normalizeValue(b), 100), this.radiusSq = this.radius * this.radius,
         this.attractionForce = new c.Vector2D(), this.lengthSq = 0, e && G._super_.prototype.reset.call(this, e, f);
     }, G.prototype.applyBehaviour = function(a, b, c) {
-        G._super_.prototype.applyBehaviour.call(this, a, b, c), this.attractionForce.copy(this.targetPosition), 
-        this.attractionForce.sub(a.p), this.lengthSq = this.attractionForce.lengthSq(), 
-        this.lengthSq > 4e-6 && this.lengthSq < this.radiusSq && (this.attractionForce.normalize(), 
-        this.attractionForce.multiplyScalar(1 - this.lengthSq / this.radiusSq), this.attractionForce.multiplyScalar(this.force), 
+        G._super_.prototype.applyBehaviour.call(this, a, b, c), this.attractionForce.copy(this.targetPosition),
+        this.attractionForce.sub(a.p), this.lengthSq = this.attractionForce.lengthSq(),
+        this.lengthSq > 4e-6 && this.lengthSq < this.radiusSq && (this.attractionForce.normalize(),
+        this.attractionForce.multiplyScalar(1 - this.lengthSq / this.radiusSq), this.attractionForce.multiplyScalar(this.force),
         a.a.add(this.attractionForce));
     }, c.Attraction = G, c.Util.inherits(H, c.Behaviour), H.prototype.reset = function(a, b, d, e, f) {
-        this.panFoce = new c.Vector2D(a, b), this.panFoce = this.normalizeForce(this.panFoce), 
+        this.panFoce = new c.Vector2D(a, b), this.panFoce = this.normalizeForce(this.panFoce),
         this.delay = d, e && H._super_.prototype.reset.call(this, e, f);
     }, H.prototype.applyBehaviour = function(a, b, d) {
-        H._super_.prototype.applyBehaviour.call(this, a, b, d), this.time += b, this.time >= this.delay && (a.a.addXY(c.MathUtils.randomAToB(-this.panFoce.x, this.panFoce.x), c.MathUtils.randomAToB(-this.panFoce.y, this.panFoce.y)), 
+        H._super_.prototype.applyBehaviour.call(this, a, b, d), this.time += b, this.time >= this.delay && (a.a.addXY(c.MathUtils.randomAToB(-this.panFoce.x, this.panFoce.x), c.MathUtils.randomAToB(-this.panFoce.y, this.panFoce.y)),
         this.time = 0);
     }, c.RandomDrift = H, c.Util.inherits(I, c.Attraction), I.prototype.reset = function(a, b, c, d, e) {
         I._super_.prototype.reset.call(this, a, b, c, d, e), this.force *= -1;
     }, c.Repulsion = I, c.Util.inherits(J, c.Force), J.prototype.reset = function(a, b, c) {
         J._super_.prototype.reset.call(this, 0, a, b, c);
     }, c.Gravity = J, c.G = J, c.Util.inherits(K, c.Behaviour), K.prototype.reset = function(a, b, d, e, f) {
-        this.emitter = c.Util.initValue(a, null), this.mass = c.Util.initValue(b, !0), this.callback = c.Util.initValue(d, null), 
+        this.emitter = c.Util.initValue(a, null), this.mass = c.Util.initValue(b, !0), this.callback = c.Util.initValue(d, null),
         this.collisionPool = [], this.delta = new c.Vector2D(), e && K._super_.prototype.reset.call(this, e, f);
     }, K.prototype.applyBehaviour = function(a, b, c) {
         var d = this.emitter ? this.emitter.particles.slice(c) : this.pool.slice(c), e, f, g, h, i, j = d.length;
-        for (var k = 0; k < j; k++) e = d[k], e !== a && (this.delta.copy(e.p), this.delta.sub(a.p), 
-        f = this.delta.lengthSq(), distance = a.radius + e.radius, f <= distance * distance && (g = distance - Math.sqrt(f), 
-        g += .5, totalMass = a.mass + e.mass, h = this.mass ? e.mass / totalMass : .5, i = this.mass ? a.mass / totalMass : .5, 
-        a.p.add(this.delta.clone().normalize().multiplyScalar(g * -h)), e.p.add(this.delta.normalize().multiplyScalar(g * i)), 
+        for (var k = 0; k < j; k++) e = d[k], e !== a && (this.delta.copy(e.p), this.delta.sub(a.p),
+        f = this.delta.lengthSq(), distance = a.radius + e.radius, f <= distance * distance && (g = distance - Math.sqrt(f),
+        g += .5, totalMass = a.mass + e.mass, h = this.mass ? e.mass / totalMass : .5, i = this.mass ? a.mass / totalMass : .5,
+        a.p.add(this.delta.clone().normalize().multiplyScalar(g * -h)), e.p.add(this.delta.normalize().multiplyScalar(g * i)),
         this.callback && this.callback(a, e)));
     }, c.Collision = K, c.Util.inherits(L, c.Behaviour), L.prototype.reset = function(a, b, d, e) {
         this.zone = a, this.zone.crossType = c.Util.initValue(b, "dead"), d && L._super_.prototype.reset.call(this, d, e);
     }, L.prototype.applyBehaviour = function(a, b, c) {
         L._super_.prototype.applyBehaviour.call(this, a, b, c), this.zone.crossing(a);
     }, c.CrossZone = L, c.Util.inherits(M, c.Behaviour), M.prototype.reset = function(a, d, e, f) {
-        d == null || d == b ? this.same = !0 : this.same = !1, this.a = c.Util.setSpanValue(c.Util.initValue(a, 1)), 
+        d == null || d == b ? this.same = !0 : this.same = !1, this.a = c.Util.setSpanValue(c.Util.initValue(a, 1)),
         this.b = c.Util.setSpanValue(d), e && M._super_.prototype.reset.call(this, e, f);
     }, M.prototype.initialize = function(a) {
         a.transform.alphaA = this.a.getValue(), this.same ? a.transform.alphaB = a.transform.alphaA : a.transform.alphaB = this.b.getValue();
     }, M.prototype.applyBehaviour = function(a, b, c) {
-        M._super_.prototype.applyBehaviour.call(this, a, b, c), a.alpha = a.transform.alphaB + (a.transform.alphaA - a.transform.alphaB) * this.energy, 
+        M._super_.prototype.applyBehaviour.call(this, a, b, c), a.alpha = a.transform.alphaB + (a.transform.alphaA - a.transform.alphaB) * this.energy,
         a.alpha < .001 && (a.alpha = 0);
     }, c.Alpha = M, c.Util.inherits(N, c.Behaviour), N.prototype.reset = function(a, d, e, f) {
-        d == null || d == b ? this.same = !0 : this.same = !1, this.a = c.Util.setSpanValue(c.Util.initValue(a, 1)), 
+        d == null || d == b ? this.same = !0 : this.same = !1, this.a = c.Util.setSpanValue(c.Util.initValue(a, 1)),
         this.b = c.Util.setSpanValue(d), e && N._super_.prototype.reset.call(this, e, f);
     }, N.prototype.initialize = function(a) {
         a.transform.scaleA = this.a.getValue(), a.transform.oldRadius = a.radius, this.same ? a.transform.scaleB = a.transform.scaleA : a.transform.scaleB = this.b.getValue();
     }, N.prototype.applyBehaviour = function(a, b, c) {
-        N._super_.prototype.applyBehaviour.call(this, a, b, c), a.scale = a.transform.scaleB + (a.transform.scaleA - a.transform.scaleB) * this.energy, 
+        N._super_.prototype.applyBehaviour.call(this, a, b, c), a.scale = a.transform.scaleB + (a.transform.scaleA - a.transform.scaleB) * this.energy,
         a.scale < 1e-4 && (a.scale = 0), a.radius = a.transform.oldRadius * a.scale;
     }, c.Scale = N, c.Util.inherits(O, c.Behaviour), O.prototype.reset = function(a, d, e, f, g) {
-        d == null || d == b ? this.same = !0 : this.same = !1, this.a = c.Util.setSpanValue(c.Util.initValue(a, "Velocity")), 
-        this.b = c.Util.setSpanValue(c.Util.initValue(d, 0)), this.style = c.Util.initValue(e, "to"), 
+        d == null || d == b ? this.same = !0 : this.same = !1, this.a = c.Util.setSpanValue(c.Util.initValue(a, "Velocity")),
+        this.b = c.Util.setSpanValue(c.Util.initValue(d, 0)), this.style = c.Util.initValue(e, "to"),
         f && O._super_.prototype.reset.call(this, f, g);
     }, O.prototype.initialize = function(a) {
         a.rotation = this.a.getValue(), a.transform.rotationA = this.a.getValue(), this.same || (a.transform.rotationB = this.b.getValue());
@@ -15373,19 +15373,19 @@ if (!window.performance) {
     }, c.Rotate = O, c.Util.inherits(P, c.Behaviour), P.prototype.reset = function(a, b, c, d) {
         this.color1 = this.setSpanValue(a), this.color2 = this.setSpanValue(b), c && P._super_.prototype.reset.call(this, c, d);
     }, P.prototype.initialize = function(a) {
-        a.color = this.color1.getValue(), a.transform.beginRGB = c.Util.hexToRGB(a.color), 
+        a.color = this.color1.getValue(), a.transform.beginRGB = c.Util.hexToRGB(a.color),
         this.color2 && (a.transform.endRGB = c.Util.hexToRGB(this.color2.getValue()));
     }, P.prototype.applyBehaviour = function(a, b, c) {
-        this.color2 ? (P._super_.prototype.applyBehaviour.call(this, a, b, c), a.transform.rgb.r = a.transform.endRGB.r + (a.transform.beginRGB.r - a.transform.endRGB.r) * this.energy, 
-        a.transform.rgb.g = a.transform.endRGB.g + (a.transform.beginRGB.g - a.transform.endRGB.g) * this.energy, 
-        a.transform.rgb.b = a.transform.endRGB.b + (a.transform.beginRGB.b - a.transform.endRGB.b) * this.energy, 
-        a.transform.rgb.r = parseInt(a.transform.rgb.r, 10), a.transform.rgb.g = parseInt(a.transform.rgb.g, 10), 
-        a.transform.rgb.b = parseInt(a.transform.rgb.b, 10)) : (a.transform.rgb.r = a.transform.beginRGB.r, 
+        this.color2 ? (P._super_.prototype.applyBehaviour.call(this, a, b, c), a.transform.rgb.r = a.transform.endRGB.r + (a.transform.beginRGB.r - a.transform.endRGB.r) * this.energy,
+        a.transform.rgb.g = a.transform.endRGB.g + (a.transform.beginRGB.g - a.transform.endRGB.g) * this.energy,
+        a.transform.rgb.b = a.transform.endRGB.b + (a.transform.beginRGB.b - a.transform.endRGB.b) * this.energy,
+        a.transform.rgb.r = parseInt(a.transform.rgb.r, 10), a.transform.rgb.g = parseInt(a.transform.rgb.g, 10),
+        a.transform.rgb.b = parseInt(a.transform.rgb.b, 10)) : (a.transform.rgb.r = a.transform.beginRGB.r,
         a.transform.rgb.g = a.transform.beginRGB.g, a.transform.rgb.b = a.transform.beginRGB.b);
     }, P.prototype.setSpanValue = function(a) {
         return a ? a instanceof c.ColorSpan ? a : new c.ColorSpan(a) : null;
     }, c.Color = P, c.Util.inherits(Q, c.Behaviour), Q.prototype.reset = function(a, b, d, e) {
-        this.distanceVec = new c.Vector2D(), this.centerPoint = c.Util.initValue(a, new c.Vector2D()), 
+        this.distanceVec = new c.Vector2D(), this.centerPoint = c.Util.initValue(a, new c.Vector2D()),
         this.force = c.Util.initValue(this.normalizeValue(b), 100), d && Q._super_.prototype.reset.call(this, d, e);
     }, Q.prototype.initialize = function(a) {}, Q.prototype.applyBehaviour = function(a, b, c) {
         this.distanceVec.set(this.centerPoint.x - a.p.x, this.centerPoint.y - a.p.y);
@@ -15394,9 +15394,9 @@ if (!window.performance) {
             var e = this.distanceVec.length(), f = this.force * b / (d * e);
             a.v.x += f * this.distanceVec.x, a.v.y += f * this.distanceVec.y;
         }
-    }, c.GravityWell = Q, R.ID = 0, c.Util.inherits(R, c.Particle), c.EventDispatcher.initialize(R.prototype), 
+    }, c.GravityWell = Q, R.ID = 0, c.Util.inherits(R, c.Particle), c.EventDispatcher.initialize(R.prototype),
     R.prototype.emit = function(a, b) {
-        this.emitTime = 0, this.emitTotalTimes = c.Util.initValue(a, Infinity), b == !0 || b == "life" || b == "destroy" ? a == "once" ? this.life = 1 : this.life = this.emitTotalTimes : isNaN(b) || (this.life = b), 
+        this.emitTime = 0, this.emitTotalTimes = c.Util.initValue(a, Infinity), b == !0 || b == "life" || b == "destroy" ? a == "once" ? this.life = 1 : this.life = this.emitTotalTimes : isNaN(b) || (this.life = b),
         this.rate.init();
     }, R.prototype.stopEmit = function() {
         this.emitTotalTimes = -1, this.emitTime = 0;
@@ -15451,20 +15451,20 @@ if (!window.performance) {
             }
         }
     }, R.prototype.update = function(a) {
-        this.age += a, (this.age >= this.life || this.dead) && this.destroy(), this.emitting(a), 
+        this.age += a, (this.age >= this.life || this.dead) && this.destroy(), this.emitting(a),
         this.integrate(a);
         var b, d = this.particles.length, e;
-        for (e = d - 1; e >= 0; e--) b = this.particles[e], b.dead && (c.pool.set(b), this.particles.splice(e, 1), 
+        for (e = d - 1; e >= 0; e--) b = this.particles[e], b.dead && (c.pool.set(b), this.particles.splice(e, 1),
         this.dispatchEvent(new c.Event({
             type: c.PARTICLE_DEAD,
             particle: b
         })));
     }, R.prototype.setupParticle = function(a, b, d) {
         var e = this.initializes, f = this.behaviours;
-        b && (b instanceof Array ? e = b : e = [ b ]), d && (d instanceof Array ? f = d : f = [ d ]), 
+        b && (b instanceof Array ? e = b : e = [ b ]), d && (d instanceof Array ? f = d : f = [ d ]),
         c.InitializeUtil.initialize(this, a, e), a.addBehaviours(f), a.parent = this, this.particles.push(a);
     }, R.prototype.destroy = function() {
-        this.dead = !0, this.emitTotalTimes = -1, this.particles.length == 0 && (this.removeInitializers(), 
+        this.dead = !0, this.emitTotalTimes = -1, this.particles.length == 0 && (this.removeInitializers(),
         this.removeAllBehaviours(), this.parent && this.parent.removeEmitter(this));
     }, c.Emitter = R, c.Util.inherits(S, c.Emitter), S.prototype.addSelfBehaviour = function() {
         var a = arguments.length, b;
@@ -15492,7 +15492,7 @@ if (!window.performance) {
     }, T.prototype.stopEmit = function() {
         this._allowEmitting = !1;
     }, T.prototype.mousemove = function(a) {
-        if (a.layerX || a.layerX == 0) this.p.x += (a.layerX - this.p.x) * this.ease, this.p.y += (a.layerY - this.p.y) * this.ease; else if (a.offsetX || a.offsetX == 0) this.p.x += (a.offsetX - this.p.x) * this.ease, 
+        if (a.layerX || a.layerX == 0) this.p.x += (a.layerX - this.p.x) * this.ease, this.p.y += (a.layerY - this.p.y) * this.ease; else if (a.offsetX || a.offsetX == 0) this.p.x += (a.offsetX - this.p.x) * this.ease,
         this.p.y += (a.offsetY - this.p.y) * this.ease;
         this._allowEmitting && T._super_.prototype.emit.call(this, "once");
     }, T.prototype.destroy = function() {
@@ -15649,13 +15649,13 @@ if (!window.performance) {
             }
         }
     };
-    c.ease = U, c.easeLinear = "easeLinear", c.easeInQuad = "easeInQuad", c.easeOutQuad = "easeOutQuad", 
-    c.easeInOutQuad = "easeInOutQuad", c.easeInCubic = "easeInCubic", c.easeOutCubic = "easeOutCubic", 
-    c.easeInOutCubic = "easeInOutCubic", c.easeInQuart = "easeInQuart", c.easeOutQuart = "easeOutQuart", 
-    c.easeInOutQuart = "easeInOutQuart", c.easeInSine = "easeInSine", c.easeOutSine = "easeOutSine", 
-    c.easeInOutSine = "easeInOutSine", c.easeInExpo = "easeInExpo", c.easeOutExpo = "easeOutExpo", 
-    c.easeInOutExpo = "easeInOutExpo", c.easeInCirc = "easeInCirc", c.easeOutCirc = "easeOutCirc", 
-    c.easeInOutCirc = "easeInOutCirc", c.easeInBack = "easeInBack", c.easeOutBack = "easeOutBack", 
+    c.ease = U, c.easeLinear = "easeLinear", c.easeInQuad = "easeInQuad", c.easeOutQuad = "easeOutQuad",
+    c.easeInOutQuad = "easeInOutQuad", c.easeInCubic = "easeInCubic", c.easeOutCubic = "easeOutCubic",
+    c.easeInOutCubic = "easeInOutCubic", c.easeInQuart = "easeInQuart", c.easeOutQuart = "easeOutQuart",
+    c.easeInOutQuart = "easeInOutQuart", c.easeInSine = "easeInSine", c.easeOutSine = "easeOutSine",
+    c.easeInOutSine = "easeInOutSine", c.easeInExpo = "easeInExpo", c.easeOutExpo = "easeOutExpo",
+    c.easeInOutExpo = "easeInOutExpo", c.easeInCirc = "easeInCirc", c.easeOutCirc = "easeOutCirc",
+    c.easeInOutCirc = "easeInOutCirc", c.easeInBack = "easeInBack", c.easeOutBack = "easeOutBack",
     c.easeInOutBack = "easeInOutBack", V.prototype = {
         start: function() {
             this.addEventHandler(), this.renderer.start();
@@ -15712,8 +15712,8 @@ if (!window.performance) {
             this.renderer.render(a);
         },
         addEventHandler: function() {
-            this.onProtonUpdate && (this.renderer.onProtonUpdate = this.onProtonUpdate), this.onParticleCreated && (this.renderer.onParticleCreated = this.onParticleCreated), 
-            this.onParticleUpdate && (this.renderer.onParticleUpdate = this.onParticleUpdate), 
+            this.onProtonUpdate && (this.renderer.onProtonUpdate = this.onProtonUpdate), this.onParticleCreated && (this.renderer.onParticleCreated = this.onParticleCreated),
+            this.onParticleUpdate && (this.renderer.onParticleUpdate = this.onParticleUpdate),
             this.onParticleDead && (this.renderer.onParticleDead = this.onParticleDead);
         }
     }, c.Renderer = V, W.prototype = {
@@ -15777,38 +15777,38 @@ if (!window.performance) {
             c.Util.getImage(a.target, a, !1, function(a) {
                 b.setImgInDIV.call(b, a);
             });
-        } else a.transform.canvas = c.DomUtil.createCanvas(a.id + "_canvas", a.radius + 1, a.radius + 1, "absolute"), 
-        a.transform.bakOldRadius = a.radius, this.stroke ? (a.transform.canvas.width = 2 * a.radius + this.stroke.thinkness * 2, 
-        a.transform.canvas.height = 2 * a.radius + this.stroke.thinkness * 2) : (a.transform.canvas.width = 2 * a.radius + 1, 
-        a.transform.canvas.height = 2 * a.radius + 1), a.transform.context = a.transform.canvas.getContext("2d"), 
-        a.transform.context.fillStyle = a.color, a.transform.context.beginPath(), a.transform.context.arc(a.radius, a.radius, a.radius, 0, Math.PI * 2, !0), 
-        this.stroke && (a.transform.context.strokeStyle = this.stroke.color, a.transform.context.lineWidth = this.stroke.thinkness, 
-        a.transform.context.stroke()), a.transform.context.closePath(), a.transform.context.fill(), 
+        } else a.transform.canvas = c.DomUtil.createCanvas(a.id + "_canvas", a.radius + 1, a.radius + 1, "absolute"),
+        a.transform.bakOldRadius = a.radius, this.stroke ? (a.transform.canvas.width = 2 * a.radius + this.stroke.thinkness * 2,
+        a.transform.canvas.height = 2 * a.radius + this.stroke.thinkness * 2) : (a.transform.canvas.width = 2 * a.radius + 1,
+        a.transform.canvas.height = 2 * a.radius + 1), a.transform.context = a.transform.canvas.getContext("2d"),
+        a.transform.context.fillStyle = a.color, a.transform.context.beginPath(), a.transform.context.arc(a.radius, a.radius, a.radius, 0, Math.PI * 2, !0),
+        this.stroke && (a.transform.context.strokeStyle = this.stroke.color, a.transform.context.lineWidth = this.stroke.thinkness,
+        a.transform.context.stroke()), a.transform.context.closePath(), a.transform.context.fill(),
         this.element.appendChild(a.transform.canvas);
     }, X.prototype.onParticleUpdate = function(a) {
-        a.target ? a.target instanceof Image && (a.transform.canvas.style.opacity = a.alpha, 
-        c.DomUtil.transformDom(a.transform.canvas, a.p.x - a.target.width / 2, a.p.y - a.target.height / 2, a.scale, a.rotation)) : (a.transform.canvas.style.opacity = a.alpha, 
+        a.target ? a.target instanceof Image && (a.transform.canvas.style.opacity = a.alpha,
+        c.DomUtil.transformDom(a.transform.canvas, a.p.x - a.target.width / 2, a.p.y - a.target.height / 2, a.scale, a.rotation)) : (a.transform.canvas.style.opacity = a.alpha,
         a.transform.oldRadius ? c.DomUtil.transformDom(a.transform.canvas, a.p.x - a.transform.oldRadius, a.p.y - a.transform.oldRadius, a.scale, a.rotation) : c.DomUtil.transformDom(a.transform.canvas, a.p.x - a.transform.bakOldRadius, a.p.y - a.transform.bakOldRadius, a.scale, a.rotation));
     }, X.prototype.onParticleDead = function(a) {
         a.transform.canvas && this.element.removeChild(a.transform.canvas);
     }, X.prototype.setImgInDIV = function(a) {
-        a.transform.canvas = c.DomUtil.createCanvas(a.id + "_canvas", a.target.width + 1, a.target.height + 1, "absolute", a.p.x - a.radius, a.p.y - a.radius), 
-        a.transform.context = a.transform.canvas.getContext("2d"), a.transform.context.drawImage(a.target, 0, 0, a.target.width, a.target.height), 
+        a.transform.canvas = c.DomUtil.createCanvas(a.id + "_canvas", a.target.width + 1, a.target.height + 1, "absolute", a.p.x - a.radius, a.p.y - a.radius),
+        a.transform.context = a.transform.canvas.getContext("2d"), a.transform.context.drawImage(a.target, 0, 0, a.target.width, a.target.height),
         this.element.appendChild(a.transform.canvas);
-    }, c.DomRender = X, c.Util.inherits(Y, c.BaseRender), Y.prototype.resize = function(a, b) {}, 
+    }, c.DomRender = X, c.Util.inherits(Y, c.BaseRender), Y.prototype.resize = function(a, b) {},
     Y.prototype.start = function() {
         Y._super_.prototype.start.call(this);
     }, Y.prototype.onProtonUpdate = function() {}, Y.prototype.onParticleCreated = function(a) {
-        if (a.target) a.target = a.target.clone(), a.target.parent || (!a.target.image || (a.target.regX = a.target.image.width / 2, 
+        if (a.target) a.target = a.target.clone(), a.target.parent || (!a.target.image || (a.target.regX = a.target.image.width / 2,
         a.target.regY = a.target.image.height / 2), this.element.addChild(a.target)); else {
             var b = new createjs.Graphics();
-            this.stroke && (this.stroke == !0 ? b.beginStroke("#000000") : this.stroke instanceof String && b.beginStroke(this.stroke)), 
+            this.stroke && (this.stroke == !0 ? b.beginStroke("#000000") : this.stroke instanceof String && b.beginStroke(this.stroke)),
             b.beginFill(a.color).drawCircle(0, 0, a.radius);
             var c = new createjs.Shape(b);
             a.target = c, this.element.addChild(a.target);
         }
     }, Y.prototype.onParticleUpdate = function(a) {
-        a.target && (a.target.x = a.p.x, a.target.y = a.p.y, a.target.alpha = a.alpha, a.target.scaleX = a.target.scaleY = a.scale, 
+        a.target && (a.target.x = a.p.x, a.target.y = a.p.y, a.target.alpha = a.alpha, a.target.scaleX = a.target.scaleY = a.scale,
         a.target.rotation = a.rotation);
     }, Y.prototype.onParticleDead = function(a) {
         a.target && a.target.parent && a.target.parent.removeChild(a.target);
@@ -15829,39 +15829,39 @@ if (!window.performance) {
         if (a.target) {
             if (a.target instanceof Image) {
                 var b = a.target.width * a.scale | 0, d = a.target.height * a.scale | 0, e = a.p.x - b / 2, f = a.p.y - d / 2;
-                if (!a.color) this.context.save(), this.context.globalAlpha = a.alpha, this.context.translate(a.p.x, a.p.y), 
-                this.context.rotate(c.MathUtils.degreeTransform(a.rotation)), this.context.translate(-a.p.x, -a.p.y), 
-                this.context.drawImage(a.target, 0, 0, a.target.width, a.target.height, e, f, b, d), 
+                if (!a.color) this.context.save(), this.context.globalAlpha = a.alpha, this.context.translate(a.p.x, a.p.y),
+                this.context.rotate(c.MathUtils.degreeTransform(a.rotation)), this.context.translate(-a.p.x, -a.p.y),
+                this.context.drawImage(a.target, 0, 0, a.target.width, a.target.height, e, f, b, d),
                 this.context.globalAlpha = 1, this.context.restore(); else {
                     a.transform.buffer || (a.transform.buffer = this.getBuffer(a.target));
                     var g = a.transform.buffer.getContext("2d");
-                    g.clearRect(0, 0, a.transform.buffer.width, a.transform.buffer.height), g.globalAlpha = a.alpha, 
-                    g.drawImage(a.target, 0, 0), g.globalCompositeOperation = "source-atop", g.fillStyle = c.Util.rgbToHex(a.transform.rgb), 
-                    g.fillRect(0, 0, a.transform.buffer.width, a.transform.buffer.height), g.globalCompositeOperation = "source-over", 
+                    g.clearRect(0, 0, a.transform.buffer.width, a.transform.buffer.height), g.globalAlpha = a.alpha,
+                    g.drawImage(a.target, 0, 0), g.globalCompositeOperation = "source-atop", g.fillStyle = c.Util.rgbToHex(a.transform.rgb),
+                    g.fillRect(0, 0, a.transform.buffer.width, a.transform.buffer.height), g.globalCompositeOperation = "source-over",
                     g.globalAlpha = 1, this.context.drawImage(a.transform.buffer, 0, 0, a.transform.buffer.width, a.transform.buffer.height, e, f, b, d);
                 }
             }
-        } else a.transform.rgb ? this.context.fillStyle = "rgba(" + a.transform.rgb.r + "," + a.transform.rgb.g + "," + a.transform.rgb.b + "," + a.alpha + ")" : this.context.fillStyle = a.color, 
-        this.context.beginPath(), this.context.arc(a.p.x, a.p.y, a.radius, 0, Math.PI * 2, !0), 
-        this.stroke && (this.context.strokeStyle = this.stroke.color, this.context.lineWidth = this.stroke.thinkness, 
+        } else a.transform.rgb ? this.context.fillStyle = "rgba(" + a.transform.rgb.r + "," + a.transform.rgb.g + "," + a.transform.rgb.b + "," + a.alpha + ")" : this.context.fillStyle = a.color,
+        this.context.beginPath(), this.context.arc(a.p.x, a.p.y, a.radius, 0, Math.PI * 2, !0),
+        this.stroke && (this.context.strokeStyle = this.stroke.color, this.context.lineWidth = this.stroke.thinkness,
         this.context.stroke()), this.context.closePath(), this.context.fill();
     }, Z.prototype.onParticleDead = function(a) {}, Z.prototype.getBuffer = function(a) {
         if (a instanceof Image) {
             var b = a.width + "_" + a.height, c = this.bufferCache[b];
-            c || (c = document.createElement("canvas"), c.width = a.width, c.height = a.height, 
+            c || (c = document.createElement("canvas"), c.width = a.width, c.height = a.height,
             this.bufferCache[b] = c);
             return c;
         }
     }, c.CanvasRender = Z, c.Util.inherits($, c.BaseRender), $.prototype.resize = function(a, b) {
         this.element.width = a, this.element.height = b;
     }, $.prototype.createImageData = function(a) {
-        a ? this.rectangle = a : this.rectangle = new c.Rectangle(0, 0, this.element.width, this.element.height), 
-        this.imageData = this.context.createImageData(this.rectangle.width, this.rectangle.height), 
+        a ? this.rectangle = a : this.rectangle = new c.Rectangle(0, 0, this.element.width, this.element.height),
+        this.imageData = this.context.createImageData(this.rectangle.width, this.rectangle.height),
         this.context.putImageData(this.imageData, this.rectangle.x, this.rectangle.y);
     }, $.prototype.start = function() {
         $._super_.prototype.start.call(this);
     }, $.prototype.onProtonUpdate = function() {
-        this.context.clearRect(this.rectangle.x, this.rectangle.y, this.rectangle.width, this.rectangle.height), 
+        this.context.clearRect(this.rectangle.x, this.rectangle.y, this.rectangle.width, this.rectangle.height),
         this.imageData = this.context.getImageData(this.rectangle.x, this.rectangle.y, this.rectangle.width, this.rectangle.height);
     }, $.prototype.onProtonUpdateAfter = function() {
         this.context.putImageData(this.imageData, this.rectangle.x, this.rectangle.y);
@@ -15873,10 +15873,10 @@ if (!window.performance) {
             var f = ((c >> 0) * a.width + (b >> 0)) * 4;
             a.data[f] = e.r, a.data[f + 1] = e.g, a.data[f + 2] = e.b, a.data[f + 3] = d.alpha * 255;
         }
-    }, $.prototype.onParticleDead = function(a) {}, c.PixelRender = $, c.Util.inherits(_, c.BaseRender), 
+    }, $.prototype.onParticleDead = function(a) {}, c.PixelRender = $, c.Util.inherits(_, c.BaseRender),
     _.prototype.resize = function(a, b) {
-        this.umat[4] = -2, this.umat[7] = 1, this.smat[0] = 1 / a, this.smat[4] = 1 / b, 
-        this.mstack.set(this.umat, 0), this.mstack.set(this.smat, 1), this.gl.viewport(0, 0, a, b), 
+        this.umat[4] = -2, this.umat[7] = 1, this.smat[0] = 1 / a, this.smat[4] = 1 / b,
+        this.mstack.set(this.umat, 0), this.mstack.set(this.smat, 1), this.gl.viewport(0, 0, a, b),
         this.element.width = a, this.element.height = b;
     }, _.prototype.setMaxRadius = function(a) {
         this.circleCanvasURL = this.createCircle(a);
@@ -15887,7 +15887,7 @@ if (!window.performance) {
         var a = [ "precision mediump float;", "varying vec2 vTextureCoord;", "varying float alpha;", "uniform sampler2D uSampler;", "uniform vec4 color;", "uniform bool useTexture;", "uniform vec3 uColor;", "void main() {", "vec4 textureColor = texture2D(uSampler, vTextureCoord);", "gl_FragColor = textureColor * vec4(uColor, 1.0);", "gl_FragColor.w *= alpha;", "}" ].join("\n");
         return a;
     }, _.prototype.initVar = function() {
-        this.mstack = new c.MStack(), this.umat = c.Mat3.create([ 2, 0, 1, 0, -2, 0, -1, 1, 1 ]), 
+        this.mstack = new c.MStack(), this.umat = c.Mat3.create([ 2, 0, 1, 0, -2, 0, -1, 1, 1 ]),
         this.smat = c.Mat3.create([ .01, 0, 1, 0, .01, 0, 0, 0, 1 ]), this.texturebuffers = {};
     }, _.prototype.start = function() {
         _._super_.prototype.start.call(this), this.resize(this.element.width, this.element.height);
@@ -15897,7 +15897,7 @@ if (!window.performance) {
         this.gl.blendFunc(this.gl[a], this.gl[b]);
     }, _.prototype.getShader = function(a, b, c) {
         var d;
-        c ? d = a.createShader(a.FRAGMENT_SHADER) : d = a.createShader(a.VERTEX_SHADER), 
+        c ? d = a.createShader(a.FRAGMENT_SHADER) : d = a.createShader(a.VERTEX_SHADER),
         a.shaderSource(d, b), a.compileShader(d);
         if (!a.getShaderParameter(d, a.COMPILE_STATUS)) {
             alert(a.getShaderInfoLog(d));
@@ -15906,13 +15906,13 @@ if (!window.performance) {
         return d;
     }, _.prototype.initShaders = function() {
         var a = this.getShader(this.gl, this.getFragmentShader(), !0), b = this.getShader(this.gl, this.getVertexShader(), !1);
-        this.sprogram = this.gl.createProgram(), this.gl.attachShader(this.sprogram, b), 
-        this.gl.attachShader(this.sprogram, a), this.gl.linkProgram(this.sprogram), this.gl.getProgramParameter(this.sprogram, this.gl.LINK_STATUS) || alert("Could not initialise shaders"), 
-        this.gl.useProgram(this.sprogram), this.sprogram.vpa = this.gl.getAttribLocation(this.sprogram, "aVertexPosition"), 
-        this.sprogram.tca = this.gl.getAttribLocation(this.sprogram, "aTextureCoord"), this.gl.enableVertexAttribArray(this.sprogram.tca), 
-        this.gl.enableVertexAttribArray(this.sprogram.vpa), this.sprogram.tMatUniform = this.gl.getUniformLocation(this.sprogram, "tMat"), 
-        this.sprogram.samplerUniform = this.gl.getUniformLocation(this.sprogram, "uSampler"), 
-        this.sprogram.useTex = this.gl.getUniformLocation(this.sprogram, "useTexture"), 
+        this.sprogram = this.gl.createProgram(), this.gl.attachShader(this.sprogram, b),
+        this.gl.attachShader(this.sprogram, a), this.gl.linkProgram(this.sprogram), this.gl.getProgramParameter(this.sprogram, this.gl.LINK_STATUS) || alert("Could not initialise shaders"),
+        this.gl.useProgram(this.sprogram), this.sprogram.vpa = this.gl.getAttribLocation(this.sprogram, "aVertexPosition"),
+        this.sprogram.tca = this.gl.getAttribLocation(this.sprogram, "aTextureCoord"), this.gl.enableVertexAttribArray(this.sprogram.tca),
+        this.gl.enableVertexAttribArray(this.sprogram.vpa), this.sprogram.tMatUniform = this.gl.getUniformLocation(this.sprogram, "tMat"),
+        this.sprogram.samplerUniform = this.gl.getUniformLocation(this.sprogram, "uSampler"),
+        this.sprogram.useTex = this.gl.getUniformLocation(this.sprogram, "useTexture"),
         this.sprogram.color = this.gl.getUniformLocation(this.sprogram, "uColor"), this.gl.uniform1i(this.sprogram.useTex, 1);
     }, _.prototype.initBuffers = function() {
         this.unitIBuffer = this.gl.createBuffer(), this.gl.bindBuffer(this.gl.ELEMENT_ARRAY_BUFFER, this.unitIBuffer);
@@ -15920,55 +15920,55 @@ if (!window.performance) {
         this.gl.bufferData(this.gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(a), this.gl.STATIC_DRAW);
         var b = [];
         for (var c = 0; c < 100; c++) b.push(c);
-        idx = new Uint16Array(b), this.unitI33 = this.gl.createBuffer(), this.gl.bindBuffer(this.gl.ELEMENT_ARRAY_BUFFER, this.unitI33), 
+        idx = new Uint16Array(b), this.unitI33 = this.gl.createBuffer(), this.gl.bindBuffer(this.gl.ELEMENT_ARRAY_BUFFER, this.unitI33),
         this.gl.bufferData(this.gl.ELEMENT_ARRAY_BUFFER, idx, this.gl.STATIC_DRAW), b = [];
         for (c = 0; c < 100; c++) b.push(c, c + 1, c + 2);
-        idx = new Uint16Array(b), this.stripBuffer = this.gl.createBuffer(), this.gl.bindBuffer(this.gl.ELEMENT_ARRAY_BUFFER, this.stripBuffer), 
+        idx = new Uint16Array(b), this.stripBuffer = this.gl.createBuffer(), this.gl.bindBuffer(this.gl.ELEMENT_ARRAY_BUFFER, this.stripBuffer),
         this.gl.bufferData(this.gl.ELEMENT_ARRAY_BUFFER, idx, this.gl.STATIC_DRAW);
     }, _.prototype.createCircle = function(a) {
         this.circleCanvasRadius = c.WebGLUtil.nhpot(c.Util.initValue(a, 32));
         var b = c.DomUtil.createCanvas("circle_canvas", this.circleCanvasRadius * 2, this.circleCanvasRadius * 2), d = b.getContext("2d");
-        d.beginPath(), d.arc(this.circleCanvasRadius, this.circleCanvasRadius, this.circleCanvasRadius, 0, Math.PI * 2, !0), 
+        d.beginPath(), d.arc(this.circleCanvasRadius, this.circleCanvasRadius, this.circleCanvasRadius, 0, Math.PI * 2, !0),
         d.closePath(), d.fillStyle = "#FFF", d.fill();
         return b.toDataURL();
     }, _.prototype.setImgInCanvas = function(a) {
         var b = a.target.width, d = a.target.height, e = c.WebGLUtil.nhpot(a.target.width), f = c.WebGLUtil.nhpot(a.target.height), g = a.target.width / e, h = a.target.height / f;
-        this.texturebuffers[a.transform.src] || (this.texturebuffers[a.transform.src] = [ this.gl.createTexture(), this.gl.createBuffer(), this.gl.createBuffer() ]), 
-        a.transform.texture = this.texturebuffers[a.transform.src][0], a.transform.vcBuffer = this.texturebuffers[a.transform.src][1], 
-        a.transform.tcBuffer = this.texturebuffers[a.transform.src][2], this.gl.bindBuffer(this.gl.ARRAY_BUFFER, a.transform.tcBuffer), 
-        this.gl.bufferData(this.gl.ARRAY_BUFFER, new Float32Array([ 0, 0, g, 0, 0, h, h, h ]), this.gl.STATIC_DRAW), 
+        this.texturebuffers[a.transform.src] || (this.texturebuffers[a.transform.src] = [ this.gl.createTexture(), this.gl.createBuffer(), this.gl.createBuffer() ]),
+        a.transform.texture = this.texturebuffers[a.transform.src][0], a.transform.vcBuffer = this.texturebuffers[a.transform.src][1],
+        a.transform.tcBuffer = this.texturebuffers[a.transform.src][2], this.gl.bindBuffer(this.gl.ARRAY_BUFFER, a.transform.tcBuffer),
+        this.gl.bufferData(this.gl.ARRAY_BUFFER, new Float32Array([ 0, 0, g, 0, 0, h, h, h ]), this.gl.STATIC_DRAW),
         this.gl.bindBuffer(this.gl.ARRAY_BUFFER, a.transform.vcBuffer), this.gl.bufferData(this.gl.ARRAY_BUFFER, new Float32Array([ 0, 0, b, 0, 0, d, b, d ]), this.gl.STATIC_DRAW);
         var i = a.transform.canvas.getContext("2d"), j = i.getImageData(0, 0, e, f);
-        this.gl.bindTexture(this.gl.TEXTURE_2D, a.transform.texture), this.gl.texImage2D(this.gl.TEXTURE_2D, 0, this.gl.RGBA, this.gl.RGBA, this.gl.UNSIGNED_BYTE, j), 
-        this.gl.texParameteri(this.gl.TEXTURE_2D, this.gl.TEXTURE_MAG_FILTER, this.gl.LINEAR), 
-        this.gl.texParameteri(this.gl.TEXTURE_2D, this.gl.TEXTURE_MIN_FILTER, this.gl.LINEAR_MIPMAP_NEAREST), 
-        this.gl.generateMipmap(this.gl.TEXTURE_2D), a.transform.textureLoaded = !0, a.transform.textureWidth = b, 
+        this.gl.bindTexture(this.gl.TEXTURE_2D, a.transform.texture), this.gl.texImage2D(this.gl.TEXTURE_2D, 0, this.gl.RGBA, this.gl.RGBA, this.gl.UNSIGNED_BYTE, j),
+        this.gl.texParameteri(this.gl.TEXTURE_2D, this.gl.TEXTURE_MAG_FILTER, this.gl.LINEAR),
+        this.gl.texParameteri(this.gl.TEXTURE_2D, this.gl.TEXTURE_MIN_FILTER, this.gl.LINEAR_MIPMAP_NEAREST),
+        this.gl.generateMipmap(this.gl.TEXTURE_2D), a.transform.textureLoaded = !0, a.transform.textureWidth = b,
         a.transform.textureHeight = d;
-    }, _.prototype.setStroke = function(a, b) {}, _.prototype.onProtonUpdate = function() {}, 
+    }, _.prototype.setStroke = function(a, b) {}, _.prototype.onProtonUpdate = function() {},
     _.prototype.onParticleCreated = function(a) {
         var b = this;
-        a.transform.textureLoaded = !1, a.transform.tmat = c.Mat3.create(), a.transform.tmat[8] = 1, 
+        a.transform.textureLoaded = !1, a.transform.tmat = c.Mat3.create(), a.transform.tmat[8] = 1,
         a.transform.imat = c.Mat3.create(), a.transform.imat[8] = 1, a.target ? c.Util.getImage(a.target, a, !0, function(a) {
             b.setImgInCanvas.call(b, a), a.transform.oldScale = 1;
         }) : c.Util.getImage(this.circleCanvasURL, a, !0, function(a) {
             b.setImgInCanvas.call(b, a), a.transform.oldScale = a.radius / b.circleCanvasRadius;
         });
     }, _.prototype.onParticleUpdate = function(a) {
-        a.transform.textureLoaded && (this.updateMatrix(a), this.gl.uniform3f(this.sprogram.color, a.transform.rgb.r / 255, a.transform.rgb.g / 255, a.transform.rgb.b / 255), 
-        this.gl.uniformMatrix3fv(this.sprogram.tMatUniform, !1, this.mstack.top()), this.gl.bindBuffer(this.gl.ARRAY_BUFFER, a.transform.vcBuffer), 
-        this.gl.vertexAttribPointer(this.sprogram.vpa, 2, this.gl.FLOAT, !1, 0, 0), this.gl.bindBuffer(this.gl.ARRAY_BUFFER, a.transform.tcBuffer), 
-        this.gl.vertexAttribPointer(this.sprogram.tca, 2, this.gl.FLOAT, !1, 0, 0), this.gl.bindTexture(this.gl.TEXTURE_2D, a.transform.texture), 
-        this.gl.uniform1i(this.sprogram.samplerUniform, 0), this.gl.bindBuffer(this.gl.ELEMENT_ARRAY_BUFFER, this.unitIBuffer), 
+        a.transform.textureLoaded && (this.updateMatrix(a), this.gl.uniform3f(this.sprogram.color, a.transform.rgb.r / 255, a.transform.rgb.g / 255, a.transform.rgb.b / 255),
+        this.gl.uniformMatrix3fv(this.sprogram.tMatUniform, !1, this.mstack.top()), this.gl.bindBuffer(this.gl.ARRAY_BUFFER, a.transform.vcBuffer),
+        this.gl.vertexAttribPointer(this.sprogram.vpa, 2, this.gl.FLOAT, !1, 0, 0), this.gl.bindBuffer(this.gl.ARRAY_BUFFER, a.transform.tcBuffer),
+        this.gl.vertexAttribPointer(this.sprogram.tca, 2, this.gl.FLOAT, !1, 0, 0), this.gl.bindTexture(this.gl.TEXTURE_2D, a.transform.texture),
+        this.gl.uniform1i(this.sprogram.samplerUniform, 0), this.gl.bindBuffer(this.gl.ELEMENT_ARRAY_BUFFER, this.unitIBuffer),
         this.gl.drawElements(this.gl.TRIANGLES, 6, this.gl.UNSIGNED_SHORT, 0), this.mstack.pop());
     }, _.prototype.onParticleDead = function(a) {}, _.prototype.updateMatrix = function(a) {
         var b = c.WebGLUtil.makeTranslation(-a.transform.textureWidth / 2, -a.transform.textureHeight / 2), d = c.WebGLUtil.makeTranslation(a.p.x, a.p.y), e = a.rotation * (Math.PI / 180), f = c.WebGLUtil.makeRotation(e), g = a.scale * a.transform.oldScale, h = c.WebGLUtil.makeScale(g, g), i = c.WebGLUtil.matrixMultiply(b, h);
-        i = c.WebGLUtil.matrixMultiply(i, f), i = c.WebGLUtil.matrixMultiply(i, d), c.Mat3.inverse(i, a.transform.imat), 
+        i = c.WebGLUtil.matrixMultiply(i, f), i = c.WebGLUtil.matrixMultiply(i, d), c.Mat3.inverse(i, a.transform.imat),
         i[2] = a.alpha, this.mstack.push(i);
     }, c.WebGLRender = _, ba.prototype = {
         getPosition: function() {},
         crossing: function(a) {}
     }, c.Zone = ba, c.Util.inherits(bb, c.Zone), bb.prototype.getPosition = function() {
-        this.random = Math.random(), this.vector.x = this.x1 + this.random * this.length * Math.cos(this.gradient), 
+        this.random = Math.random(), this.vector.x = this.x1 + this.random * this.length * Math.cos(this.gradient),
         this.vector.y = this.y1 + this.random * this.length * Math.sin(this.gradient);
         return this.vector;
     }, bb.prototype.getDirection = function(a, b) {
@@ -15996,17 +15996,17 @@ if (!window.performance) {
             b.getDirection(a.p.x, a.p.y) || (a.dead = !0);
         }) : this.crossType == "bound" ? this.getRange(a, function() {
             b.getDistance(a.p.x, a.p.y) <= a.radius && (b.dx == 0 ? a.v.x *= -1 : b.dy == 0 ? a.v.y *= -1 : b.getSymmetric(a.v));
-        }) : this.crossType == "cross" && this.alert && (alert("Sorry lineZone does not support cross method"), 
+        }) : this.crossType == "cross" && this.alert && (alert("Sorry lineZone does not support cross method"),
         this.alert = !1);
     }, c.LineZone = bb, c.Util.inherits(bc, c.Zone), bc.prototype.getPosition = function() {
-        this.random = Math.random(), this.angle = Math.PI * 2 * Math.random(), this.vector.x = this.x + this.random * this.radius * Math.cos(this.angle), 
+        this.random = Math.random(), this.angle = Math.PI * 2 * Math.random(), this.vector.x = this.x + this.random * this.radius * Math.cos(this.angle),
         this.vector.y = this.y + this.random * this.radius * Math.sin(this.angle);
         return this.vector;
     }, bc.prototype.setCenter = function(a, b) {
         this.center.x = a, this.center.y = b;
     }, bc.prototype.crossing = function(a) {
         var b = a.p.distanceTo(this.center);
-        this.crossType == "dead" ? b - a.radius > this.radius && (a.dead = !0) : this.crossType == "bound" ? b + a.radius >= this.radius && this.getSymmetric(a) : this.crossType == "cross" && this.alert && (alert("Sorry CircleZone does not support cross method"), 
+        this.crossType == "dead" ? b - a.radius > this.radius && (a.dead = !0) : this.crossType == "bound" ? b + a.radius >= this.radius && this.getSymmetric(a) : this.crossType == "cross" && this.alert && (alert("Sorry CircleZone does not support cross method"),
         this.alert = !1);
     }, bc.prototype.getSymmetric = function(a) {
         var b = a.v.getGradient(), c = this.getGradient(a), d = 2 * (c - b), e = a.v.x, f = a.v.y;
@@ -16022,14 +16022,14 @@ if (!window.performance) {
         this.vector.x = this.x + Math.random() * this.width, this.vector.y = this.y + Math.random() * this.height;
         return this.vector;
     }, be.prototype.crossing = function(a) {
-        this.crossType == "dead" ? (a.p.x + a.radius < this.x ? a.dead = !0 : a.p.x - a.radius > this.x + this.width && (a.dead = !0), 
-        a.p.y + a.radius < this.y ? a.dead = !0 : a.p.y - a.radius > this.y + this.height && (a.dead = !0)) : this.crossType == "bound" ? (a.p.x - a.radius < this.x ? (a.p.x = this.x + a.radius, 
-        a.v.x *= -1) : a.p.x + a.radius > this.x + this.width && (a.p.x = this.x + this.width - a.radius, 
-        a.v.x *= -1), a.p.y - a.radius < this.y ? (a.p.y = this.y + a.radius, a.v.y *= -1) : a.p.y + a.radius > this.y + this.height && (a.p.y = this.y + this.height - a.radius, 
-        a.v.y *= -1)) : this.crossType == "cross" && (a.p.x + a.radius < this.x && a.v.x <= 0 ? a.p.x = this.x + this.width + a.radius : a.p.x - a.radius > this.x + this.width && a.v.x >= 0 && (a.p.x = this.x - a.radius), 
+        this.crossType == "dead" ? (a.p.x + a.radius < this.x ? a.dead = !0 : a.p.x - a.radius > this.x + this.width && (a.dead = !0),
+        a.p.y + a.radius < this.y ? a.dead = !0 : a.p.y - a.radius > this.y + this.height && (a.dead = !0)) : this.crossType == "bound" ? (a.p.x - a.radius < this.x ? (a.p.x = this.x + a.radius,
+        a.v.x *= -1) : a.p.x + a.radius > this.x + this.width && (a.p.x = this.x + this.width - a.radius,
+        a.v.x *= -1), a.p.y - a.radius < this.y ? (a.p.y = this.y + a.radius, a.v.y *= -1) : a.p.y + a.radius > this.y + this.height && (a.p.y = this.y + this.height - a.radius,
+        a.v.y *= -1)) : this.crossType == "cross" && (a.p.x + a.radius < this.x && a.v.x <= 0 ? a.p.x = this.x + this.width + a.radius : a.p.x - a.radius > this.x + this.width && a.v.x >= 0 && (a.p.x = this.x - a.radius),
         a.p.y + a.radius < this.y && a.v.y <= 0 ? a.p.y = this.y + this.height + a.radius : a.p.y - a.radius > this.y + this.height && a.v.y >= 0 && (a.p.y = this.y - a.radius));
     }, c.RectZone = be, c.Util.inherits(bf, c.Zone), bf.prototype.reset = function(a, b, d, e) {
-        this.imageData = a, this.x = c.Util.initValue(b, 0), this.y = c.Util.initValue(d, 0), 
+        this.imageData = a, this.x = c.Util.initValue(b, 0), this.y = c.Util.initValue(d, 0),
         this.d = c.Util.initValue(e, 2), this.vectors = [], this.setVectors();
     }, bf.prototype.setVectors = function() {
         var a, b, c = this.imageData.width, d = this.imageData.height;
@@ -16081,17 +16081,17 @@ if (!window.performance) {
         drawZone: function(a, b, d, e) {
             var f = b.getContext("2d"), g = this.setStyle();
             this.addEventListener(a, function() {
-                e && f.clearRect(0, 0, b.width, b.height), d instanceof c.PointZone ? (f.beginPath(), 
-                f.fillStyle = g, f.arc(d.x, d.y, 10, 0, Math.PI * 2, !0), f.fill(), f.closePath()) : d instanceof c.LineZone ? (f.beginPath(), 
-                f.strokeStyle = g, f.moveTo(d.x1, d.y1), f.lineTo(d.x2, d.y2), f.stroke(), f.closePath()) : d instanceof c.RectZone ? (f.beginPath(), 
-                f.strokeStyle = g, f.drawRect(d.x, d.y, d.width, d.height), f.stroke(), f.closePath()) : d instanceof c.CircleZone && (f.beginPath(), 
+                e && f.clearRect(0, 0, b.width, b.height), d instanceof c.PointZone ? (f.beginPath(),
+                f.fillStyle = g, f.arc(d.x, d.y, 10, 0, Math.PI * 2, !0), f.fill(), f.closePath()) : d instanceof c.LineZone ? (f.beginPath(),
+                f.strokeStyle = g, f.moveTo(d.x1, d.y1), f.lineTo(d.x2, d.y2), f.stroke(), f.closePath()) : d instanceof c.RectZone ? (f.beginPath(),
+                f.strokeStyle = g, f.drawRect(d.x, d.y, d.width, d.height), f.stroke(), f.closePath()) : d instanceof c.CircleZone && (f.beginPath(),
                 f.strokeStyle = g, f.arc(d.x, d.y, d.radius, 0, Math.PI * 2, !0), f.stroke(), f.closePath());
             });
         },
         drawEmitter: function(a, b, c, d) {
             var e = b.getContext("2d"), f = this.setStyle();
             this.addEventListener(a, function() {
-                d && e.clearRect(0, 0, b.width, b.height), e.beginPath(), e.fillStyle = f, e.arc(c.p.x, c.p.y, 10, 0, Math.PI * 2, !0), 
+                d && e.clearRect(0, 0, b.width, b.height), e.beginPath(), e.fillStyle = f, e.arc(c.p.x, c.p.y, 10, 0, Math.PI * 2, !0),
                 e.fill(), e.closePath();
             });
         },
@@ -16106,7 +16106,7 @@ if (!window.performance) {
     c.Debug = bh;
 })(window), function() {
     var a = 0, b = [ "ms", "moz", "webkit", "o" ];
-    for (var c = 0; c < b.length && !window.requestAnimationFrame; ++c) window.requestAnimationFrame = window[b[c] + "RequestAnimationFrame"], 
+    for (var c = 0; c < b.length && !window.requestAnimationFrame; ++c) window.requestAnimationFrame = window[b[c] + "RequestAnimationFrame"],
     window.cancelAnimationFrame = window[b[c] + "CancelAnimationFrame"] || window[b[c] + "CancelRequestAnimationFrame"];
     window.requestAnimationFrame || (window.requestAnimationFrame = function(b, c) {
         var d = new Date().getTime(), e = Math.max(0, 16 - (d - a)), f = window.setTimeout(function() {
@@ -24357,14 +24357,14 @@ T5516.prototype._m25346 = function(c, a) {
 T5516.prototype._m25347 = function(c, a) {
     for (var b = new NPlayer().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setLogin(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setPassword(d), MemoryManagement.free(d)) : 1003 == d ? (d = BinaryInputStream.readString(a), 
-        b.setAccessToken(d), MemoryManagement.free(d)) : 1004 == d ? (d = BinaryInputStream.readString(a), 
-        b.setName(d), MemoryManagement.free(d)) : 1005 == d ? b.setConnected(BinaryInputStream.readBoolean(a)) : 1006 == d ? b.setLoginSource(BinaryInputStream.readObject(c, a)) : 1007 == d ? (d = BinaryInputStream.readString(a), 
-        b.setThirdPartyId(d), MemoryManagement.free(d)) : 1008 == d ? b.setCreationDate(BinaryInputStream.readDouble(a)) : 1009 == d ? b.setActive(BinaryInputStream.readBoolean(a)) : 1010 == d ? (d = BinaryInputStream.readString(a), 
-        b.setLang(d), MemoryManagement.free(d)) : 1011 == d ? b.setAnonymous(BinaryInputStream.readBoolean(a)) : 1012 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setLogin(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setPassword(d), MemoryManagement.free(d)) : 1003 == d ? (d = BinaryInputStream.readString(a),
+        b.setAccessToken(d), MemoryManagement.free(d)) : 1004 == d ? (d = BinaryInputStream.readString(a),
+        b.setName(d), MemoryManagement.free(d)) : 1005 == d ? b.setConnected(BinaryInputStream.readBoolean(a)) : 1006 == d ? b.setLoginSource(BinaryInputStream.readObject(c, a)) : 1007 == d ? (d = BinaryInputStream.readString(a),
+        b.setThirdPartyId(d), MemoryManagement.free(d)) : 1008 == d ? b.setCreationDate(BinaryInputStream.readDouble(a)) : 1009 == d ? b.setActive(BinaryInputStream.readBoolean(a)) : 1010 == d ? (d = BinaryInputStream.readString(a),
+        b.setLang(d), MemoryManagement.free(d)) : 1011 == d ? b.setAnonymous(BinaryInputStream.readBoolean(a)) : 1012 == d ? (d = BinaryInputStream.readString(a),
         b.setCustomData(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24373,9 +24373,9 @@ T5516.prototype._m25347 = function(c, a) {
 T5516.prototype._m25348 = function(c, a) {
     for (var b = new NAchievement().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setName(d), MemoryManagement.free(d)) : 1002 == d ? b.setAchieved(BinaryInputStream.readBoolean(a)) : 1003 == d ? b.setFeatured(BinaryInputStream.readBoolean(a)) : 1004 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setName(d), MemoryManagement.free(d)) : 1002 == d ? b.setAchieved(BinaryInputStream.readBoolean(a)) : 1003 == d ? b.setFeatured(BinaryInputStream.readBoolean(a)) : 1004 == d ? (d = BinaryInputStream.readString(a),
         b.setDescription(d), MemoryManagement.free(d)) : 1005 == d ? b.setNXP(BinaryInputStream.readInteger(a)) : 1006 == d ? b.setNEnergy(BinaryInputStream.readInteger(a)) : 1007 == d ? b.setType(BinaryInputStream.readObject(c, a)) : 1008 == d ? b.setGoal(BinaryInputStream.readInteger(a)) : 1009 == d ? b.setProgress(BinaryInputStream.readInteger(a)) : 1010 == d ? b.setOrder(BinaryInputStream.readInteger(a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24384,16 +24384,16 @@ T5516.prototype._m25348 = function(c, a) {
 T5516.prototype._m25349 = function(c, a) {
     for (var b = new Handshake().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setVersion(d), MemoryManagement.free(d)) : 2001 == d ? b.setReason(BinaryInputStream.readObject(c, a)) : 2002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setPlayerIdsStored(d), MemoryManagement.free(d)) : 2003 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSessionId(d), MemoryManagement.free(d)) : 2004 == d ? (d = BinaryInputStream.readString(a), 
-        b.setPlatform(d), MemoryManagement.free(d)) : 2005 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSpId(d), MemoryManagement.free(d)) : 2006 == d ? (d = BinaryInputStream.readString(a), 
-        b.setDebugSpId(d), MemoryManagement.free(d)) : 2007 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setVersion(d), MemoryManagement.free(d)) : 2001 == d ? b.setReason(BinaryInputStream.readObject(c, a)) : 2002 == d ? (d = BinaryInputStream.readString(a),
+        b.setPlayerIdsStored(d), MemoryManagement.free(d)) : 2003 == d ? (d = BinaryInputStream.readString(a),
+        b.setSessionId(d), MemoryManagement.free(d)) : 2004 == d ? (d = BinaryInputStream.readString(a),
+        b.setPlatform(d), MemoryManagement.free(d)) : 2005 == d ? (d = BinaryInputStream.readString(a),
+        b.setSpId(d), MemoryManagement.free(d)) : 2006 == d ? (d = BinaryInputStream.readString(a),
+        b.setDebugSpId(d), MemoryManagement.free(d)) : 2007 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24402,11 +24402,11 @@ T5516.prototype._m25349 = function(c, a) {
 T5516.prototype._m25350 = function(c, a) {
     for (var b = new HandshakeResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setExecutionStatus(BinaryInputStream.readObject(c, a)) : 2001 == d ? b.setReason(BinaryInputStream.readObject(c, a)) : 2002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setPlayerIdsStored(d), MemoryManagement.free(d)) : 2003 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setExecutionStatus(BinaryInputStream.readObject(c, a)) : 2001 == d ? b.setReason(BinaryInputStream.readObject(c, a)) : 2002 == d ? (d = BinaryInputStream.readString(a),
+        b.setPlayerIdsStored(d), MemoryManagement.free(d)) : 2003 == d ? (d = BinaryInputStream.readString(a),
         b.setSessionId(d), MemoryManagement.free(d)) : 2004 == d ? b.setPlayerSessionType(BinaryInputStream.readObject(c, a)) : 2005 == d ? b.setPlayer(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24415,10 +24415,10 @@ T5516.prototype._m25350 = function(c, a) {
 T5516.prototype._m25351 = function(c, a) {
     for (var b = new GameRunningStateChange().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? b.setGameRunningState(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24427,9 +24427,9 @@ T5516.prototype._m25351 = function(c, a) {
 T5516.prototype._m25352 = function(c, a) {
     for (var b = new NFriendDemand().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? b.setEmitter(BinaryInputStream.readObject(c, a)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setReceiverId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setCustomMessage(d), MemoryManagement.free(d)) : 1003 == d ? b.setFriendDemandStatus(BinaryInputStream.readObject(c, a)) : 1004 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? b.setEmitter(BinaryInputStream.readObject(c, a)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setReceiverId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setCustomMessage(d), MemoryManagement.free(d)) : 1003 == d ? b.setFriendDemandStatus(BinaryInputStream.readObject(c, a)) : 1004 == d ? (d = BinaryInputStream.readString(a),
         b.setId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24438,10 +24438,10 @@ T5516.prototype._m25352 = function(c, a) {
 T5516.prototype._m25353 = function(c, a) {
     for (var b = new NScore().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? b.setValue(BinaryInputStream.readDouble(a)) : 1001 == d ? b.setTimestamp(BinaryInputStream.readDouble(a)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setPlayerId(d), MemoryManagement.free(d)) : 1003 == d ? (d = BinaryInputStream.readString(a), 
-        b.setPlayerName(d), MemoryManagement.free(d)) : 1004 == d ? (d = BinaryInputStream.readString(a), 
-        b.setPlayerAvatarPath(d), MemoryManagement.free(d)) : 1005 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? b.setValue(BinaryInputStream.readDouble(a)) : 1001 == d ? b.setTimestamp(BinaryInputStream.readDouble(a)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setPlayerId(d), MemoryManagement.free(d)) : 1003 == d ? (d = BinaryInputStream.readString(a),
+        b.setPlayerName(d), MemoryManagement.free(d)) : 1004 == d ? (d = BinaryInputStream.readString(a),
+        b.setPlayerAvatarPath(d), MemoryManagement.free(d)) : 1005 == d ? (d = BinaryInputStream.readString(a),
         b.setCustomData(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24450,8 +24450,8 @@ T5516.prototype._m25353 = function(c, a) {
 T5516.prototype._m25354 = function(c, a) {
     for (var b = new AbstractRoom().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a),
         b.setName(d), MemoryManagement.free(d); else if (1002 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -24467,8 +24467,8 @@ T5516.prototype._m25354 = function(c, a) {
 T5516.prototype._m25355 = function(c, a) {
     for (var b = new NRoom().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a),
         b.setName(d), MemoryManagement.free(d); else if (1002 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -24484,8 +24484,8 @@ T5516.prototype._m25355 = function(c, a) {
 T5516.prototype._m25356 = function(c, a) {
     for (var b = new NGame().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a),
         b.setName(d), MemoryManagement.free(d); else if (1002 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -24501,7 +24501,7 @@ T5516.prototype._m25356 = function(c, a) {
 T5516.prototype._m25357 = function(c, a) {
     for (var b = new NGameCharacteristics().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? b.setMinPlayer(BinaryInputStream.readInteger(a)) : 1 == d ? b.setMaxPlayer(BinaryInputStream.readInteger(a)) : 2 == d ? b.setAutoStop(BinaryInputStream.readBoolean(a)) : 3 == d ? b.setAutoStart(BinaryInputStream.readBoolean(a)) : 4 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? b.setMinPlayer(BinaryInputStream.readInteger(a)) : 1 == d ? b.setMaxPlayer(BinaryInputStream.readInteger(a)) : 2 == d ? b.setAutoStop(BinaryInputStream.readBoolean(a)) : 3 == d ? b.setAutoStart(BinaryInputStream.readBoolean(a)) : 4 == d ? (d = BinaryInputStream.readString(a),
         b.setCustomData(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24510,10 +24510,10 @@ T5516.prototype._m25357 = function(c, a) {
 T5516.prototype._m25358 = function(c, a) {
     for (var b = new PlayerEnterGame().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? b.setPlayer(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24522,9 +24522,9 @@ T5516.prototype._m25358 = function(c, a) {
 T5516.prototype._m25359 = function(c, a) {
     for (var b = new FriendshipNotification().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setFriend(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24533,10 +24533,10 @@ T5516.prototype._m25359 = function(c, a) {
 T5516.prototype._m25360 = function(c, a) {
     for (var b = new PlayerUnjoinGame().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? b.setPlayer(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24560,9 +24560,9 @@ T5516.prototype._m25361 = function(c, a) {
 T5516.prototype._m25362 = function(c, a) {
     for (var b = new FriendConnectedNotification().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setFriend(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24571,9 +24571,9 @@ T5516.prototype._m25362 = function(c, a) {
 T5516.prototype._m25363 = function(c, a) {
     for (var b = new FriendDisconnectedNotification().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setFriend(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24582,7 +24582,7 @@ T5516.prototype._m25363 = function(c, a) {
 T5516.prototype._m25364 = function(c, a) {
     for (var b = new NPlayerWallet().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
         b.setPlayerId(d), MemoryManagement.free(d)) : 1001 == d ? b.setNbCoins(BinaryInputStream.readInteger(a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24591,9 +24591,9 @@ T5516.prototype._m25364 = function(c, a) {
 T5516.prototype._m25365 = function(c, a) {
     for (var b = new NItem().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setName(d), MemoryManagement.free(d)) : 1002 == d ? b.setPrice(BinaryInputStream.readInteger(a)) : 1003 == d ? b.setBought(BinaryInputStream.readBoolean(a)) : 1004 == d ? b.setCount(BinaryInputStream.readInteger(a)) : 1005 == d ? b.setOrder(BinaryInputStream.readInteger(a)) : 1006 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setName(d), MemoryManagement.free(d)) : 1002 == d ? b.setPrice(BinaryInputStream.readInteger(a)) : 1003 == d ? b.setBought(BinaryInputStream.readBoolean(a)) : 1004 == d ? b.setCount(BinaryInputStream.readInteger(a)) : 1005 == d ? b.setOrder(BinaryInputStream.readInteger(a)) : 1006 == d ? (d = BinaryInputStream.readString(a),
         b.setCustomData(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24625,10 +24625,10 @@ T5516.prototype._m25367 = function(c, a) {
 T5516.prototype._m25368 = function(c, a) {
     for (var b = new OpenConnection().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setIpAddress(d), MemoryManagement.free(d)) : 2001 == d ? b.setTcpPort(BinaryInputStream.readInteger(a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24637,10 +24637,10 @@ T5516.prototype._m25368 = function(c, a) {
 T5516.prototype._m25369 = function(c, a) {
     for (var b = new SlaveConnectionNotification().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setSessionId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24649,14 +24649,14 @@ T5516.prototype._m25369 = function(c, a) {
 T5516.prototype._m25370 = function(c, a) {
     for (var b = new PlayerMessage().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSystemID(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setTargetID(d), MemoryManagement.free(d)) : 2002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setOwnerID(d), MemoryManagement.free(d)) : 2003 == d ? (d = BinaryInputStream.readString(a), 
-        b.setApplicationID(d), MemoryManagement.free(d)) : 2004 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSystemID(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a),
+        b.setTargetID(d), MemoryManagement.free(d)) : 2002 == d ? (d = BinaryInputStream.readString(a),
+        b.setOwnerID(d), MemoryManagement.free(d)) : 2003 == d ? (d = BinaryInputStream.readString(a),
+        b.setApplicationID(d), MemoryManagement.free(d)) : 2004 == d ? (d = BinaryInputStream.readString(a),
         b.setPlayerId(d), MemoryManagement.free(d)) : 2005 == d ? b.setMessage(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24665,11 +24665,11 @@ T5516.prototype._m25370 = function(c, a) {
 T5516.prototype._m25371 = function(c, a) {
     for (var b = new NRawGameMessage().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setGameId(d), MemoryManagement.free(d)) : 3e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setGameId(d), MemoryManagement.free(d)) : 3e3 == d ? (d = BinaryInputStream.readString(a),
         b.setContent(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24678,10 +24678,10 @@ T5516.prototype._m25371 = function(c, a) {
 T5516.prototype._m25372 = function(c, a) {
     for (var b = new SessionExpired().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setSessionId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24690,10 +24690,10 @@ T5516.prototype._m25372 = function(c, a) {
 T5516.prototype._m25373 = function(c, a) {
     for (var b = new GameMessageError().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setReason(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24702,10 +24702,10 @@ T5516.prototype._m25373 = function(c, a) {
 T5516.prototype._m25374 = function(c, a) {
     for (var b = new NPlayerProfile().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a), 
-        b.setAvatar(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a), 
-        b.setPlayerId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a), 
-        b.setEmail(d), MemoryManagement.free(d); else if (1003 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a),
+        b.setAvatar(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a),
+        b.setPlayerId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a),
+        b.setEmail(d), MemoryManagement.free(d); else if (1003 == d) d = BinaryInputStream.readString(a),
         b.setCountry(d), MemoryManagement.free(d); else if (1004 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -24721,9 +24721,9 @@ T5516.prototype._m25374 = function(c, a) {
 T5516.prototype._m25375 = function(c, a) {
     for (var b = new FriendDemandNotification().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setFriendDemand(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24732,10 +24732,10 @@ T5516.prototype._m25375 = function(c, a) {
 T5516.prototype._m25376 = function(c, a) {
     for (var b = new GameChatNotification().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setPlayer(BinaryInputStream.readObject(c, a)) : 2001 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setPlayer(BinaryInputStream.readObject(c, a)) : 2001 == d ? (d = BinaryInputStream.readString(a),
         b.setMessage(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24744,10 +24744,10 @@ T5516.prototype._m25376 = function(c, a) {
 T5516.prototype._m25377 = function(c, a) {
     for (var b = new SwitchToServerInformation().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setAddress(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24756,12 +24756,12 @@ T5516.prototype._m25377 = function(c, a) {
 T5516.prototype._m25378 = function(c, a) {
     for (var b = new SwitchPlayerRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSessionId(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setPlayerId(d), MemoryManagement.free(d)) : 2002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSessionId(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a),
+        b.setPlayerId(d), MemoryManagement.free(d)) : 2002 == d ? (d = BinaryInputStream.readString(a),
         b.setPlayerIdsStored(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24770,10 +24770,10 @@ T5516.prototype._m25378 = function(c, a) {
 T5516.prototype._m25379 = function(c, a) {
     for (var b = new MyTurnNotification().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24782,10 +24782,10 @@ T5516.prototype._m25379 = function(c, a) {
 T5516.prototype._m25380 = function(c, a) {
     for (var b = new PlayerTurnNotification().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setCurrentPlayer(BinaryInputStream.readObject(c, a)) : 2001 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setCurrentPlayer(BinaryInputStream.readObject(c, a)) : 2001 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24818,7 +24818,7 @@ T5516.prototype._m25382 = function(c, a) {
 T5516.prototype._m25383 = function(c, a) {
     for (var b = new NLeaderboard().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setId(d), MemoryManagement.free(d); else if (1 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setId(d), MemoryManagement.free(d); else if (1 == d) d = BinaryInputStream.readString(a),
         b.setName(d), MemoryManagement.free(d); else if (2 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -24834,10 +24834,10 @@ T5516.prototype._m25383 = function(c, a) {
 T5516.prototype._m25384 = function(c, a) {
     for (var b = new OpenUrl().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setUrl(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24846,9 +24846,9 @@ T5516.prototype._m25384 = function(c, a) {
 T5516.prototype._m25385 = function(c, a) {
     for (var b = new TurnBasedContext().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setCurrentPlayer(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24857,9 +24857,9 @@ T5516.prototype._m25385 = function(c, a) {
 T5516.prototype._m25386 = function(c, a) {
     for (var b = new DisconnectedContext().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -24875,13 +24875,13 @@ T5516.prototype._m25386 = function(c, a) {
 T5516.prototype._m25387 = function(c, a) {
     for (var b = new OpenUrlData().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSessionId(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setCallbackId(d), MemoryManagement.free(d)) : 2002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setCallbackUrl(d), MemoryManagement.free(d)) : 2003 == d ? b.setThirdPartySource(BinaryInputStream.readObject(c, a)) : 2004 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSessionId(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a),
+        b.setCallbackId(d), MemoryManagement.free(d)) : 2002 == d ? (d = BinaryInputStream.readString(a),
+        b.setCallbackUrl(d), MemoryManagement.free(d)) : 2003 == d ? b.setThirdPartySource(BinaryInputStream.readObject(c, a)) : 2004 == d ? (d = BinaryInputStream.readString(a),
         b.setThirdPartyId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24890,11 +24890,11 @@ T5516.prototype._m25387 = function(c, a) {
 T5516.prototype._m25388 = function(c, a) {
     for (var b = new NLeaderboardEntry().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? b.setTimestamp(BinaryInputStream.readDouble(a)) : 1002 == d ? b.setPlayer(BinaryInputStream.readObject(c, a)) : 1003 == d ? b.setScore(BinaryInputStream.readObject(c, a)) : 1004 == d ? (d = BinaryInputStream.readString(a), 
-        b.setPlayerId(d), MemoryManagement.free(d)) : 1005 == d ? (d = BinaryInputStream.readString(a), 
-        b.setPlayerName(d), MemoryManagement.free(d)) : 1006 == d ? (d = BinaryInputStream.readString(a), 
-        b.setPlayerAvatarPath(d), MemoryManagement.free(d)) : 1007 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? b.setTimestamp(BinaryInputStream.readDouble(a)) : 1002 == d ? b.setPlayer(BinaryInputStream.readObject(c, a)) : 1003 == d ? b.setScore(BinaryInputStream.readObject(c, a)) : 1004 == d ? (d = BinaryInputStream.readString(a),
+        b.setPlayerId(d), MemoryManagement.free(d)) : 1005 == d ? (d = BinaryInputStream.readString(a),
+        b.setPlayerName(d), MemoryManagement.free(d)) : 1006 == d ? (d = BinaryInputStream.readString(a),
+        b.setPlayerAvatarPath(d), MemoryManagement.free(d)) : 1007 == d ? (d = BinaryInputStream.readString(a),
         b.setCustomData(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24903,9 +24903,9 @@ T5516.prototype._m25388 = function(c, a) {
 T5516.prototype._m25389 = function(c, a) {
     for (var b = new StartRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24914,9 +24914,9 @@ T5516.prototype._m25389 = function(c, a) {
 T5516.prototype._m25390 = function(c, a) {
     for (var b = new StartResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setStartStatus(BinaryInputStream.readObject(c, a)) : 2001 == d ? b.setStartDetails(BinaryInputStream.readObject(c, a)) : 2002 == d ? b.setPlayerSessionType(BinaryInputStream.readObject(c, a)) : 2003 == d ? b.setPlayer(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24925,8 +24925,8 @@ T5516.prototype._m25390 = function(c, a) {
 T5516.prototype._m25391 = function(c, a) {
     for (var b = new NInvitation().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? b.setInviter(BinaryInputStream.readObject(c, a)) : 1002 == d ? b.setInvitee(BinaryInputStream.readObject(c, a)) : 1003 == d ? b.setContent(BinaryInputStream.readObject(c, a)) : 1004 == d ? b.setCreationTimeStamp(BinaryInputStream.readDouble(a)) : 1005 == d ? b.setExpirationDelay(BinaryInputStream.readDouble(a)) : 1006 == d ? b.setStatus(BinaryInputStream.readObject(c, a)) : 1007 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? b.setInviter(BinaryInputStream.readObject(c, a)) : 1002 == d ? b.setInvitee(BinaryInputStream.readObject(c, a)) : 1003 == d ? b.setContent(BinaryInputStream.readObject(c, a)) : 1004 == d ? b.setCreationTimeStamp(BinaryInputStream.readDouble(a)) : 1005 == d ? b.setExpirationDelay(BinaryInputStream.readDouble(a)) : 1006 == d ? b.setStatus(BinaryInputStream.readObject(c, a)) : 1007 == d ? (d = BinaryInputStream.readString(a),
         b.setCustomData(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24935,10 +24935,10 @@ T5516.prototype._m25391 = function(c, a) {
 T5516.prototype._m25392 = function(c, a) {
     for (var b = new NGameInvitation().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24947,9 +24947,9 @@ T5516.prototype._m25392 = function(c, a) {
 T5516.prototype._m25393 = function(c, a) {
     for (var b = new InvitationRequestNotification().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setInvitation(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24958,9 +24958,9 @@ T5516.prototype._m25393 = function(c, a) {
 T5516.prototype._m25394 = function(c, a) {
     for (var b = new InvitationAcceptedNotification().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setInvitation(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24969,9 +24969,9 @@ T5516.prototype._m25394 = function(c, a) {
 T5516.prototype._m25395 = function(c, a) {
     for (var b = new InvitationRefusedNotification().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setInvitation(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24980,9 +24980,9 @@ T5516.prototype._m25395 = function(c, a) {
 T5516.prototype._m25396 = function(c, a) {
     for (var b = new InvitationExpiredNotification().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setInvitation(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -24991,10 +24991,10 @@ T5516.prototype._m25396 = function(c, a) {
 T5516.prototype._m25397 = function(c, a) {
     for (var b = new NMatchAndJoinGameExpiredNotification().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25003,11 +25003,11 @@ T5516.prototype._m25397 = function(c, a) {
 T5516.prototype._m25398 = function(c, a) {
     for (var b = new CreatePlayerRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setLogin(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setLogin(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a),
         b.setPassword(d), MemoryManagement.free(d)) : 2002 == d ? b.setPlayer(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25016,9 +25016,9 @@ T5516.prototype._m25398 = function(c, a) {
 T5516.prototype._m25399 = function(c, a) {
     for (var b = new CreatePlayerResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setCreatePlayerStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? b.setPlayer(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25027,11 +25027,11 @@ T5516.prototype._m25399 = function(c, a) {
 T5516.prototype._m25400 = function(c, a) {
     for (var b = new LoginRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setLogin(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setLogin(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a),
         b.setPassword(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25040,9 +25040,9 @@ T5516.prototype._m25400 = function(c, a) {
 T5516.prototype._m25401 = function(c, a) {
     for (var b = new LoginResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setLoginStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? b.setPlayer(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25051,10 +25051,10 @@ T5516.prototype._m25401 = function(c, a) {
 T5516.prototype._m25402 = function(c, a) {
     for (var b = new ThirdPartyLoginRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setThirdPartySource(BinaryInputStream.readObject(c, a)) : 2001 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setThirdPartySource(BinaryInputStream.readObject(c, a)) : 2001 == d ? (d = BinaryInputStream.readString(a),
         b.setAccessToken(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25063,9 +25063,9 @@ T5516.prototype._m25402 = function(c, a) {
 T5516.prototype._m25403 = function(c, a) {
     for (var b = new ThirdPartyLoginResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setThirdPartyLoginStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? b.setPlayer(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25074,9 +25074,9 @@ T5516.prototype._m25403 = function(c, a) {
 T5516.prototype._m25404 = function(c, a) {
     for (var b = new LogoutRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25085,9 +25085,9 @@ T5516.prototype._m25404 = function(c, a) {
 T5516.prototype._m25405 = function(c, a) {
     for (var b = new LogoutResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setLogoutStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? b.setPlayer(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25096,10 +25096,10 @@ T5516.prototype._m25405 = function(c, a) {
 T5516.prototype._m25406 = function(c, a) {
     for (var b = new ForgotPasswordRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setLogin(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25108,9 +25108,9 @@ T5516.prototype._m25406 = function(c, a) {
 T5516.prototype._m25407 = function(c, a) {
     for (var b = new ForgotPasswordResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setForgotPasswordStatus(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25119,10 +25119,10 @@ T5516.prototype._m25407 = function(c, a) {
 T5516.prototype._m25408 = function(c, a) {
     for (var b = new SetPlayerNameRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setName(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25131,9 +25131,9 @@ T5516.prototype._m25408 = function(c, a) {
 T5516.prototype._m25409 = function(c, a) {
     for (var b = new SetPlayerNameResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSetPlayerNameStatus(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25142,9 +25142,9 @@ T5516.prototype._m25409 = function(c, a) {
 T5516.prototype._m25410 = function(c, a) {
     for (var b = new GetFriendsRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25153,9 +25153,9 @@ T5516.prototype._m25410 = function(c, a) {
 T5516.prototype._m25411 = function(c, a) {
     for (var b = new GetFriendsResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetFriendsStatus(BinaryInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -25171,10 +25171,10 @@ T5516.prototype._m25411 = function(c, a) {
 T5516.prototype._m25412 = function(c, a) {
     for (var b = new AskForFriendRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25183,9 +25183,9 @@ T5516.prototype._m25412 = function(c, a) {
 T5516.prototype._m25413 = function(c, a) {
     for (var b = new AskForFriendResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAskForFriendStatus(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25194,9 +25194,9 @@ T5516.prototype._m25413 = function(c, a) {
 T5516.prototype._m25414 = function(c, a) {
     for (var b = new GetFriendDemandsRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25205,9 +25205,9 @@ T5516.prototype._m25414 = function(c, a) {
 T5516.prototype._m25415 = function(c, a) {
     for (var b = new GetFriendDemandsResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetFriendDemandsStatus(BinaryInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -25223,10 +25223,10 @@ T5516.prototype._m25415 = function(c, a) {
 T5516.prototype._m25416 = function(c, a) {
     for (var b = new AcceptFriendDemandRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setFriendDemandId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25235,10 +25235,10 @@ T5516.prototype._m25416 = function(c, a) {
 T5516.prototype._m25417 = function(c, a) {
     for (var b = new AcceptFriendDemandResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAcceptFriendDemandStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAcceptFriendDemandStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setFriendDemandId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25247,10 +25247,10 @@ T5516.prototype._m25417 = function(c, a) {
 T5516.prototype._m25418 = function(c, a) {
     for (var b = new RefuseFriendDemandRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setFriendDemandId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25259,10 +25259,10 @@ T5516.prototype._m25418 = function(c, a) {
 T5516.prototype._m25419 = function(c, a) {
     for (var b = new RefuseFriendDemandResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setRefuseFriendDemandStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setRefuseFriendDemandStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setFriendDemandId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25271,10 +25271,10 @@ T5516.prototype._m25419 = function(c, a) {
 T5516.prototype._m25420 = function(c, a) {
     for (var b = new SubmitScoreRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setScore(BinaryInputStream.readObject(c, a)) : 2001 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setScore(BinaryInputStream.readObject(c, a)) : 2001 == d ? (d = BinaryInputStream.readString(a),
         b.setLeaderboardId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25283,9 +25283,9 @@ T5516.prototype._m25420 = function(c, a) {
 T5516.prototype._m25421 = function(c, a) {
     for (var b = new SubmitScoreResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSubmitScoreStatus(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25294,10 +25294,10 @@ T5516.prototype._m25421 = function(c, a) {
 T5516.prototype._m25422 = function(c, a) {
     for (var b = new GetScoresRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setLeaderboardId(d), MemoryManagement.free(d)) : 2001 == d ? b.setPeriod(BinaryInputStream.readObject(c, a)) : 2002 == d ? b.setStart(BinaryInputStream.readInteger(a)) : 2003 == d ? b.setLimit(BinaryInputStream.readInteger(a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25306,11 +25306,11 @@ T5516.prototype._m25422 = function(c, a) {
 T5516.prototype._m25423 = function(c, a) {
     for (var b = new GetScoresResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetScoresStatus(BinaryInputStream.readObject(c, a)); else if (2e3 == d) d = BinaryInputStream.readString(a), 
-        b.setLeaderboardId(d), MemoryManagement.free(d); else if (2001 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetScoresStatus(BinaryInputStream.readObject(c, a)); else if (2e3 == d) d = BinaryInputStream.readString(a),
+        b.setLeaderboardId(d), MemoryManagement.free(d); else if (2001 == d) d = BinaryInputStream.readString(a),
         b.setLeaderboardName(d), MemoryManagement.free(d); else if (2002 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -25326,9 +25326,9 @@ T5516.prototype._m25423 = function(c, a) {
 T5516.prototype._m25424 = function(c, a) {
     for (var b = new GetAchievementsRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25337,9 +25337,9 @@ T5516.prototype._m25424 = function(c, a) {
 T5516.prototype._m25425 = function(c, a) {
     for (var b = new GetAchievementsResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetAchievementsStatus(BinaryInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -25355,10 +25355,10 @@ T5516.prototype._m25425 = function(c, a) {
 T5516.prototype._m25426 = function(c, a) {
     for (var b = new AchieveRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setAchivementId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25367,10 +25367,10 @@ T5516.prototype._m25426 = function(c, a) {
 T5516.prototype._m25427 = function(c, a) {
     for (var b = new AchieveResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAchieveStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAchieveStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setAchivementId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25379,10 +25379,10 @@ T5516.prototype._m25427 = function(c, a) {
 T5516.prototype._m25428 = function(c, a) {
     for (var b = new AchieveWithProgressRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setAchivementId(d), MemoryManagement.free(d)) : 2001 == d ? b.setValue(BinaryInputStream.readInteger(a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25391,10 +25391,10 @@ T5516.prototype._m25428 = function(c, a) {
 T5516.prototype._m25429 = function(c, a) {
     for (var b = new AchieveWithProgressResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAchieveWithProgressStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAchieveWithProgressStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setAchivementId(d), MemoryManagement.free(d)) : 2001 == d ? b.setProgress(BinaryInputStream.readInteger(a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25403,9 +25403,9 @@ T5516.prototype._m25429 = function(c, a) {
 T5516.prototype._m25430 = function(c, a) {
     for (var b = new GetPlayerProfileRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25414,9 +25414,9 @@ T5516.prototype._m25430 = function(c, a) {
 T5516.prototype._m25431 = function(c, a) {
     for (var b = new GetPlayerProfileResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setGetPlayerProfileStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? b.setProfile(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25425,10 +25425,10 @@ T5516.prototype._m25431 = function(c, a) {
 T5516.prototype._m25432 = function(c, a) {
     for (var b = new GetPlayerProfileByPlayerIdRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setPlayerId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25437,9 +25437,9 @@ T5516.prototype._m25432 = function(c, a) {
 T5516.prototype._m25433 = function(c, a) {
     for (var b = new GetPlayerProfileByPlayerIdResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setGetPlayerProfileByPlayerIdStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? b.setProfile(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25448,9 +25448,9 @@ T5516.prototype._m25433 = function(c, a) {
 T5516.prototype._m25434 = function(c, a) {
     for (var b = new SavePlayerProfileRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setProfile(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25459,9 +25459,9 @@ T5516.prototype._m25434 = function(c, a) {
 T5516.prototype._m25435 = function(c, a) {
     for (var b = new SavePlayerProfileResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSavePlayerProfileStatus(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25470,9 +25470,9 @@ T5516.prototype._m25435 = function(c, a) {
 T5516.prototype._m25436 = function(c, a) {
     for (var b = new GetStorablesRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setDbQuery(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25481,9 +25481,9 @@ T5516.prototype._m25436 = function(c, a) {
 T5516.prototype._m25437 = function(c, a) {
     for (var b = new GetStorablesResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetStorablesStatus(BinaryInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -25499,9 +25499,9 @@ T5516.prototype._m25437 = function(c, a) {
 T5516.prototype._m25438 = function(c, a) {
     for (var b = new SaveStorableRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setStorable(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25510,10 +25510,10 @@ T5516.prototype._m25438 = function(c, a) {
 T5516.prototype._m25439 = function(c, a) {
     for (var b = new SaveStorableResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSaveStorableStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSaveStorableStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setStorableId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25522,9 +25522,9 @@ T5516.prototype._m25439 = function(c, a) {
 T5516.prototype._m25440 = function(c, a) {
     for (var b = new UpdateStorableRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setStorable(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25533,10 +25533,10 @@ T5516.prototype._m25440 = function(c, a) {
 T5516.prototype._m25441 = function(c, a) {
     for (var b = new UpdateStorableResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setUpdateStorableStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setUpdateStorableStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setStorableId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25545,9 +25545,9 @@ T5516.prototype._m25441 = function(c, a) {
 T5516.prototype._m25442 = function(c, a) {
     for (var b = new RemoveStorableRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setStorable(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25556,10 +25556,10 @@ T5516.prototype._m25442 = function(c, a) {
 T5516.prototype._m25443 = function(c, a) {
     for (var b = new RemoveStorableResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setRemoveStorableStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setRemoveStorableStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setStorableId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25568,9 +25568,9 @@ T5516.prototype._m25443 = function(c, a) {
 T5516.prototype._m25444 = function(c, a) {
     for (var b = new GetItemsRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25579,9 +25579,9 @@ T5516.prototype._m25444 = function(c, a) {
 T5516.prototype._m25445 = function(c, a) {
     for (var b = new GetItemsResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetItemsStatus(BinaryInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -25597,10 +25597,10 @@ T5516.prototype._m25445 = function(c, a) {
 T5516.prototype._m25446 = function(c, a) {
     for (var b = new BuyItemRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setItemId(d), MemoryManagement.free(d)) : 2001 == d ? b.setQuantity(BinaryInputStream.readInteger(a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25609,9 +25609,9 @@ T5516.prototype._m25446 = function(c, a) {
 T5516.prototype._m25447 = function(c, a) {
     for (var b = new BuyItemResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setBuyItemStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? b.setBoughtItem(BinaryInputStream.readObject(c, a)) : 2001 == d ? b.setQuantity(BinaryInputStream.readInteger(a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25620,10 +25620,10 @@ T5516.prototype._m25447 = function(c, a) {
 T5516.prototype._m25448 = function(c, a) {
     for (var b = new ConsumeItemRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setItemId(d), MemoryManagement.free(d)) : 2001 == d ? b.setQuantity(BinaryInputStream.readInteger(a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25632,9 +25632,9 @@ T5516.prototype._m25448 = function(c, a) {
 T5516.prototype._m25449 = function(c, a) {
     for (var b = new ConsumeItemResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setConsumeItemStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? b.setConsumedItem(BinaryInputStream.readObject(c, a)) : 2001 == d ? b.setQuantity(BinaryInputStream.readInteger(a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25643,9 +25643,9 @@ T5516.prototype._m25449 = function(c, a) {
 T5516.prototype._m25450 = function(c, a) {
     for (var b = new IncreasePlayerWalletRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setValue(BinaryInputStream.readInteger(a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25654,9 +25654,9 @@ T5516.prototype._m25450 = function(c, a) {
 T5516.prototype._m25451 = function(c, a) {
     for (var b = new IncreasePlayerWalletResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setIncreasePlayerWalletStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? b.setValue(BinaryInputStream.readInteger(a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25665,9 +25665,9 @@ T5516.prototype._m25451 = function(c, a) {
 T5516.prototype._m25452 = function(c, a) {
     for (var b = new GetPlayerWalletRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25676,9 +25676,9 @@ T5516.prototype._m25452 = function(c, a) {
 T5516.prototype._m25453 = function(c, a) {
     for (var b = new GetPlayerWalletResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setGetPlayerWalletStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? b.setWallet(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25687,10 +25687,10 @@ T5516.prototype._m25453 = function(c, a) {
 T5516.prototype._m25454 = function(c, a) {
     for (var b = new JoinGameRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25699,9 +25699,9 @@ T5516.prototype._m25454 = function(c, a) {
 T5516.prototype._m25455 = function(c, a) {
     for (var b = new JoinGameResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setJoinGameStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? b.setGame(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25710,10 +25710,10 @@ T5516.prototype._m25455 = function(c, a) {
 T5516.prototype._m25456 = function(c, a) {
     for (var b = new UnjoinGameRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25722,10 +25722,10 @@ T5516.prototype._m25456 = function(c, a) {
 T5516.prototype._m25457 = function(c, a) {
     for (var b = new UnjoinGameResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setUnjoinGameStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setUnjoinGameStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25734,10 +25734,10 @@ T5516.prototype._m25457 = function(c, a) {
 T5516.prototype._m25458 = function(c, a) {
     for (var b = new StartGameRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25746,10 +25746,10 @@ T5516.prototype._m25458 = function(c, a) {
 T5516.prototype._m25459 = function(c, a) {
     for (var b = new StartGameResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setStartGameStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setStartGameStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25758,10 +25758,10 @@ T5516.prototype._m25459 = function(c, a) {
 T5516.prototype._m25460 = function(c, a) {
     for (var b = new StopGameRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25770,10 +25770,10 @@ T5516.prototype._m25460 = function(c, a) {
 T5516.prototype._m25461 = function(c, a) {
     for (var b = new StopGameResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setStopGameStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setStopGameStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25782,9 +25782,9 @@ T5516.prototype._m25461 = function(c, a) {
 T5516.prototype._m25462 = function(c, a) {
     for (var b = new CreateGameRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setGame(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25793,10 +25793,10 @@ T5516.prototype._m25462 = function(c, a) {
 T5516.prototype._m25463 = function(c, a) {
     for (var b = new CreateGameResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setCreateGameStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setCreateGameStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25805,9 +25805,9 @@ T5516.prototype._m25463 = function(c, a) {
 T5516.prototype._m25464 = function(c, a) {
     for (var b = new GetGamesRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setDbQuery(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25816,9 +25816,9 @@ T5516.prototype._m25464 = function(c, a) {
 T5516.prototype._m25465 = function(c, a) {
     for (var b = new GetGamesResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetGamesStatus(BinaryInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -25834,9 +25834,9 @@ T5516.prototype._m25465 = function(c, a) {
 T5516.prototype._m25466 = function(c, a) {
     for (var b = new SaveAsGhostRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setGame(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25845,9 +25845,9 @@ T5516.prototype._m25466 = function(c, a) {
 T5516.prototype._m25467 = function(c, a) {
     for (var b = new SaveAsGhostResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSaveAsGhostStatus(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25856,9 +25856,9 @@ T5516.prototype._m25467 = function(c, a) {
 T5516.prototype._m25468 = function(c, a) {
     for (var b = new GetGhostsRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setDbQuery(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25867,9 +25867,9 @@ T5516.prototype._m25468 = function(c, a) {
 T5516.prototype._m25469 = function(c, a) {
     for (var b = new GetGhostsResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetGhostsStatus(BinaryInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -25885,10 +25885,10 @@ T5516.prototype._m25469 = function(c, a) {
 T5516.prototype._m25470 = function(c, a) {
     for (var b = new LoadGhostRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25897,9 +25897,9 @@ T5516.prototype._m25470 = function(c, a) {
 T5516.prototype._m25471 = function(c, a) {
     for (var b = new LoadGhostResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setLoadGhostStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? b.setGame(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25908,10 +25908,10 @@ T5516.prototype._m25471 = function(c, a) {
 T5516.prototype._m25472 = function(c, a) {
     for (var b = new NextPlayerTurnRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25920,9 +25920,9 @@ T5516.prototype._m25472 = function(c, a) {
 T5516.prototype._m25473 = function(c, a) {
     for (var b = new NextPlayerTurnResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setNextPlayerTurnStatus(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25931,9 +25931,9 @@ T5516.prototype._m25473 = function(c, a) {
 T5516.prototype._m25474 = function(c, a) {
     for (var b = new SaveGameRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setGame(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25942,10 +25942,10 @@ T5516.prototype._m25474 = function(c, a) {
 T5516.prototype._m25475 = function(c, a) {
     for (var b = new SaveGameResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSaveGameStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSaveGameStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25954,10 +25954,10 @@ T5516.prototype._m25475 = function(c, a) {
 T5516.prototype._m25476 = function(c, a) {
     for (var b = new LoadGameRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25966,9 +25966,9 @@ T5516.prototype._m25476 = function(c, a) {
 T5516.prototype._m25477 = function(c, a) {
     for (var b = new LoadGameResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setLoadGameStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? b.setGame(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25977,11 +25977,11 @@ T5516.prototype._m25477 = function(c, a) {
 T5516.prototype._m25478 = function(c, a) {
     for (var b = new SendGameChatRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a),
         b.setMessage(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -25990,9 +25990,9 @@ T5516.prototype._m25478 = function(c, a) {
 T5516.prototype._m25479 = function(c, a) {
     for (var b = new SendGameChatResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSendGameChatStatus(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26001,12 +26001,12 @@ T5516.prototype._m25479 = function(c, a) {
 T5516.prototype._m25480 = function(c, a) {
     for (var b = new SendGameChatToPlayerRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setPlayerId(d), MemoryManagement.free(d)) : 2002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a),
+        b.setPlayerId(d), MemoryManagement.free(d)) : 2002 == d ? (d = BinaryInputStream.readString(a),
         b.setMessage(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26015,9 +26015,9 @@ T5516.prototype._m25480 = function(c, a) {
 T5516.prototype._m25481 = function(c, a) {
     for (var b = new SendGameChatToPlayerResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSendGameChatToPlayerStatus(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26026,11 +26026,11 @@ T5516.prototype._m25481 = function(c, a) {
 T5516.prototype._m25482 = function(c, a) {
     for (var b = new SendGameChatToPlayerListRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? (d = BinaryInputStream.readString(a),
         b.setMessage(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26039,9 +26039,9 @@ T5516.prototype._m25482 = function(c, a) {
 T5516.prototype._m25483 = function(c, a) {
     for (var b = new SendGameChatToPlayerListResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSendGameChatToPlayerListStatus(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26050,10 +26050,10 @@ T5516.prototype._m25483 = function(c, a) {
 T5516.prototype._m25484 = function(c, a) {
     for (var b = new InvitePlayerRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setPlayerId(d), MemoryManagement.free(d)) : 2001 == d ? b.setInvitation(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26062,10 +26062,10 @@ T5516.prototype._m25484 = function(c, a) {
 T5516.prototype._m25485 = function(c, a) {
     for (var b = new InvitePlayerResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setInvitePlayerStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setInvitePlayerStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setInvitationId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26074,9 +26074,9 @@ T5516.prototype._m25485 = function(c, a) {
 T5516.prototype._m25486 = function(c, a) {
     for (var b = new GetInvitationsRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setNuggetaQuery(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26085,9 +26085,9 @@ T5516.prototype._m25486 = function(c, a) {
 T5516.prototype._m25487 = function(c, a) {
     for (var b = new GetInvitationsResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetInvitationsStatus(BinaryInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -26103,10 +26103,10 @@ T5516.prototype._m25487 = function(c, a) {
 T5516.prototype._m25488 = function(c, a) {
     for (var b = new AcceptInvitationRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setInvitationId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26115,10 +26115,10 @@ T5516.prototype._m25488 = function(c, a) {
 T5516.prototype._m25489 = function(c, a) {
     for (var b = new AcceptInvitationResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAcceptInvitationStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAcceptInvitationStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setInvitationId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26127,10 +26127,10 @@ T5516.prototype._m25489 = function(c, a) {
 T5516.prototype._m25490 = function(c, a) {
     for (var b = new RefuseInvitationRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setInvitationId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26139,10 +26139,10 @@ T5516.prototype._m25490 = function(c, a) {
 T5516.prototype._m25491 = function(c, a) {
     for (var b = new RefuseInvitationResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setRefuseInvitationStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setRefuseInvitationStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setInvitationId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26151,9 +26151,9 @@ T5516.prototype._m25491 = function(c, a) {
 T5516.prototype._m25492 = function(c, a) {
     for (var b = new PauseSessionMonitoringRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26162,9 +26162,9 @@ T5516.prototype._m25492 = function(c, a) {
 T5516.prototype._m25493 = function(c, a) {
     for (var b = new PauseSessionMonitoringResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setPauseSessionMonitoringStatus(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26173,9 +26173,9 @@ T5516.prototype._m25493 = function(c, a) {
 T5516.prototype._m25494 = function(c, a) {
     for (var b = new ResumeSessionMonitoringRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26184,9 +26184,9 @@ T5516.prototype._m25494 = function(c, a) {
 T5516.prototype._m25495 = function(c, a) {
     for (var b = new ResumeSessionMonitoringResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setResumeSessionMonitoringStatus(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26195,9 +26195,9 @@ T5516.prototype._m25495 = function(c, a) {
 T5516.prototype._m25496 = function(c, a) {
     for (var b = new MatchAndJoinGameRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setGamesQuery(BinaryInputStream.readObject(c, a)) : 2001 == d ? b.setMatchMakingConditions(BinaryInputStream.readObject(c, a)) : 2002 == d ? b.setTimeoutDelayMinPlayers(BinaryInputStream.readInteger(a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26206,9 +26206,9 @@ T5516.prototype._m25496 = function(c, a) {
 T5516.prototype._m25497 = function(c, a) {
     for (var b = new MatchAndJoinGameResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setMatchAndJoinGameStatus(BinaryInputStream.readObject(c, a)) : 2e3 == d ? b.setGame(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26217,9 +26217,9 @@ T5516.prototype._m25497 = function(c, a) {
 T5516.prototype._m25498 = function(c, a) {
     for (var b = new GetPlayersRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setPlayersQuery(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -26228,9 +26228,9 @@ T5516.prototype._m25498 = function(c, a) {
 T5516.prototype._m25499 = function(c, a) {
     for (var b = new GetPlayersResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a), 
+        if (0 == d) d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetPlayersStatus(BinaryInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -27842,9 +27842,9 @@ T5537.prototype._m26473 = function(c, a) {
 T5537.prototype._m26474 = function(c, a) {
     for (var b = new HeartBeatRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setCounter(StringInputStream.readInteger(a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -27853,9 +27853,9 @@ T5537.prototype._m26474 = function(c, a) {
 T5537.prototype._m26475 = function(c, a) {
     for (var b = new HeartBeatResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setCounter(StringInputStream.readInteger(a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -27864,11 +27864,11 @@ T5537.prototype._m26475 = function(c, a) {
 T5537.prototype._m26476 = function(c, a) {
     for (var b = new DnsRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
-        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? b.setGameVersion(StringInputStream.readInteger(a)) : 2002 == d ? b.setGameDeployedVersion(StringInputStream.readInteger(a)) : 2003 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
+        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? b.setGameVersion(StringInputStream.readInteger(a)) : 2002 == d ? b.setGameDeployedVersion(StringInputStream.readInteger(a)) : 2003 == d ? (d = StringInputStream.readString(a),
         b.setPlatform(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -27877,10 +27877,10 @@ T5537.prototype._m26476 = function(c, a) {
 T5537.prototype._m26477 = function(c, a) {
     for (var b = new DnsResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setIpAddress(d), MemoryManagement.free(d)) : 2001 == d ? b.setTcpPort(StringInputStream.readInteger(a)) : 2002 == d ? b.setDnsStatus(StringInputStream.readObject(c, a)) : 2003 == d ? b.setStartDetails(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -27889,9 +27889,9 @@ T5537.prototype._m26477 = function(c, a) {
 T5537.prototype._m26478 = function(c, a) {
     for (var b = new StartDetails().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? b.setUseDefaultImpl(StringInputStream.readBoolean(a)) : 1 == d ? b.setCurrentVersion(StringInputStream.readInteger(a)) : 2 == d ? b.setNextVersion(StringInputStream.readInteger(a)) : 3 == d ? (d = StringInputStream.readString(a), 
-        b.setTitle(d), MemoryManagement.free(d)) : 4 == d ? (d = StringInputStream.readString(a), 
-        b.setText(d), MemoryManagement.free(d)) : 5 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? b.setUseDefaultImpl(StringInputStream.readBoolean(a)) : 1 == d ? b.setCurrentVersion(StringInputStream.readInteger(a)) : 2 == d ? b.setNextVersion(StringInputStream.readInteger(a)) : 3 == d ? (d = StringInputStream.readString(a),
+        b.setTitle(d), MemoryManagement.free(d)) : 4 == d ? (d = StringInputStream.readString(a),
+        b.setText(d), MemoryManagement.free(d)) : 5 == d ? (d = StringInputStream.readString(a),
         b.setUrl(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -27900,9 +27900,9 @@ T5537.prototype._m26478 = function(c, a) {
 T5537.prototype._m26479 = function(c, a) {
     for (var b = new StopPlugConnectionRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -27911,9 +27911,9 @@ T5537.prototype._m26479 = function(c, a) {
 T5537.prototype._m26480 = function(c, a) {
     for (var b = new StopPlugConnectionResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -27922,10 +27922,10 @@ T5537.prototype._m26480 = function(c, a) {
 T5537.prototype._m26481 = function(c, a) {
     for (var b = new NuggetaExceptionMessage().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setErrorCode(StringInputStream.readObject(c, a)) : 2001 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setErrorCode(StringInputStream.readObject(c, a)) : 2001 == d ? (d = StringInputStream.readString(a),
         b.setReason(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -27934,7 +27934,7 @@ T5537.prototype._m26481 = function(c, a) {
 T5537.prototype._m26482 = function(c, a) {
     for (var b = new NuggetaQuery().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setDomain(d), MemoryManagement.free(d)) : 1 == d ? b.setStart(StringInputStream.readInteger(a)) : 2 == d ? b.setLimit(StringInputStream.readInteger(a)) : 3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setDomain(d), MemoryManagement.free(d)) : 1 == d ? b.setStart(StringInputStream.readInteger(a)) : 2 == d ? b.setLimit(StringInputStream.readInteger(a)) : 3 == d ? (d = StringInputStream.readString(a),
         b.setQuery(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -27943,10 +27943,10 @@ T5537.prototype._m26482 = function(c, a) {
 T5537.prototype._m26483 = function(c, a) {
     for (var b = new NRawMessage().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setContent(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -35529,7 +35529,7 @@ T5531.prototype._m25044 = function() {
         this._g14300 = new T5532().init(this._f9006, this._f9007, this._v18100, this._d18099);
         var a = new NHttpRequestImpl().init(), b = NSystem.currentTimeMillis();
         a.get(c._j9010, c._o6334 + "?init=init&p=" + T5531._f14299 + "&id=" + b, function(a) {
-            c._s18096 == T5529._g18144 ? (c._g14297 = a, c._s18096 = T5529._w18145, c._i18097._m25032(), 
+            c._s18096 == T5529._g18144 ? (c._g14297 = a, c._s18096 = T5529._w18145, c._i18097._m25032(),
             c._m25046()) : c._x14295.error("invalid connection status");
         }, function() {
             c._s18096 == T5529._g18144 ? c._g18098._m25048() : c._x14295.error("invalid connection status");
@@ -35543,7 +35543,7 @@ T5531.prototype._m25046 = function() {
         var a = new NHttpRequestImpl().init(), b = NSystem.currentTimeMillis();
         a.get(c._j9010, c._o6334 + "?session_id=" + c._g14297 + "&id=" + b + "&p=" + T5531._f14299 + "&send=p", function(a) {
             try {
-                c._s18096 == T5529._w18145 && (null != a && 0 < a.length && "INVALID_SESSION_ID" == a ? c._d18099._m25036() : (c._g14300._m25049(a), 
+                c._s18096 == T5529._w18145 && (null != a && 0 < a.length && "INVALID_SESSION_ID" == a ? c._d18099._m25036() : (c._g14300._m25049(a),
                 c._m25046()));
             } catch (b) {
                 c._f14298 || (c._f14298 = !0, c._x14295.debugCause("can't poll: ", b), c._d18099._m25036());
@@ -35555,7 +35555,7 @@ T5531.prototype._m25046 = function() {
 };
 
 T5531.prototype._m25050 = function() {
-    this._s18096 != T5529._w18145 ? (this._s18096 = T5529._o18147, this._m25051()) : this._s18096 != T5529._g18144 ? (this._s18096 = T5529._o18147, 
+    this._s18096 != T5529._w18145 ? (this._s18096 = T5529._o18147, this._m25051()) : this._s18096 != T5529._g18144 ? (this._s18096 = T5529._o18147,
     this._m25051()) : this._x14295.error("invalid status " + this._s18096);
 };
 
@@ -35771,7 +35771,7 @@ NuggetaGameCoreDispatcher.prototype.fireMessage = function(c) {
         for (var M = 0; M < this.GetPlayerProfileResponseHandlers.length; M++) (0, this.GetPlayerProfileResponseHandlers[M])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == GetPlayerProfileByPlayerIdResponse.serializerID) {
         for (var N = 0; N < this.globalListeners.length; N++) (0, this.globalListeners[N])(MemoryManagement._clone(c));
-        for (var O = 0; O < this.GetPlayerProfileByPlayerIdResponseHandlers.length; O++) (0, 
+        for (var O = 0; O < this.GetPlayerProfileByPlayerIdResponseHandlers.length; O++) (0,
         this.GetPlayerProfileByPlayerIdResponseHandlers[O])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == SavePlayerProfileResponse.serializerID) {
         for (var P = 0; P < this.globalListeners.length; P++) (0, this.globalListeners[P])(MemoryManagement._clone(c));
@@ -35799,7 +35799,7 @@ NuggetaGameCoreDispatcher.prototype.fireMessage = function(c) {
         for (var ea = 0; ea < this.ConsumeItemResponseHandlers.length; ea++) (0, this.ConsumeItemResponseHandlers[ea])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == IncreasePlayerWalletResponse.serializerID) {
         for (var fa = 0; fa < this.globalListeners.length; fa++) (0, this.globalListeners[fa])(MemoryManagement._clone(c));
-        for (var ga = 0; ga < this.IncreasePlayerWalletResponseHandlers.length; ga++) (0, 
+        for (var ga = 0; ga < this.IncreasePlayerWalletResponseHandlers.length; ga++) (0,
         this.IncreasePlayerWalletResponseHandlers[ga])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == GetPlayerWalletResponse.serializerID) {
         for (var ha = 0; ha < this.globalListeners.length; ha++) (0, this.globalListeners[ha])(MemoryManagement._clone(c));
@@ -35845,11 +35845,11 @@ NuggetaGameCoreDispatcher.prototype.fireMessage = function(c) {
         for (var Ia = 0; Ia < this.SendGameChatResponseHandlers.length; Ia++) (0, this.SendGameChatResponseHandlers[Ia])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == SendGameChatToPlayerResponse.serializerID) {
         for (var Ja = 0; Ja < this.globalListeners.length; Ja++) (0, this.globalListeners[Ja])(MemoryManagement._clone(c));
-        for (var Ka = 0; Ka < this.SendGameChatToPlayerResponseHandlers.length; Ka++) (0, 
+        for (var Ka = 0; Ka < this.SendGameChatToPlayerResponseHandlers.length; Ka++) (0,
         this.SendGameChatToPlayerResponseHandlers[Ka])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == SendGameChatToPlayerListResponse.serializerID) {
         for (var La = 0; La < this.globalListeners.length; La++) (0, this.globalListeners[La])(MemoryManagement._clone(c));
-        for (var Ma = 0; Ma < this.SendGameChatToPlayerListResponseHandlers.length; Ma++) (0, 
+        for (var Ma = 0; Ma < this.SendGameChatToPlayerListResponseHandlers.length; Ma++) (0,
         this.SendGameChatToPlayerListResponseHandlers[Ma])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == InvitePlayerResponse.serializerID) {
         for (var Na = 0; Na < this.globalListeners.length; Na++) (0, this.globalListeners[Na])(MemoryManagement._clone(c));
@@ -35865,11 +35865,11 @@ NuggetaGameCoreDispatcher.prototype.fireMessage = function(c) {
         for (var Ua = 0; Ua < this.RefuseInvitationResponseHandlers.length; Ua++) (0, this.RefuseInvitationResponseHandlers[Ua])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == PauseSessionMonitoringResponse.serializerID) {
         for (var Va = 0; Va < this.globalListeners.length; Va++) (0, this.globalListeners[Va])(MemoryManagement._clone(c));
-        for (var Wa = 0; Wa < this.PauseSessionMonitoringResponseHandlers.length; Wa++) (0, 
+        for (var Wa = 0; Wa < this.PauseSessionMonitoringResponseHandlers.length; Wa++) (0,
         this.PauseSessionMonitoringResponseHandlers[Wa])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == ResumeSessionMonitoringResponse.serializerID) {
         for (var Xa = 0; Xa < this.globalListeners.length; Xa++) (0, this.globalListeners[Xa])(MemoryManagement._clone(c));
-        for (var Ya = 0; Ya < this.ResumeSessionMonitoringResponseHandlers.length; Ya++) (0, 
+        for (var Ya = 0; Ya < this.ResumeSessionMonitoringResponseHandlers.length; Ya++) (0,
         this.ResumeSessionMonitoringResponseHandlers[Ya])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == MatchAndJoinGameResponse.serializerID) {
         for (var Za = 0; Za < this.globalListeners.length; Za++) (0, this.globalListeners[Za])(MemoryManagement._clone(c));
@@ -35888,11 +35888,11 @@ NuggetaGameCoreDispatcher.prototype.fireMessage = function(c) {
         for (var hb = 0; hb < this.FriendshipNotificationHandlers.length; hb++) (0, this.FriendshipNotificationHandlers[hb])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == FriendConnectedNotification.serializerID) {
         for (var ib = 0; ib < this.globalListeners.length; ib++) (0, this.globalListeners[ib])(MemoryManagement._clone(c));
-        for (var jb = 0; jb < this.FriendConnectedNotificationHandlers.length; jb++) (0, 
+        for (var jb = 0; jb < this.FriendConnectedNotificationHandlers.length; jb++) (0,
         this.FriendConnectedNotificationHandlers[jb])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == FriendDisconnectedNotification.serializerID) {
         for (var kb = 0; kb < this.globalListeners.length; kb++) (0, this.globalListeners[kb])(MemoryManagement._clone(c));
-        for (var lb = 0; lb < this.FriendDisconnectedNotificationHandlers.length; lb++) (0, 
+        for (var lb = 0; lb < this.FriendDisconnectedNotificationHandlers.length; lb++) (0,
         this.FriendDisconnectedNotificationHandlers[lb])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == SessionExpired.serializerID) {
         for (var mb = 0; mb < this.globalListeners.length; mb++) (0, this.globalListeners[mb])(MemoryManagement._clone(c));
@@ -35914,19 +35914,19 @@ NuggetaGameCoreDispatcher.prototype.fireMessage = function(c) {
         for (var xb = 0; xb < this.StartResponseHandlers.length; xb++) (0, this.StartResponseHandlers[xb])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == InvitationRequestNotification.serializerID) {
         for (var yb = 0; yb < this.globalListeners.length; yb++) (0, this.globalListeners[yb])(MemoryManagement._clone(c));
-        for (var zb = 0; zb < this.InvitationRequestNotificationHandlers.length; zb++) (0, 
+        for (var zb = 0; zb < this.InvitationRequestNotificationHandlers.length; zb++) (0,
         this.InvitationRequestNotificationHandlers[zb])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == InvitationAcceptedNotification.serializerID) {
         for (var Ab = 0; Ab < this.globalListeners.length; Ab++) (0, this.globalListeners[Ab])(MemoryManagement._clone(c));
-        for (var Bb = 0; Bb < this.InvitationAcceptedNotificationHandlers.length; Bb++) (0, 
+        for (var Bb = 0; Bb < this.InvitationAcceptedNotificationHandlers.length; Bb++) (0,
         this.InvitationAcceptedNotificationHandlers[Bb])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == InvitationRefusedNotification.serializerID) {
         for (var Cb = 0; Cb < this.globalListeners.length; Cb++) (0, this.globalListeners[Cb])(MemoryManagement._clone(c));
-        for (var Db = 0; Db < this.InvitationRefusedNotificationHandlers.length; Db++) (0, 
+        for (var Db = 0; Db < this.InvitationRefusedNotificationHandlers.length; Db++) (0,
         this.InvitationRefusedNotificationHandlers[Db])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == InvitationExpiredNotification.serializerID) {
         for (var Eb = 0; Eb < this.globalListeners.length; Eb++) (0, this.globalListeners[Eb])(MemoryManagement._clone(c));
-        for (var Fb = 0; Fb < this.InvitationExpiredNotificationHandlers.length; Fb++) (0, 
+        for (var Fb = 0; Fb < this.InvitationExpiredNotificationHandlers.length; Fb++) (0,
         this.InvitationExpiredNotificationHandlers[Fb])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == NRawGameMessage.serializerID) {
         for (var Gb = 0; Gb < this.globalListeners.length; Gb++) (0, this.globalListeners[Gb])(MemoryManagement._clone(c));
@@ -35936,7 +35936,7 @@ NuggetaGameCoreDispatcher.prototype.fireMessage = function(c) {
         for (var Jb = 0; Jb < this.GameRunningStateChangeHandlers.length; Jb++) (0, this.GameRunningStateChangeHandlers[Jb])(MemoryManagement._clone(c));
     } else if (c.getSerializerID() == NMatchAndJoinGameExpiredNotification.serializerID) {
         for (var Kb = 0; Kb < this.globalListeners.length; Kb++) (0, this.globalListeners[Kb])(MemoryManagement._clone(c));
-        for (var Lb = 0; Lb < this.NMatchAndJoinGameExpiredNotificationHandlers.length; Lb++) (0, 
+        for (var Lb = 0; Lb < this.NMatchAndJoinGameExpiredNotificationHandlers.length; Lb++) (0,
         this.NMatchAndJoinGameExpiredNotificationHandlers[Lb])(MemoryManagement._clone(c));
     }
 };
@@ -37137,7 +37137,7 @@ Byte2DArray.prototype.getRow = function(c) {
 };
 
 Byte2DArray.prototype.setRow = function(c, a) {
-    for (var b = a * this.colunmSize, e = 0; e < this.colunmSize; e++) this.tab[b] = c[e], 
+    for (var b = a * this.colunmSize, e = 0; e < this.colunmSize; e++) this.tab[b] = c[e],
     b++;
 };
 
@@ -38529,7 +38529,7 @@ T5522.prototype._m25007 = function(c, a, b) {
     var e = parseFloat(e[1]), f = e + 1, d = new T5530().init(a);
     if (null != this._n6358) for (var h = this._n6358.split("/"), g = 0; g < h.length; g++) {
         var k = h[g];
-        "sock" == k ? d._m25056(new T5534().init(c, this._w14329, a, b, e, null)) : "wsock" == k ? (k = "ws://" + b + ":" + f + "/nuggeta/", 
+        "sock" == k ? d._m25056(new T5534().init(c, this._w14329, a, b, e, null)) : "wsock" == k ? (k = "ws://" + b + ":" + f + "/nuggeta/",
         d._m25056(new T5534().init(c, this._w14329, a, null, 0, k))) : "http" == k ? d._m25056(new T5531().init(c, this._w14329, a, "http://" + b + ":" + f + "/httpstream/")) : this._d14326.error("Unsupported network " + k);
     } else this._d14326.error("No Layer defined ! using fallback http");
     "a12-plug" == c ? d._m25056(new T5531().init(c, this._w14329, a, "http://" + b + "/httpstream/")) : d._m25056(new T5531().init(c, this._w14329, a, "http://" + b + "/" + f + "/httpstream/"));
@@ -40741,7 +40741,7 @@ BasicNuggetaPlug.prototype.start = function() {
         if (a instanceof HeartBeatRequest) {
             var b = new HeartBeatResponse().init();
             c.connectionManager._m25002(b);
-        } else for (b = a.getDomainID() + "", b = c.getDomainMessageListener(b), null != b && b(a), 
+        } else for (b = a.getDomainID() + "", b = c.getDomainMessageListener(b), null != b && b(a),
         b = 0; b < c.messagesListeners.length; b++) {
             var e = c.messagesListeners[b], f = MemoryManagement._clone(a);
             e(f);
@@ -41063,7 +41063,7 @@ BinaryInputStream.getShort = function(c) {
 
 BinaryInputStream.skipProperty = function(c) {
     var a = c.get();
-    a != SerializationTypes.NULL_TYPE && (a == SerializationTypes.INTEGER ? c.skip(4) : a == SerializationTypes.SHORT ? c.skip(2) : a == SerializationTypes.LONG ? c.skip(8) : a == SerializationTypes.FLOAT ? c.skip(4) : a == SerializationTypes.DOUBLE ? c.skip(8) : a == SerializationTypes.BOOLEAN ? c.skip(1) : a == SerializationTypes.STRING ? (a = c.getShort(), 
+    a != SerializationTypes.NULL_TYPE && (a == SerializationTypes.INTEGER ? c.skip(4) : a == SerializationTypes.SHORT ? c.skip(2) : a == SerializationTypes.LONG ? c.skip(8) : a == SerializationTypes.FLOAT ? c.skip(4) : a == SerializationTypes.DOUBLE ? c.skip(8) : a == SerializationTypes.BOOLEAN ? c.skip(1) : a == SerializationTypes.STRING ? (a = c.getShort(),
     c.skip(a)) : a == SerializationTypes.OBJECT && (a = c.getInt(), c.skip(a)));
 };
 
@@ -41413,8 +41413,8 @@ AES.prototype.xor_func = function(c, a) {
 };
 
 AES.prototype.generateSubkeys = function(c) {
-    for (var a = new Byte2DArray().init(this.Nb * (this.Nr + 1), 4), b = 0; b < this.Nk; ) a.set(b, 0, c[4 * b]), 
-    a.set(b, 1, c[4 * b + 1]), a.set(b, 2, c[4 * b + 2]), a.set(b, 3, c[4 * b + 3]), 
+    for (var a = new Byte2DArray().init(this.Nb * (this.Nr + 1), 4), b = 0; b < this.Nk; ) a.set(b, 0, c[4 * b]),
+    a.set(b, 1, c[4 * b + 1]), a.set(b, 2, c[4 * b + 2]), a.set(b, 3, c[4 * b + 3]),
     b++;
     for (b = this.Nk; b < this.Nb * (this.Nr + 1); ) {
         c = Array(4);
@@ -41494,7 +41494,7 @@ AES.prototype.MixColumns = function(c) {
 };
 
 AES.prototype.FFMul = function(c, a) {
-    for (var b = c, e = a, f = 0, d; 0 != b; ) 0 != (b & 1) && (f ^= e), d = e & 128, 
+    for (var b = c, e = a, f = 0, d; 0 != b; ) 0 != (b & 1) && (f ^= e), d = e & 128,
     e <<= 1, 0 != d && (e ^= 27), b = (b & 255) >> 1;
     return f;
 };
@@ -41502,7 +41502,7 @@ AES.prototype.FFMul = function(c, a) {
 AES.prototype.encryptBloc = function(c) {
     for (var a = Array(c.length), b = new Byte2DArray().init(4, this.Nb), e = 0; e < c.length; e++) b.set(Math.floor(e / 4), e % 4, c[e % 4 * 4 + Math.floor(e / 4)]);
     b = this.AddRoundKey(b, this.w, 0);
-    for (e = 1; e < this.Nr; e++) b = this.SubBytes(b), b = this.ShiftRows(b), b = this.MixColumns(b), 
+    for (e = 1; e < this.Nr; e++) b = this.SubBytes(b), b = this.ShiftRows(b), b = this.MixColumns(b),
     b = this.AddRoundKey(b, this.w, e);
     b = this.SubBytes(b);
     b = this.ShiftRows(b);
@@ -41514,7 +41514,7 @@ AES.prototype.encryptBloc = function(c) {
 AES.prototype.decryptBloc = function(c) {
     for (var a = Array(c.length), b = new Byte2DArray().init(4, this.Nb), e = 0; e < c.length; e++) b.set(Math.floor(e / 4), e % 4, c[e % 4 * 4 + Math.floor(e / 4)]);
     b = this.AddRoundKey(b, this.w, this.Nr);
-    for (e = this.Nr - 1; 1 <= e; ) b = this.InvSubBytes(b), b = this.InvShiftRows(b), 
+    for (e = this.Nr - 1; 1 <= e; ) b = this.InvSubBytes(b), b = this.InvShiftRows(b),
     b = this.AddRoundKey(b, this.w, e), b = this.InvMixColumns(b), e--;
     b = this.InvSubBytes(b);
     b = this.InvShiftRows(b);
@@ -41532,8 +41532,8 @@ AES.prototype.encrypt = function(c, a) {
     for (f = 1; f < b; f++) e[f] = 0;
     var d = Array(c.length + b), h = Array(16);
     this.w = this.generateSubkeys(a);
-    for (var g = 0, k = 0; k < c.length + b; k++) f = k, 0 < f && 0 == f % 16 && (h = this.encryptBloc(h), 
-    AES.arraycopy(h, 0, d, f - 16, h.length)), f < c.length ? h[f % 16] = c[f] : (h[f % 16] = e[g % 16], 
+    for (var g = 0, k = 0; k < c.length + b; k++) f = k, 0 < f && 0 == f % 16 && (h = this.encryptBloc(h),
+    AES.arraycopy(h, 0, d, f - 16, h.length)), f < c.length ? h[f % 16] = c[f] : (h[f % 16] = e[g % 16],
     g++);
     16 == h.length && (h = this.encryptBloc(h), AES.arraycopy(h, 0, d, f + 1 - 16, h.length));
     return d;
@@ -41545,7 +41545,7 @@ AES.prototype.decrypt = function(c, a) {
     this.Nk = a.length / 4;
     this.Nr = this.Nk + 6;
     this.w = this.generateSubkeys(a);
-    for (var d = 0; d < c.length; d++) b = d, 0 < b && 0 == b % 16 && (f = this.decryptBloc(f), 
+    for (var d = 0; d < c.length; d++) b = d, 0 < b && 0 == b % 16 && (f = this.decryptBloc(f),
     AES.arraycopy(f, 0, e, b - 16, f.length)), b < c.length && (f[b % 16] = c[b]);
     f = this.decryptBloc(f);
     AES.arraycopy(f, 0, e, b + 1 - 16, f.length);
@@ -43763,7 +43763,7 @@ T5534.prototype._m25044 = function() {
     if (this._s18096 == T5529._s18143) {
         this._s18096 = T5529._g18144;
         try {
-            this._i17803 = new T5532().init(this._f9006, this._f9007, this._v18100, this._d18099), 
+            this._i17803 = new T5532().init(this._f9006, this._f9007, this._v18100, this._d18099),
             this._o17807 = function(a) {
                 if (c._s18096 == T5529._g18144 || c._s18096 == T5529._w18145) null != c._m17806 ? c._i17803._m25049(a) : c._i17803._m25061(a);
             }, c._z17802 = new NSocketImpl().init(), c._z17802.openConnection(c._j9010, c._v17804, c._v17805, c._m17806, function() {
@@ -43773,7 +43773,7 @@ T5534.prototype._m25044 = function() {
                 c._s18096 == T5529._g18144 ? c._g18098._m25048() : c._f17801.error("invalid connection status");
             }, c._o17807);
         } catch (a) {
-            c._f17801.errorCause("Can't connect to server  url " + c._v17804 + ":" + c._v17805, a), 
+            c._f17801.errorCause("Can't connect to server  url " + c._v17804 + ":" + c._v17805, a),
             c._g18098._m25048();
         }
     }
@@ -43784,7 +43784,7 @@ T5534.prototype._m25052 = function(c) {
 };
 
 T5534.prototype._m25502 = function(c) {
-    null != this._m17806 ? (c = this._i17803._m25055(c), this._z17802.sendString(c, null, this._t18093)) : (c = this._i17803._m25058(c), 
+    null != this._m17806 ? (c = this._i17803._m25055(c), this._z17802.sendString(c, null, this._t18093)) : (c = this._i17803._m25058(c),
     this._z17802.sendBytes(c.getByteBuffer(), null, this._t18093), MemoryManagement.free(c));
 };
 
@@ -45539,10 +45539,10 @@ T5530.prototype._m25044 = function() {
 
 T5530.prototype._m25961 = function() {
     var c = this;
-    0 != this._o20667.length ? (null != this._n20681 && (this._n20681._m25513(this._l20687), 
-    this._n20681._m25518(this._h20689), this._n20681._m25515(this._b20688), this._n20681._m25521(this._b20686), 
-    MemoryManagement.free(this._l20687), MemoryManagement.free(this._h20689), MemoryManagement.free(this._b20688), 
-    MemoryManagement.free(this._b20686)), this._n20681 = this._o20667[0], this._o20667.splice(0, 1), 
+    0 != this._o20667.length ? (null != this._n20681 && (this._n20681._m25513(this._l20687),
+    this._n20681._m25518(this._h20689), this._n20681._m25515(this._b20688), this._n20681._m25521(this._b20686),
+    MemoryManagement.free(this._l20687), MemoryManagement.free(this._h20689), MemoryManagement.free(this._b20688),
+    MemoryManagement.free(this._b20686)), this._n20681 = this._o20667[0], this._o20667.splice(0, 1),
     this._l20687 = function() {
         c._n20681._m25513(c._l20687);
         c._y20669._m25032();
@@ -46665,7 +46665,7 @@ StringInputStream.getShort = function(c) {
 
 StringInputStream.skipProperty = function(c) {
     var a = c.get();
-    a != SerializationTypes.NULL_TYPE && (a == SerializationTypes.OBJECT ? (a = c.getInt(), 
+    a != SerializationTypes.NULL_TYPE && (a == SerializationTypes.OBJECT ? (a = c.getInt(),
     c.ignoreLength(a)) : c.ignore());
 };
 
@@ -47280,14 +47280,14 @@ T5511.prototype.onAdminMessage = function(c) {
         var a = c.getStartDetails();
         this._o13552 = c.getDnsStatus();
         this._d13553 = this._cloneSerializable(a);
-        c.getDnsStatus() == DnsStatus.SUCCESS ? (this._o13552 = DnsStatus.SUCCESS, this._x13537.stop(), 
-        a = c.getIpAddress() + ":" + c.getTcpPort(), this.startGSConnection(a)) : c.getDnsStatus() == DnsStatus.WARNED ? (this._o13552 = DnsStatus.WARNED, 
-        this._x13537.stop(), a = c.getIpAddress() + ":" + c.getTcpPort(), this.startGSConnection(a)) : c.getDnsStatus() == DnsStatus.REFUSED ? (c = new StartResponse().init(), 
-        c.setStartStatus(StartStatus.REFUSED), c.setStartDetails(a), null != a && 1 == a.isUseDefaultImpl() && this.defaultAlertVersionUnsupported(a), 
-        this._n13554(c)) : c.getDnsStatus() == DnsStatus.FAILED ? (a = new DnsRequest().init(), 
-        a.setGameId(this._w13547), a.setGameVersion(this.getVersion()), a.setGameDeployedVersion(this.getDeployedVersion()), 
-        a.setPlatform(Platform.get()), this._x13537.sendMessage(a)) : c.getDnsStatus() == DnsStatus.FAILED_TRY_LATER && (this._x13537.stop(), 
-        this._o13546 == HandshakeState.BALANCE ? (this._j13548 = !0, this._l13555()) : (a = new StartResponse().init(), 
+        c.getDnsStatus() == DnsStatus.SUCCESS ? (this._o13552 = DnsStatus.SUCCESS, this._x13537.stop(),
+        a = c.getIpAddress() + ":" + c.getTcpPort(), this.startGSConnection(a)) : c.getDnsStatus() == DnsStatus.WARNED ? (this._o13552 = DnsStatus.WARNED,
+        this._x13537.stop(), a = c.getIpAddress() + ":" + c.getTcpPort(), this.startGSConnection(a)) : c.getDnsStatus() == DnsStatus.REFUSED ? (c = new StartResponse().init(),
+        c.setStartStatus(StartStatus.REFUSED), c.setStartDetails(a), null != a && 1 == a.isUseDefaultImpl() && this.defaultAlertVersionUnsupported(a),
+        this._n13554(c)) : c.getDnsStatus() == DnsStatus.FAILED ? (a = new DnsRequest().init(),
+        a.setGameId(this._w13547), a.setGameVersion(this.getVersion()), a.setGameDeployedVersion(this.getDeployedVersion()),
+        a.setPlatform(Platform.get()), this._x13537.sendMessage(a)) : c.getDnsStatus() == DnsStatus.FAILED_TRY_LATER && (this._x13537.stop(),
+        this._o13546 == HandshakeState.BALANCE ? (this._j13548 = !0, this._l13555()) : (a = new StartResponse().init(),
         a.setStartStatus(StartStatus.FAILED), this._n13554(a)));
     }
 };
@@ -47319,8 +47319,8 @@ T5511.prototype.initGamingPlug = function() {
         } else c.restart();
     });
     c._h13536.setConnectionLostListener(function() {
-        c._j13548 || (c._z13539.error("gs-plug lost"), c._h13536.stop(), c._o13546 != HandshakeState.BALANCE ? (c._o13546 = HandshakeState.BALANCE, 
-        c._z13539.warn("Connection Interrupted ! trying to reconnect..."), null != c._t13556 && c._t13556()) : c._z13539.error("Balance failed : onConnectionLost - Retry to balance connection"), 
+        c._j13548 || (c._z13539.error("gs-plug lost"), c._h13536.stop(), c._o13546 != HandshakeState.BALANCE ? (c._o13546 = HandshakeState.BALANCE,
+        c._z13539.warn("Connection Interrupted ! trying to reconnect..."), null != c._t13556 && c._t13556()) : c._z13539.error("Balance failed : onConnectionLost - Retry to balance connection"),
         c.restart());
     });
     c._h13536.addMessageListener(function(a) {
@@ -47340,7 +47340,7 @@ T5511.prototype.startGSConnection = function(c) {
 
 T5511.prototype.onGSMessage = function(c) {
     var a = this;
-    if (!this._j13548 || c instanceof StopPlugConnectionResponse) if (c instanceof SessionExpired && (this._j13548 = !0), 
+    if (!this._j13548 || c instanceof StopPlugConnectionResponse) if (c instanceof SessionExpired && (this._j13548 = !0),
     c instanceof StopPlugConnectionResponse) this.stop0(); else if (c instanceof OpenConnection) {
         var b = c.getIpAddress();
         c = c.getTcpPort();
@@ -47370,9 +47370,9 @@ T5511.prototype.onGSMessage = function(c) {
             }
         }, b));
         a._h13540.push(a._t13541);
-    } else if (c instanceof SwitchToServerInformation) a._h13536.stop(), a._o13546 = HandshakeState.SWITCH, 
-    this.startGSConnection(c.getAddress()); else if (c instanceof HandshakeResponse) if (c.getExecutionStatus() == ExecutionStatus.OK) if (this.setSessionId(c.getSessionId()), 
-    a._h13536.setPrefixMessageId(a._x13544), c.getReason() == HandshakeState.BALANCE) a._o13546 = HandshakeState.INIT, 
+    } else if (c instanceof SwitchToServerInformation) a._h13536.stop(), a._o13546 = HandshakeState.SWITCH,
+    this.startGSConnection(c.getAddress()); else if (c instanceof HandshakeResponse) if (c.getExecutionStatus() == ExecutionStatus.OK) if (this.setSessionId(c.getSessionId()),
+    a._h13536.setPrefixMessageId(a._x13544), c.getReason() == HandshakeState.BALANCE) a._o13546 = HandshakeState.INIT,
     a._s13557(); else {
         if (c.getReason() != HandshakeState.SWITCH && c.getReason() == HandshakeState.INIT) {
             a._o13546 = HandshakeState.INIT;
@@ -47384,14 +47384,14 @@ T5511.prototype.onGSMessage = function(c) {
                 b.setPlayer(e);
                 c = this._cloneSerializable(c.getPlayerSessionType());
                 b.setPlayerSessionType(c);
-            } else a._o13552 == DnsStatus.WARNED && (b.setStartStatus(StartStatus.WARNED), e = this._cloneSerializable(c.getPlayer()), 
-            b.setPlayer(e), c = this._cloneSerializable(c.getPlayerSessionType()), b.setPlayerSessionType(c), 
+            } else a._o13552 == DnsStatus.WARNED && (b.setStartStatus(StartStatus.WARNED), e = this._cloneSerializable(c.getPlayer()),
+            b.setPlayer(e), c = this._cloneSerializable(c.getPlayerSessionType()), b.setPlayerSessionType(c),
             c = this._cloneSerializable(a._d13553), b.setStartDetails(c), null != a._d13553 && 1 == a._d13553.isUseDefaultImpl() && this.defaultAlertWarningNewVersion(c));
             a._n13554(b);
         }
-    } else c.getReason() == HandshakeState.BALANCE ? (a._j13548 = !0, a._l13555()) : (b = new StartResponse().init(), 
-    b.setStartStatus(StartStatus.FAILED), a._n13554(b)); else c instanceof OpenUrl && (a._d13550 = !0, 
-    this.openWebView(c)), a._m13533.getDomainMessageListener().getMessageListener()(c), 
+    } else c.getReason() == HandshakeState.BALANCE ? (a._j13548 = !0, a._l13555()) : (b = new StartResponse().init(),
+    b.setStartStatus(StartStatus.FAILED), a._n13554(b)); else c instanceof OpenUrl && (a._d13550 = !0,
+    this.openWebView(c)), a._m13533.getDomainMessageListener().getMessageListener()(c),
     a._j13532.getDomainMessageListener().getMessageListener()(c);
 };
 
@@ -52971,14 +52971,14 @@ T5518.prototype._m26246 = function(c, a) {
 T5518.prototype._m26247 = function(c, a) {
     for (var b = new NPlayer().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setLogin(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setPassword(d), MemoryManagement.free(d)) : 1003 == d ? (d = StringInputStream.readString(a), 
-        b.setAccessToken(d), MemoryManagement.free(d)) : 1004 == d ? (d = StringInputStream.readString(a), 
-        b.setName(d), MemoryManagement.free(d)) : 1005 == d ? b.setConnected(StringInputStream.readBoolean(a)) : 1006 == d ? b.setLoginSource(StringInputStream.readObject(c, a)) : 1007 == d ? (d = StringInputStream.readString(a), 
-        b.setThirdPartyId(d), MemoryManagement.free(d)) : 1008 == d ? b.setCreationDate(StringInputStream.readDouble(a)) : 1009 == d ? b.setActive(StringInputStream.readBoolean(a)) : 1010 == d ? (d = StringInputStream.readString(a), 
-        b.setLang(d), MemoryManagement.free(d)) : 1011 == d ? b.setAnonymous(StringInputStream.readBoolean(a)) : 1012 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setLogin(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setPassword(d), MemoryManagement.free(d)) : 1003 == d ? (d = StringInputStream.readString(a),
+        b.setAccessToken(d), MemoryManagement.free(d)) : 1004 == d ? (d = StringInputStream.readString(a),
+        b.setName(d), MemoryManagement.free(d)) : 1005 == d ? b.setConnected(StringInputStream.readBoolean(a)) : 1006 == d ? b.setLoginSource(StringInputStream.readObject(c, a)) : 1007 == d ? (d = StringInputStream.readString(a),
+        b.setThirdPartyId(d), MemoryManagement.free(d)) : 1008 == d ? b.setCreationDate(StringInputStream.readDouble(a)) : 1009 == d ? b.setActive(StringInputStream.readBoolean(a)) : 1010 == d ? (d = StringInputStream.readString(a),
+        b.setLang(d), MemoryManagement.free(d)) : 1011 == d ? b.setAnonymous(StringInputStream.readBoolean(a)) : 1012 == d ? (d = StringInputStream.readString(a),
         b.setCustomData(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -52987,9 +52987,9 @@ T5518.prototype._m26247 = function(c, a) {
 T5518.prototype._m26248 = function(c, a) {
     for (var b = new NAchievement().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setName(d), MemoryManagement.free(d)) : 1002 == d ? b.setAchieved(StringInputStream.readBoolean(a)) : 1003 == d ? b.setFeatured(StringInputStream.readBoolean(a)) : 1004 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setName(d), MemoryManagement.free(d)) : 1002 == d ? b.setAchieved(StringInputStream.readBoolean(a)) : 1003 == d ? b.setFeatured(StringInputStream.readBoolean(a)) : 1004 == d ? (d = StringInputStream.readString(a),
         b.setDescription(d), MemoryManagement.free(d)) : 1005 == d ? b.setNXP(StringInputStream.readInteger(a)) : 1006 == d ? b.setNEnergy(StringInputStream.readInteger(a)) : 1007 == d ? b.setType(StringInputStream.readObject(c, a)) : 1008 == d ? b.setGoal(StringInputStream.readInteger(a)) : 1009 == d ? b.setProgress(StringInputStream.readInteger(a)) : 1010 == d ? b.setOrder(StringInputStream.readInteger(a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -52998,16 +52998,16 @@ T5518.prototype._m26248 = function(c, a) {
 T5518.prototype._m26249 = function(c, a) {
     for (var b = new Handshake().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
-        b.setVersion(d), MemoryManagement.free(d)) : 2001 == d ? b.setReason(StringInputStream.readObject(c, a)) : 2002 == d ? (d = StringInputStream.readString(a), 
-        b.setPlayerIdsStored(d), MemoryManagement.free(d)) : 2003 == d ? (d = StringInputStream.readString(a), 
-        b.setSessionId(d), MemoryManagement.free(d)) : 2004 == d ? (d = StringInputStream.readString(a), 
-        b.setPlatform(d), MemoryManagement.free(d)) : 2005 == d ? (d = StringInputStream.readString(a), 
-        b.setSpId(d), MemoryManagement.free(d)) : 2006 == d ? (d = StringInputStream.readString(a), 
-        b.setDebugSpId(d), MemoryManagement.free(d)) : 2007 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
+        b.setVersion(d), MemoryManagement.free(d)) : 2001 == d ? b.setReason(StringInputStream.readObject(c, a)) : 2002 == d ? (d = StringInputStream.readString(a),
+        b.setPlayerIdsStored(d), MemoryManagement.free(d)) : 2003 == d ? (d = StringInputStream.readString(a),
+        b.setSessionId(d), MemoryManagement.free(d)) : 2004 == d ? (d = StringInputStream.readString(a),
+        b.setPlatform(d), MemoryManagement.free(d)) : 2005 == d ? (d = StringInputStream.readString(a),
+        b.setSpId(d), MemoryManagement.free(d)) : 2006 == d ? (d = StringInputStream.readString(a),
+        b.setDebugSpId(d), MemoryManagement.free(d)) : 2007 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53016,11 +53016,11 @@ T5518.prototype._m26249 = function(c, a) {
 T5518.prototype._m26250 = function(c, a) {
     for (var b = new HandshakeResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setExecutionStatus(StringInputStream.readObject(c, a)) : 2001 == d ? b.setReason(StringInputStream.readObject(c, a)) : 2002 == d ? (d = StringInputStream.readString(a), 
-        b.setPlayerIdsStored(d), MemoryManagement.free(d)) : 2003 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setExecutionStatus(StringInputStream.readObject(c, a)) : 2001 == d ? b.setReason(StringInputStream.readObject(c, a)) : 2002 == d ? (d = StringInputStream.readString(a),
+        b.setPlayerIdsStored(d), MemoryManagement.free(d)) : 2003 == d ? (d = StringInputStream.readString(a),
         b.setSessionId(d), MemoryManagement.free(d)) : 2004 == d ? b.setPlayerSessionType(StringInputStream.readObject(c, a)) : 2005 == d ? b.setPlayer(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53029,10 +53029,10 @@ T5518.prototype._m26250 = function(c, a) {
 T5518.prototype._m26251 = function(c, a) {
     for (var b = new GameRunningStateChange().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? b.setGameRunningState(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53041,9 +53041,9 @@ T5518.prototype._m26251 = function(c, a) {
 T5518.prototype._m26252 = function(c, a) {
     for (var b = new NFriendDemand().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? b.setEmitter(StringInputStream.readObject(c, a)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setReceiverId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setCustomMessage(d), MemoryManagement.free(d)) : 1003 == d ? b.setFriendDemandStatus(StringInputStream.readObject(c, a)) : 1004 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? b.setEmitter(StringInputStream.readObject(c, a)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setReceiverId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setCustomMessage(d), MemoryManagement.free(d)) : 1003 == d ? b.setFriendDemandStatus(StringInputStream.readObject(c, a)) : 1004 == d ? (d = StringInputStream.readString(a),
         b.setId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53052,10 +53052,10 @@ T5518.prototype._m26252 = function(c, a) {
 T5518.prototype._m26253 = function(c, a) {
     for (var b = new NScore().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? b.setValue(StringInputStream.readDouble(a)) : 1001 == d ? b.setTimestamp(StringInputStream.readDouble(a)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setPlayerId(d), MemoryManagement.free(d)) : 1003 == d ? (d = StringInputStream.readString(a), 
-        b.setPlayerName(d), MemoryManagement.free(d)) : 1004 == d ? (d = StringInputStream.readString(a), 
-        b.setPlayerAvatarPath(d), MemoryManagement.free(d)) : 1005 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? b.setValue(StringInputStream.readDouble(a)) : 1001 == d ? b.setTimestamp(StringInputStream.readDouble(a)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setPlayerId(d), MemoryManagement.free(d)) : 1003 == d ? (d = StringInputStream.readString(a),
+        b.setPlayerName(d), MemoryManagement.free(d)) : 1004 == d ? (d = StringInputStream.readString(a),
+        b.setPlayerAvatarPath(d), MemoryManagement.free(d)) : 1005 == d ? (d = StringInputStream.readString(a),
         b.setCustomData(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53064,8 +53064,8 @@ T5518.prototype._m26253 = function(c, a) {
 T5518.prototype._m26254 = function(c, a) {
     for (var b = new AbstractRoom().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a),
         b.setName(d), MemoryManagement.free(d); else if (1002 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -53081,8 +53081,8 @@ T5518.prototype._m26254 = function(c, a) {
 T5518.prototype._m26255 = function(c, a) {
     for (var b = new NRoom().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a),
         b.setName(d), MemoryManagement.free(d); else if (1002 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -53098,8 +53098,8 @@ T5518.prototype._m26255 = function(c, a) {
 T5518.prototype._m26256 = function(c, a) {
     for (var b = new NGame().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a),
         b.setName(d), MemoryManagement.free(d); else if (1002 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -53115,7 +53115,7 @@ T5518.prototype._m26256 = function(c, a) {
 T5518.prototype._m26257 = function(c, a) {
     for (var b = new NGameCharacteristics().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? b.setMinPlayer(StringInputStream.readInteger(a)) : 1 == d ? b.setMaxPlayer(StringInputStream.readInteger(a)) : 2 == d ? b.setAutoStop(StringInputStream.readBoolean(a)) : 3 == d ? b.setAutoStart(StringInputStream.readBoolean(a)) : 4 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? b.setMinPlayer(StringInputStream.readInteger(a)) : 1 == d ? b.setMaxPlayer(StringInputStream.readInteger(a)) : 2 == d ? b.setAutoStop(StringInputStream.readBoolean(a)) : 3 == d ? b.setAutoStart(StringInputStream.readBoolean(a)) : 4 == d ? (d = StringInputStream.readString(a),
         b.setCustomData(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53124,10 +53124,10 @@ T5518.prototype._m26257 = function(c, a) {
 T5518.prototype._m26258 = function(c, a) {
     for (var b = new PlayerEnterGame().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? b.setPlayer(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53136,9 +53136,9 @@ T5518.prototype._m26258 = function(c, a) {
 T5518.prototype._m26259 = function(c, a) {
     for (var b = new FriendshipNotification().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setFriend(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53147,10 +53147,10 @@ T5518.prototype._m26259 = function(c, a) {
 T5518.prototype._m26260 = function(c, a) {
     for (var b = new PlayerUnjoinGame().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? b.setPlayer(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53174,9 +53174,9 @@ T5518.prototype._m26261 = function(c, a) {
 T5518.prototype._m26262 = function(c, a) {
     for (var b = new FriendConnectedNotification().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setFriend(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53185,9 +53185,9 @@ T5518.prototype._m26262 = function(c, a) {
 T5518.prototype._m26263 = function(c, a) {
     for (var b = new FriendDisconnectedNotification().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setFriend(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53196,7 +53196,7 @@ T5518.prototype._m26263 = function(c, a) {
 T5518.prototype._m26264 = function(c, a) {
     for (var b = new NPlayerWallet().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
         b.setPlayerId(d), MemoryManagement.free(d)) : 1001 == d ? b.setNbCoins(StringInputStream.readInteger(a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53205,9 +53205,9 @@ T5518.prototype._m26264 = function(c, a) {
 T5518.prototype._m26265 = function(c, a) {
     for (var b = new NItem().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setName(d), MemoryManagement.free(d)) : 1002 == d ? b.setPrice(StringInputStream.readInteger(a)) : 1003 == d ? b.setBought(StringInputStream.readBoolean(a)) : 1004 == d ? b.setCount(StringInputStream.readInteger(a)) : 1005 == d ? b.setOrder(StringInputStream.readInteger(a)) : 1006 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setName(d), MemoryManagement.free(d)) : 1002 == d ? b.setPrice(StringInputStream.readInteger(a)) : 1003 == d ? b.setBought(StringInputStream.readBoolean(a)) : 1004 == d ? b.setCount(StringInputStream.readInteger(a)) : 1005 == d ? b.setOrder(StringInputStream.readInteger(a)) : 1006 == d ? (d = StringInputStream.readString(a),
         b.setCustomData(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53239,10 +53239,10 @@ T5518.prototype._m26267 = function(c, a) {
 T5518.prototype._m26268 = function(c, a) {
     for (var b = new OpenConnection().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setIpAddress(d), MemoryManagement.free(d)) : 2001 == d ? b.setTcpPort(StringInputStream.readInteger(a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53251,10 +53251,10 @@ T5518.prototype._m26268 = function(c, a) {
 T5518.prototype._m26269 = function(c, a) {
     for (var b = new SlaveConnectionNotification().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setSessionId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53263,14 +53263,14 @@ T5518.prototype._m26269 = function(c, a) {
 T5518.prototype._m26270 = function(c, a) {
     for (var b = new PlayerMessage().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSystemID(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a), 
-        b.setTargetID(d), MemoryManagement.free(d)) : 2002 == d ? (d = StringInputStream.readString(a), 
-        b.setOwnerID(d), MemoryManagement.free(d)) : 2003 == d ? (d = StringInputStream.readString(a), 
-        b.setApplicationID(d), MemoryManagement.free(d)) : 2004 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
+        b.setSystemID(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a),
+        b.setTargetID(d), MemoryManagement.free(d)) : 2002 == d ? (d = StringInputStream.readString(a),
+        b.setOwnerID(d), MemoryManagement.free(d)) : 2003 == d ? (d = StringInputStream.readString(a),
+        b.setApplicationID(d), MemoryManagement.free(d)) : 2004 == d ? (d = StringInputStream.readString(a),
         b.setPlayerId(d), MemoryManagement.free(d)) : 2005 == d ? b.setMessage(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53279,11 +53279,11 @@ T5518.prototype._m26270 = function(c, a) {
 T5518.prototype._m26271 = function(c, a) {
     for (var b = new NRawGameMessage().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
-        b.setGameId(d), MemoryManagement.free(d)) : 3e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
+        b.setGameId(d), MemoryManagement.free(d)) : 3e3 == d ? (d = StringInputStream.readString(a),
         b.setContent(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53292,10 +53292,10 @@ T5518.prototype._m26271 = function(c, a) {
 T5518.prototype._m26272 = function(c, a) {
     for (var b = new SessionExpired().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setSessionId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53304,10 +53304,10 @@ T5518.prototype._m26272 = function(c, a) {
 T5518.prototype._m26273 = function(c, a) {
     for (var b = new GameMessageError().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setReason(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53316,10 +53316,10 @@ T5518.prototype._m26273 = function(c, a) {
 T5518.prototype._m26274 = function(c, a) {
     for (var b = new NPlayerProfile().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a), 
-        b.setAvatar(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a), 
-        b.setPlayerId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a), 
-        b.setEmail(d), MemoryManagement.free(d); else if (1003 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a),
+        b.setAvatar(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a),
+        b.setPlayerId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a),
+        b.setEmail(d), MemoryManagement.free(d); else if (1003 == d) d = StringInputStream.readString(a),
         b.setCountry(d), MemoryManagement.free(d); else if (1004 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -53335,9 +53335,9 @@ T5518.prototype._m26274 = function(c, a) {
 T5518.prototype._m26275 = function(c, a) {
     for (var b = new FriendDemandNotification().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setFriendDemand(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53346,10 +53346,10 @@ T5518.prototype._m26275 = function(c, a) {
 T5518.prototype._m26276 = function(c, a) {
     for (var b = new GameChatNotification().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setPlayer(StringInputStream.readObject(c, a)) : 2001 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setPlayer(StringInputStream.readObject(c, a)) : 2001 == d ? (d = StringInputStream.readString(a),
         b.setMessage(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53358,10 +53358,10 @@ T5518.prototype._m26276 = function(c, a) {
 T5518.prototype._m26277 = function(c, a) {
     for (var b = new SwitchToServerInformation().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setAddress(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53370,12 +53370,12 @@ T5518.prototype._m26277 = function(c, a) {
 T5518.prototype._m26278 = function(c, a) {
     for (var b = new SwitchPlayerRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSessionId(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a), 
-        b.setPlayerId(d), MemoryManagement.free(d)) : 2002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
+        b.setSessionId(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a),
+        b.setPlayerId(d), MemoryManagement.free(d)) : 2002 == d ? (d = StringInputStream.readString(a),
         b.setPlayerIdsStored(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53384,10 +53384,10 @@ T5518.prototype._m26278 = function(c, a) {
 T5518.prototype._m26279 = function(c, a) {
     for (var b = new MyTurnNotification().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53396,10 +53396,10 @@ T5518.prototype._m26279 = function(c, a) {
 T5518.prototype._m26280 = function(c, a) {
     for (var b = new PlayerTurnNotification().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setCurrentPlayer(StringInputStream.readObject(c, a)) : 2001 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setCurrentPlayer(StringInputStream.readObject(c, a)) : 2001 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53432,7 +53432,7 @@ T5518.prototype._m26282 = function(c, a) {
 T5518.prototype._m26283 = function(c, a) {
     for (var b = new NLeaderboard().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setId(d), MemoryManagement.free(d); else if (1 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setId(d), MemoryManagement.free(d); else if (1 == d) d = StringInputStream.readString(a),
         b.setName(d), MemoryManagement.free(d); else if (2 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -53448,10 +53448,10 @@ T5518.prototype._m26283 = function(c, a) {
 T5518.prototype._m26284 = function(c, a) {
     for (var b = new OpenUrl().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setUrl(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53460,9 +53460,9 @@ T5518.prototype._m26284 = function(c, a) {
 T5518.prototype._m26285 = function(c, a) {
     for (var b = new TurnBasedContext().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setCurrentPlayer(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53471,9 +53471,9 @@ T5518.prototype._m26285 = function(c, a) {
 T5518.prototype._m26286 = function(c, a) {
     for (var b = new DisconnectedContext().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -53489,13 +53489,13 @@ T5518.prototype._m26286 = function(c, a) {
 T5518.prototype._m26287 = function(c, a) {
     for (var b = new OpenUrlData().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSessionId(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a), 
-        b.setCallbackId(d), MemoryManagement.free(d)) : 2002 == d ? (d = StringInputStream.readString(a), 
-        b.setCallbackUrl(d), MemoryManagement.free(d)) : 2003 == d ? b.setThirdPartySource(StringInputStream.readObject(c, a)) : 2004 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
+        b.setSessionId(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a),
+        b.setCallbackId(d), MemoryManagement.free(d)) : 2002 == d ? (d = StringInputStream.readString(a),
+        b.setCallbackUrl(d), MemoryManagement.free(d)) : 2003 == d ? b.setThirdPartySource(StringInputStream.readObject(c, a)) : 2004 == d ? (d = StringInputStream.readString(a),
         b.setThirdPartyId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53504,11 +53504,11 @@ T5518.prototype._m26287 = function(c, a) {
 T5518.prototype._m26288 = function(c, a) {
     for (var b = new NLeaderboardEntry().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? b.setTimestamp(StringInputStream.readDouble(a)) : 1002 == d ? b.setPlayer(StringInputStream.readObject(c, a)) : 1003 == d ? b.setScore(StringInputStream.readObject(c, a)) : 1004 == d ? (d = StringInputStream.readString(a), 
-        b.setPlayerId(d), MemoryManagement.free(d)) : 1005 == d ? (d = StringInputStream.readString(a), 
-        b.setPlayerName(d), MemoryManagement.free(d)) : 1006 == d ? (d = StringInputStream.readString(a), 
-        b.setPlayerAvatarPath(d), MemoryManagement.free(d)) : 1007 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? b.setTimestamp(StringInputStream.readDouble(a)) : 1002 == d ? b.setPlayer(StringInputStream.readObject(c, a)) : 1003 == d ? b.setScore(StringInputStream.readObject(c, a)) : 1004 == d ? (d = StringInputStream.readString(a),
+        b.setPlayerId(d), MemoryManagement.free(d)) : 1005 == d ? (d = StringInputStream.readString(a),
+        b.setPlayerName(d), MemoryManagement.free(d)) : 1006 == d ? (d = StringInputStream.readString(a),
+        b.setPlayerAvatarPath(d), MemoryManagement.free(d)) : 1007 == d ? (d = StringInputStream.readString(a),
         b.setCustomData(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53517,9 +53517,9 @@ T5518.prototype._m26288 = function(c, a) {
 T5518.prototype._m26289 = function(c, a) {
     for (var b = new StartRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53528,9 +53528,9 @@ T5518.prototype._m26289 = function(c, a) {
 T5518.prototype._m26290 = function(c, a) {
     for (var b = new StartResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setStartStatus(StringInputStream.readObject(c, a)) : 2001 == d ? b.setStartDetails(StringInputStream.readObject(c, a)) : 2002 == d ? b.setPlayerSessionType(StringInputStream.readObject(c, a)) : 2003 == d ? b.setPlayer(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53539,8 +53539,8 @@ T5518.prototype._m26290 = function(c, a) {
 T5518.prototype._m26291 = function(c, a) {
     for (var b = new NInvitation().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? b.setInviter(StringInputStream.readObject(c, a)) : 1002 == d ? b.setInvitee(StringInputStream.readObject(c, a)) : 1003 == d ? b.setContent(StringInputStream.readObject(c, a)) : 1004 == d ? b.setCreationTimeStamp(StringInputStream.readDouble(a)) : 1005 == d ? b.setExpirationDelay(StringInputStream.readDouble(a)) : 1006 == d ? b.setStatus(StringInputStream.readObject(c, a)) : 1007 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setId(d), MemoryManagement.free(d)) : 1001 == d ? b.setInviter(StringInputStream.readObject(c, a)) : 1002 == d ? b.setInvitee(StringInputStream.readObject(c, a)) : 1003 == d ? b.setContent(StringInputStream.readObject(c, a)) : 1004 == d ? b.setCreationTimeStamp(StringInputStream.readDouble(a)) : 1005 == d ? b.setExpirationDelay(StringInputStream.readDouble(a)) : 1006 == d ? b.setStatus(StringInputStream.readObject(c, a)) : 1007 == d ? (d = StringInputStream.readString(a),
         b.setCustomData(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53549,10 +53549,10 @@ T5518.prototype._m26291 = function(c, a) {
 T5518.prototype._m26292 = function(c, a) {
     for (var b = new NGameInvitation().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53561,9 +53561,9 @@ T5518.prototype._m26292 = function(c, a) {
 T5518.prototype._m26293 = function(c, a) {
     for (var b = new InvitationRequestNotification().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setInvitation(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53572,9 +53572,9 @@ T5518.prototype._m26293 = function(c, a) {
 T5518.prototype._m26294 = function(c, a) {
     for (var b = new InvitationAcceptedNotification().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setInvitation(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53583,9 +53583,9 @@ T5518.prototype._m26294 = function(c, a) {
 T5518.prototype._m26295 = function(c, a) {
     for (var b = new InvitationRefusedNotification().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setInvitation(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53594,9 +53594,9 @@ T5518.prototype._m26295 = function(c, a) {
 T5518.prototype._m26296 = function(c, a) {
     for (var b = new InvitationExpiredNotification().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setInvitation(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53605,10 +53605,10 @@ T5518.prototype._m26296 = function(c, a) {
 T5518.prototype._m26297 = function(c, a) {
     for (var b = new NMatchAndJoinGameExpiredNotification().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53617,11 +53617,11 @@ T5518.prototype._m26297 = function(c, a) {
 T5518.prototype._m26298 = function(c, a) {
     for (var b = new CreatePlayerRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
-        b.setLogin(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
+        b.setLogin(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a),
         b.setPassword(d), MemoryManagement.free(d)) : 2002 == d ? b.setPlayer(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53630,9 +53630,9 @@ T5518.prototype._m26298 = function(c, a) {
 T5518.prototype._m26299 = function(c, a) {
     for (var b = new CreatePlayerResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setCreatePlayerStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? b.setPlayer(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53641,11 +53641,11 @@ T5518.prototype._m26299 = function(c, a) {
 T5518.prototype._m26300 = function(c, a) {
     for (var b = new LoginRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
-        b.setLogin(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
+        b.setLogin(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a),
         b.setPassword(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53654,9 +53654,9 @@ T5518.prototype._m26300 = function(c, a) {
 T5518.prototype._m26301 = function(c, a) {
     for (var b = new LoginResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setLoginStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? b.setPlayer(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53665,10 +53665,10 @@ T5518.prototype._m26301 = function(c, a) {
 T5518.prototype._m26302 = function(c, a) {
     for (var b = new ThirdPartyLoginRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setThirdPartySource(StringInputStream.readObject(c, a)) : 2001 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setThirdPartySource(StringInputStream.readObject(c, a)) : 2001 == d ? (d = StringInputStream.readString(a),
         b.setAccessToken(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53677,9 +53677,9 @@ T5518.prototype._m26302 = function(c, a) {
 T5518.prototype._m26303 = function(c, a) {
     for (var b = new ThirdPartyLoginResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setThirdPartyLoginStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? b.setPlayer(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53688,9 +53688,9 @@ T5518.prototype._m26303 = function(c, a) {
 T5518.prototype._m26304 = function(c, a) {
     for (var b = new LogoutRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53699,9 +53699,9 @@ T5518.prototype._m26304 = function(c, a) {
 T5518.prototype._m26305 = function(c, a) {
     for (var b = new LogoutResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setLogoutStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? b.setPlayer(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53710,10 +53710,10 @@ T5518.prototype._m26305 = function(c, a) {
 T5518.prototype._m26306 = function(c, a) {
     for (var b = new ForgotPasswordRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setLogin(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53722,9 +53722,9 @@ T5518.prototype._m26306 = function(c, a) {
 T5518.prototype._m26307 = function(c, a) {
     for (var b = new ForgotPasswordResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setForgotPasswordStatus(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53733,10 +53733,10 @@ T5518.prototype._m26307 = function(c, a) {
 T5518.prototype._m26308 = function(c, a) {
     for (var b = new SetPlayerNameRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setName(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53745,9 +53745,9 @@ T5518.prototype._m26308 = function(c, a) {
 T5518.prototype._m26309 = function(c, a) {
     for (var b = new SetPlayerNameResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSetPlayerNameStatus(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53756,9 +53756,9 @@ T5518.prototype._m26309 = function(c, a) {
 T5518.prototype._m26310 = function(c, a) {
     for (var b = new GetFriendsRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53767,9 +53767,9 @@ T5518.prototype._m26310 = function(c, a) {
 T5518.prototype._m26311 = function(c, a) {
     for (var b = new GetFriendsResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetFriendsStatus(StringInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -53785,10 +53785,10 @@ T5518.prototype._m26311 = function(c, a) {
 T5518.prototype._m26312 = function(c, a) {
     for (var b = new AskForFriendRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53797,9 +53797,9 @@ T5518.prototype._m26312 = function(c, a) {
 T5518.prototype._m26313 = function(c, a) {
     for (var b = new AskForFriendResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAskForFriendStatus(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53808,9 +53808,9 @@ T5518.prototype._m26313 = function(c, a) {
 T5518.prototype._m26314 = function(c, a) {
     for (var b = new GetFriendDemandsRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53819,9 +53819,9 @@ T5518.prototype._m26314 = function(c, a) {
 T5518.prototype._m26315 = function(c, a) {
     for (var b = new GetFriendDemandsResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetFriendDemandsStatus(StringInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -53837,10 +53837,10 @@ T5518.prototype._m26315 = function(c, a) {
 T5518.prototype._m26316 = function(c, a) {
     for (var b = new AcceptFriendDemandRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setFriendDemandId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53849,10 +53849,10 @@ T5518.prototype._m26316 = function(c, a) {
 T5518.prototype._m26317 = function(c, a) {
     for (var b = new AcceptFriendDemandResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAcceptFriendDemandStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAcceptFriendDemandStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setFriendDemandId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53861,10 +53861,10 @@ T5518.prototype._m26317 = function(c, a) {
 T5518.prototype._m26318 = function(c, a) {
     for (var b = new RefuseFriendDemandRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setFriendDemandId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53873,10 +53873,10 @@ T5518.prototype._m26318 = function(c, a) {
 T5518.prototype._m26319 = function(c, a) {
     for (var b = new RefuseFriendDemandResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setRefuseFriendDemandStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setRefuseFriendDemandStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setFriendDemandId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53885,10 +53885,10 @@ T5518.prototype._m26319 = function(c, a) {
 T5518.prototype._m26320 = function(c, a) {
     for (var b = new SubmitScoreRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setScore(StringInputStream.readObject(c, a)) : 2001 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setScore(StringInputStream.readObject(c, a)) : 2001 == d ? (d = StringInputStream.readString(a),
         b.setLeaderboardId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53897,9 +53897,9 @@ T5518.prototype._m26320 = function(c, a) {
 T5518.prototype._m26321 = function(c, a) {
     for (var b = new SubmitScoreResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSubmitScoreStatus(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53908,10 +53908,10 @@ T5518.prototype._m26321 = function(c, a) {
 T5518.prototype._m26322 = function(c, a) {
     for (var b = new GetScoresRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setLeaderboardId(d), MemoryManagement.free(d)) : 2001 == d ? b.setPeriod(StringInputStream.readObject(c, a)) : 2002 == d ? b.setStart(StringInputStream.readInteger(a)) : 2003 == d ? b.setLimit(StringInputStream.readInteger(a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53920,11 +53920,11 @@ T5518.prototype._m26322 = function(c, a) {
 T5518.prototype._m26323 = function(c, a) {
     for (var b = new GetScoresResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetScoresStatus(StringInputStream.readObject(c, a)); else if (2e3 == d) d = StringInputStream.readString(a), 
-        b.setLeaderboardId(d), MemoryManagement.free(d); else if (2001 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetScoresStatus(StringInputStream.readObject(c, a)); else if (2e3 == d) d = StringInputStream.readString(a),
+        b.setLeaderboardId(d), MemoryManagement.free(d); else if (2001 == d) d = StringInputStream.readString(a),
         b.setLeaderboardName(d), MemoryManagement.free(d); else if (2002 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -53940,9 +53940,9 @@ T5518.prototype._m26323 = function(c, a) {
 T5518.prototype._m26324 = function(c, a) {
     for (var b = new GetAchievementsRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53951,9 +53951,9 @@ T5518.prototype._m26324 = function(c, a) {
 T5518.prototype._m26325 = function(c, a) {
     for (var b = new GetAchievementsResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetAchievementsStatus(StringInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -53969,10 +53969,10 @@ T5518.prototype._m26325 = function(c, a) {
 T5518.prototype._m26326 = function(c, a) {
     for (var b = new AchieveRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setAchivementId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53981,10 +53981,10 @@ T5518.prototype._m26326 = function(c, a) {
 T5518.prototype._m26327 = function(c, a) {
     for (var b = new AchieveResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAchieveStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAchieveStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setAchivementId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -53993,10 +53993,10 @@ T5518.prototype._m26327 = function(c, a) {
 T5518.prototype._m26328 = function(c, a) {
     for (var b = new AchieveWithProgressRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setAchivementId(d), MemoryManagement.free(d)) : 2001 == d ? b.setValue(StringInputStream.readInteger(a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54005,10 +54005,10 @@ T5518.prototype._m26328 = function(c, a) {
 T5518.prototype._m26329 = function(c, a) {
     for (var b = new AchieveWithProgressResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAchieveWithProgressStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAchieveWithProgressStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setAchivementId(d), MemoryManagement.free(d)) : 2001 == d ? b.setProgress(StringInputStream.readInteger(a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54017,9 +54017,9 @@ T5518.prototype._m26329 = function(c, a) {
 T5518.prototype._m26330 = function(c, a) {
     for (var b = new GetPlayerProfileRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54028,9 +54028,9 @@ T5518.prototype._m26330 = function(c, a) {
 T5518.prototype._m26331 = function(c, a) {
     for (var b = new GetPlayerProfileResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setGetPlayerProfileStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? b.setProfile(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54039,10 +54039,10 @@ T5518.prototype._m26331 = function(c, a) {
 T5518.prototype._m26332 = function(c, a) {
     for (var b = new GetPlayerProfileByPlayerIdRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setPlayerId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54051,9 +54051,9 @@ T5518.prototype._m26332 = function(c, a) {
 T5518.prototype._m26333 = function(c, a) {
     for (var b = new GetPlayerProfileByPlayerIdResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setGetPlayerProfileByPlayerIdStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? b.setProfile(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54062,9 +54062,9 @@ T5518.prototype._m26333 = function(c, a) {
 T5518.prototype._m26334 = function(c, a) {
     for (var b = new SavePlayerProfileRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setProfile(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54073,9 +54073,9 @@ T5518.prototype._m26334 = function(c, a) {
 T5518.prototype._m26335 = function(c, a) {
     for (var b = new SavePlayerProfileResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSavePlayerProfileStatus(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54084,9 +54084,9 @@ T5518.prototype._m26335 = function(c, a) {
 T5518.prototype._m26336 = function(c, a) {
     for (var b = new GetStorablesRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setDbQuery(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54095,9 +54095,9 @@ T5518.prototype._m26336 = function(c, a) {
 T5518.prototype._m26337 = function(c, a) {
     for (var b = new GetStorablesResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetStorablesStatus(StringInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -54113,9 +54113,9 @@ T5518.prototype._m26337 = function(c, a) {
 T5518.prototype._m26338 = function(c, a) {
     for (var b = new SaveStorableRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setStorable(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54124,10 +54124,10 @@ T5518.prototype._m26338 = function(c, a) {
 T5518.prototype._m26339 = function(c, a) {
     for (var b = new SaveStorableResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSaveStorableStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSaveStorableStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setStorableId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54136,9 +54136,9 @@ T5518.prototype._m26339 = function(c, a) {
 T5518.prototype._m26340 = function(c, a) {
     for (var b = new UpdateStorableRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setStorable(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54147,10 +54147,10 @@ T5518.prototype._m26340 = function(c, a) {
 T5518.prototype._m26341 = function(c, a) {
     for (var b = new UpdateStorableResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setUpdateStorableStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setUpdateStorableStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setStorableId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54159,9 +54159,9 @@ T5518.prototype._m26341 = function(c, a) {
 T5518.prototype._m26342 = function(c, a) {
     for (var b = new RemoveStorableRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setStorable(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54170,10 +54170,10 @@ T5518.prototype._m26342 = function(c, a) {
 T5518.prototype._m26343 = function(c, a) {
     for (var b = new RemoveStorableResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setRemoveStorableStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setRemoveStorableStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setStorableId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54182,9 +54182,9 @@ T5518.prototype._m26343 = function(c, a) {
 T5518.prototype._m26344 = function(c, a) {
     for (var b = new GetItemsRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54193,9 +54193,9 @@ T5518.prototype._m26344 = function(c, a) {
 T5518.prototype._m26345 = function(c, a) {
     for (var b = new GetItemsResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetItemsStatus(StringInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -54211,10 +54211,10 @@ T5518.prototype._m26345 = function(c, a) {
 T5518.prototype._m26346 = function(c, a) {
     for (var b = new BuyItemRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setItemId(d), MemoryManagement.free(d)) : 2001 == d ? b.setQuantity(StringInputStream.readInteger(a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54223,9 +54223,9 @@ T5518.prototype._m26346 = function(c, a) {
 T5518.prototype._m26347 = function(c, a) {
     for (var b = new BuyItemResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setBuyItemStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? b.setBoughtItem(StringInputStream.readObject(c, a)) : 2001 == d ? b.setQuantity(StringInputStream.readInteger(a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54234,10 +54234,10 @@ T5518.prototype._m26347 = function(c, a) {
 T5518.prototype._m26348 = function(c, a) {
     for (var b = new ConsumeItemRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setItemId(d), MemoryManagement.free(d)) : 2001 == d ? b.setQuantity(StringInputStream.readInteger(a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54246,9 +54246,9 @@ T5518.prototype._m26348 = function(c, a) {
 T5518.prototype._m26349 = function(c, a) {
     for (var b = new ConsumeItemResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setConsumeItemStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? b.setConsumedItem(StringInputStream.readObject(c, a)) : 2001 == d ? b.setQuantity(StringInputStream.readInteger(a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54257,9 +54257,9 @@ T5518.prototype._m26349 = function(c, a) {
 T5518.prototype._m26350 = function(c, a) {
     for (var b = new IncreasePlayerWalletRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setValue(StringInputStream.readInteger(a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54268,9 +54268,9 @@ T5518.prototype._m26350 = function(c, a) {
 T5518.prototype._m26351 = function(c, a) {
     for (var b = new IncreasePlayerWalletResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setIncreasePlayerWalletStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? b.setValue(StringInputStream.readInteger(a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54279,9 +54279,9 @@ T5518.prototype._m26351 = function(c, a) {
 T5518.prototype._m26352 = function(c, a) {
     for (var b = new GetPlayerWalletRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54290,9 +54290,9 @@ T5518.prototype._m26352 = function(c, a) {
 T5518.prototype._m26353 = function(c, a) {
     for (var b = new GetPlayerWalletResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setGetPlayerWalletStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? b.setWallet(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54301,10 +54301,10 @@ T5518.prototype._m26353 = function(c, a) {
 T5518.prototype._m26354 = function(c, a) {
     for (var b = new JoinGameRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54313,9 +54313,9 @@ T5518.prototype._m26354 = function(c, a) {
 T5518.prototype._m26355 = function(c, a) {
     for (var b = new JoinGameResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setJoinGameStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? b.setGame(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54324,10 +54324,10 @@ T5518.prototype._m26355 = function(c, a) {
 T5518.prototype._m26356 = function(c, a) {
     for (var b = new UnjoinGameRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54336,10 +54336,10 @@ T5518.prototype._m26356 = function(c, a) {
 T5518.prototype._m26357 = function(c, a) {
     for (var b = new UnjoinGameResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setUnjoinGameStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setUnjoinGameStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54348,10 +54348,10 @@ T5518.prototype._m26357 = function(c, a) {
 T5518.prototype._m26358 = function(c, a) {
     for (var b = new StartGameRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54360,10 +54360,10 @@ T5518.prototype._m26358 = function(c, a) {
 T5518.prototype._m26359 = function(c, a) {
     for (var b = new StartGameResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setStartGameStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setStartGameStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54372,10 +54372,10 @@ T5518.prototype._m26359 = function(c, a) {
 T5518.prototype._m26360 = function(c, a) {
     for (var b = new StopGameRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54384,10 +54384,10 @@ T5518.prototype._m26360 = function(c, a) {
 T5518.prototype._m26361 = function(c, a) {
     for (var b = new StopGameResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setStopGameStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setStopGameStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54396,9 +54396,9 @@ T5518.prototype._m26361 = function(c, a) {
 T5518.prototype._m26362 = function(c, a) {
     for (var b = new CreateGameRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setGame(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54407,10 +54407,10 @@ T5518.prototype._m26362 = function(c, a) {
 T5518.prototype._m26363 = function(c, a) {
     for (var b = new CreateGameResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setCreateGameStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setCreateGameStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54419,9 +54419,9 @@ T5518.prototype._m26363 = function(c, a) {
 T5518.prototype._m26364 = function(c, a) {
     for (var b = new GetGamesRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setDbQuery(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54430,9 +54430,9 @@ T5518.prototype._m26364 = function(c, a) {
 T5518.prototype._m26365 = function(c, a) {
     for (var b = new GetGamesResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetGamesStatus(StringInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -54448,9 +54448,9 @@ T5518.prototype._m26365 = function(c, a) {
 T5518.prototype._m26366 = function(c, a) {
     for (var b = new SaveAsGhostRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setGame(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54459,9 +54459,9 @@ T5518.prototype._m26366 = function(c, a) {
 T5518.prototype._m26367 = function(c, a) {
     for (var b = new SaveAsGhostResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSaveAsGhostStatus(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54470,9 +54470,9 @@ T5518.prototype._m26367 = function(c, a) {
 T5518.prototype._m26368 = function(c, a) {
     for (var b = new GetGhostsRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setDbQuery(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54481,9 +54481,9 @@ T5518.prototype._m26368 = function(c, a) {
 T5518.prototype._m26369 = function(c, a) {
     for (var b = new GetGhostsResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetGhostsStatus(StringInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -54499,10 +54499,10 @@ T5518.prototype._m26369 = function(c, a) {
 T5518.prototype._m26370 = function(c, a) {
     for (var b = new LoadGhostRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54511,9 +54511,9 @@ T5518.prototype._m26370 = function(c, a) {
 T5518.prototype._m26371 = function(c, a) {
     for (var b = new LoadGhostResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setLoadGhostStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? b.setGame(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54522,10 +54522,10 @@ T5518.prototype._m26371 = function(c, a) {
 T5518.prototype._m26372 = function(c, a) {
     for (var b = new NextPlayerTurnRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54534,9 +54534,9 @@ T5518.prototype._m26372 = function(c, a) {
 T5518.prototype._m26373 = function(c, a) {
     for (var b = new NextPlayerTurnResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setNextPlayerTurnStatus(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54545,9 +54545,9 @@ T5518.prototype._m26373 = function(c, a) {
 T5518.prototype._m26374 = function(c, a) {
     for (var b = new SaveGameRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setGame(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54556,10 +54556,10 @@ T5518.prototype._m26374 = function(c, a) {
 T5518.prototype._m26375 = function(c, a) {
     for (var b = new SaveGameResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSaveGameStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSaveGameStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54568,10 +54568,10 @@ T5518.prototype._m26375 = function(c, a) {
 T5518.prototype._m26376 = function(c, a) {
     for (var b = new LoadGameRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setGameId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54580,9 +54580,9 @@ T5518.prototype._m26376 = function(c, a) {
 T5518.prototype._m26377 = function(c, a) {
     for (var b = new LoadGameResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setLoadGameStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? b.setGame(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54591,11 +54591,11 @@ T5518.prototype._m26377 = function(c, a) {
 T5518.prototype._m26378 = function(c, a) {
     for (var b = new SendGameChatRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
-        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
+        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a),
         b.setMessage(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54604,9 +54604,9 @@ T5518.prototype._m26378 = function(c, a) {
 T5518.prototype._m26379 = function(c, a) {
     for (var b = new SendGameChatResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSendGameChatStatus(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54615,12 +54615,12 @@ T5518.prototype._m26379 = function(c, a) {
 T5518.prototype._m26380 = function(c, a) {
     for (var b = new SendGameChatToPlayerRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
-        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a), 
-        b.setPlayerId(d), MemoryManagement.free(d)) : 2002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
+        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a),
+        b.setPlayerId(d), MemoryManagement.free(d)) : 2002 == d ? (d = StringInputStream.readString(a),
         b.setMessage(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54629,9 +54629,9 @@ T5518.prototype._m26380 = function(c, a) {
 T5518.prototype._m26381 = function(c, a) {
     for (var b = new SendGameChatToPlayerResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSendGameChatToPlayerStatus(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54640,11 +54640,11 @@ T5518.prototype._m26381 = function(c, a) {
 T5518.prototype._m26382 = function(c, a) {
     for (var b = new SendGameChatToPlayerListRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
-        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
+        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? (d = StringInputStream.readString(a),
         b.setMessage(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54653,9 +54653,9 @@ T5518.prototype._m26382 = function(c, a) {
 T5518.prototype._m26383 = function(c, a) {
     for (var b = new SendGameChatToPlayerListResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setSendGameChatToPlayerListStatus(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54664,10 +54664,10 @@ T5518.prototype._m26383 = function(c, a) {
 T5518.prototype._m26384 = function(c, a) {
     for (var b = new InvitePlayerRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setPlayerId(d), MemoryManagement.free(d)) : 2001 == d ? b.setInvitation(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54676,10 +54676,10 @@ T5518.prototype._m26384 = function(c, a) {
 T5518.prototype._m26385 = function(c, a) {
     for (var b = new InvitePlayerResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setInvitePlayerStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setInvitePlayerStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setInvitationId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54688,9 +54688,9 @@ T5518.prototype._m26385 = function(c, a) {
 T5518.prototype._m26386 = function(c, a) {
     for (var b = new GetInvitationsRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setNuggetaQuery(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54699,9 +54699,9 @@ T5518.prototype._m26386 = function(c, a) {
 T5518.prototype._m26387 = function(c, a) {
     for (var b = new GetInvitationsResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetInvitationsStatus(StringInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -54717,10 +54717,10 @@ T5518.prototype._m26387 = function(c, a) {
 T5518.prototype._m26388 = function(c, a) {
     for (var b = new AcceptInvitationRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setInvitationId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54729,10 +54729,10 @@ T5518.prototype._m26388 = function(c, a) {
 T5518.prototype._m26389 = function(c, a) {
     for (var b = new AcceptInvitationResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAcceptInvitationStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setAcceptInvitationStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setInvitationId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54741,10 +54741,10 @@ T5518.prototype._m26389 = function(c, a) {
 T5518.prototype._m26390 = function(c, a) {
     for (var b = new RefuseInvitationRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setInvitationId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54753,10 +54753,10 @@ T5518.prototype._m26390 = function(c, a) {
 T5518.prototype._m26391 = function(c, a) {
     for (var b = new RefuseInvitationResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setRefuseInvitationStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setRefuseInvitationStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? (d = StringInputStream.readString(a),
         b.setInvitationId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54765,9 +54765,9 @@ T5518.prototype._m26391 = function(c, a) {
 T5518.prototype._m26392 = function(c, a) {
     for (var b = new PauseSessionMonitoringRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54776,9 +54776,9 @@ T5518.prototype._m26392 = function(c, a) {
 T5518.prototype._m26393 = function(c, a) {
     for (var b = new PauseSessionMonitoringResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setPauseSessionMonitoringStatus(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54787,9 +54787,9 @@ T5518.prototype._m26393 = function(c, a) {
 T5518.prototype._m26394 = function(c, a) {
     for (var b = new ResumeSessionMonitoringRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54798,9 +54798,9 @@ T5518.prototype._m26394 = function(c, a) {
 T5518.prototype._m26395 = function(c, a) {
     for (var b = new ResumeSessionMonitoringResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setResumeSessionMonitoringStatus(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54809,9 +54809,9 @@ T5518.prototype._m26395 = function(c, a) {
 T5518.prototype._m26396 = function(c, a) {
     for (var b = new MatchAndJoinGameRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setGamesQuery(StringInputStream.readObject(c, a)) : 2001 == d ? b.setMatchMakingConditions(StringInputStream.readObject(c, a)) : 2002 == d ? b.setTimeoutDelayMinPlayers(StringInputStream.readInteger(a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54820,9 +54820,9 @@ T5518.prototype._m26396 = function(c, a) {
 T5518.prototype._m26397 = function(c, a) {
     for (var b = new MatchAndJoinGameResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 1999 == d ? b.setMatchAndJoinGameStatus(StringInputStream.readObject(c, a)) : 2e3 == d ? b.setGame(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54831,9 +54831,9 @@ T5518.prototype._m26397 = function(c, a) {
 T5518.prototype._m26398 = function(c, a) {
     for (var b = new GetPlayersRequest().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a), 
+        0 == d ? (d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setPlayersQuery(StringInputStream.readObject(c, a)) : StringInputStream.skipProperty(a);
     }
     return b;
@@ -54842,9 +54842,9 @@ T5518.prototype._m26398 = function(c, a) {
 T5518.prototype._m26399 = function(c, a) {
     for (var b = new GetPlayersResponse().init(), e = StringInputStream.getShort(a), f = 0; f < e; f++) {
         var d = StringInputStream.getShort(a);
-        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a), 
+        if (0 == d) d = StringInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d); else if (1e3 == d) d = StringInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d); else if (1001 == d) d = StringInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d); else if (1002 == d) d = StringInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d); else if (1999 == d) b.setGetPlayersStatus(StringInputStream.readObject(c, a)); else if (2e3 == d) {
             d = [];
             if (a.get() != SerializationTypes.NULL_TYPE) {
@@ -58112,9 +58112,9 @@ T5535.prototype._m26449 = function(c, a) {
 T5535.prototype._m26450 = function(c, a) {
     for (var b = new HeartBeatRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setCounter(BinaryInputStream.readInteger(a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -58123,9 +58123,9 @@ T5535.prototype._m26450 = function(c, a) {
 T5535.prototype._m26451 = function(c, a) {
     for (var b = new HeartBeatResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setCounter(BinaryInputStream.readInteger(a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -58134,11 +58134,11 @@ T5535.prototype._m26451 = function(c, a) {
 T5535.prototype._m26452 = function(c, a) {
     for (var b = new DnsRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? b.setGameVersion(BinaryInputStream.readInteger(a)) : 2002 == d ? b.setGameDeployedVersion(BinaryInputStream.readInteger(a)) : 2003 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setGameId(d), MemoryManagement.free(d)) : 2001 == d ? b.setGameVersion(BinaryInputStream.readInteger(a)) : 2002 == d ? b.setGameDeployedVersion(BinaryInputStream.readInteger(a)) : 2003 == d ? (d = BinaryInputStream.readString(a),
         b.setPlatform(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -58147,10 +58147,10 @@ T5535.prototype._m26452 = function(c, a) {
 T5535.prototype._m26453 = function(c, a) {
     for (var b = new DnsResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setIpAddress(d), MemoryManagement.free(d)) : 2001 == d ? b.setTcpPort(BinaryInputStream.readInteger(a)) : 2002 == d ? b.setDnsStatus(BinaryInputStream.readObject(c, a)) : 2003 == d ? b.setStartDetails(BinaryInputStream.readObject(c, a)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -58159,9 +58159,9 @@ T5535.prototype._m26453 = function(c, a) {
 T5535.prototype._m26454 = function(c, a) {
     for (var b = new StartDetails().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? b.setUseDefaultImpl(BinaryInputStream.readBoolean(a)) : 1 == d ? b.setCurrentVersion(BinaryInputStream.readInteger(a)) : 2 == d ? b.setNextVersion(BinaryInputStream.readInteger(a)) : 3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setTitle(d), MemoryManagement.free(d)) : 4 == d ? (d = BinaryInputStream.readString(a), 
-        b.setText(d), MemoryManagement.free(d)) : 5 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? b.setUseDefaultImpl(BinaryInputStream.readBoolean(a)) : 1 == d ? b.setCurrentVersion(BinaryInputStream.readInteger(a)) : 2 == d ? b.setNextVersion(BinaryInputStream.readInteger(a)) : 3 == d ? (d = BinaryInputStream.readString(a),
+        b.setTitle(d), MemoryManagement.free(d)) : 4 == d ? (d = BinaryInputStream.readString(a),
+        b.setText(d), MemoryManagement.free(d)) : 5 == d ? (d = BinaryInputStream.readString(a),
         b.setUrl(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -58170,9 +58170,9 @@ T5535.prototype._m26454 = function(c, a) {
 T5535.prototype._m26455 = function(c, a) {
     for (var b = new StopPlugConnectionRequest().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -58181,9 +58181,9 @@ T5535.prototype._m26455 = function(c, a) {
 T5535.prototype._m26456 = function(c, a) {
     for (var b = new StopPlugConnectionResponse().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
         b.setRequestId(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -58192,10 +58192,10 @@ T5535.prototype._m26456 = function(c, a) {
 T5535.prototype._m26457 = function(c, a) {
     for (var b = new NuggetaExceptionMessage().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setErrorCode(BinaryInputStream.readObject(c, a)) : 2001 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? b.setErrorCode(BinaryInputStream.readObject(c, a)) : 2001 == d ? (d = BinaryInputStream.readString(a),
         b.setReason(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -58204,7 +58204,7 @@ T5535.prototype._m26457 = function(c, a) {
 T5535.prototype._m26458 = function(c, a) {
     for (var b = new NuggetaQuery().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setDomain(d), MemoryManagement.free(d)) : 1 == d ? b.setStart(BinaryInputStream.readInteger(a)) : 2 == d ? b.setLimit(BinaryInputStream.readInteger(a)) : 3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setDomain(d), MemoryManagement.free(d)) : 1 == d ? b.setStart(BinaryInputStream.readInteger(a)) : 2 == d ? b.setLimit(BinaryInputStream.readInteger(a)) : 3 == d ? (d = BinaryInputStream.readString(a),
         b.setQuery(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -58213,10 +58213,10 @@ T5535.prototype._m26458 = function(c, a) {
 T5535.prototype._m26459 = function(c, a) {
     for (var b = new NRawMessage().init(), e = BinaryInputStream.getShort(a), f = 0; f < e; f++) {
         var d = BinaryInputStream.getShort(a);
-        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a), 
-        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a), 
-        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a), 
-        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a), 
+        0 == d ? (d = BinaryInputStream.readString(a), b.setStoreId(d), MemoryManagement.free(d)) : 1e3 == d ? (d = BinaryInputStream.readString(a),
+        b.setSenderId(d), MemoryManagement.free(d)) : 1001 == d ? (d = BinaryInputStream.readString(a),
+        b.setMessageId(d), MemoryManagement.free(d)) : 1002 == d ? (d = BinaryInputStream.readString(a),
+        b.setRequestId(d), MemoryManagement.free(d)) : 2e3 == d ? (d = BinaryInputStream.readString(a),
         b.setContent(d), MemoryManagement.free(d)) : BinaryInputStream.skipProperty(a);
     }
     return b;
@@ -59012,7 +59012,7 @@ NHttpRequestImpl.prototype.post = function(c, a, b, e, f) {
     this.xhr_object && (d.xhr_object.open("POST", c, !0), d.xhr_object.onreadystatechange = function() {
         4 == d.xhr_object.readyState && (200 == d.xhr_object.status ? e(d.xhr_object.responseText) : f());
         0 >= d.xhr_object.readyState && f();
-    }, this.xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), 
+    }, this.xhr_object.setRequestHeader("Content-type", "application/x-www-form-urlencoded"),
     this.xhr_object.send(b));
 };
 
@@ -59031,7 +59031,7 @@ NSocketImpl.prototype.openConnection = function(c, a, b, e, f, d, h, g) {
     this.connectionFailHandler = h;
     this.connectionReceivedHandler = g;
     this.log = NLoggerFactory.getLogger("WebSocket[" + c + "]");
-    if ("https:" == document.location.protocol) h(); else return this.connection = new WebSocket(e, "plug"), 
+    if ("https:" == document.location.protocol) h(); else return this.connection = new WebSocket(e, "plug"),
     this.connection.onopen = function() {
         k.started = !0;
         k.receiveResponse = !0;
@@ -59140,7 +59140,7 @@ ByteUtil.getBytes = function(c) {
     c = c.replace(/\r\n/g, "\n");
     for (var a = [], b = 0, e = 0; e < c.length; e++) {
         var f = c.charCodeAt(e);
-        128 > f ? a[b++] = f : (2048 > f ? a[b++] = f >> 6 | 192 : (a[b++] = f >> 12 | 224, 
+        128 > f ? a[b++] = f : (2048 > f ? a[b++] = f >> 6 | 192 : (a[b++] = f >> 12 | 224,
         a[b++] = f >> 6 & 63 | 128), a[b++] = f & 63 | 128);
     }
     return a;
@@ -60668,9 +60668,9 @@ SQUARESCAPE.COMPONENT.LEVEL.ColumnManager = function(Block, Platform, Spikes) {
 
 SQUARESCAPE.COMPONENT.LEVEL.LevelManager = function(event, stage, ColumnManager) {
     "use strict";
-    var LevelManager = function(level) {
+    var LevelManager = function(genLevel) {
         var self = this;
-        this.level = level;
+        this.genLevel = genLevel;
         this.columns = [];
         this.alive = true;
         this.init();
@@ -60705,6 +60705,7 @@ SQUARESCAPE.COMPONENT.LEVEL.LevelManager = function(event, stage, ColumnManager)
     LevelManager.prototype.init = function(restart) {
         var self = this;
         this.lastShowed = 25;
+        this.level = this.genLevel();
         this.level.forEach(function(column, colNum) {
             if (colNum < self.lastShowed) {
                 self.processColumn(column, colNum, true);
@@ -60980,7 +60981,7 @@ SQUARESCAPE.COMPONENT.LEVEL.example = (function() {
     addSpikesOnGround(ret);
 
     return ret;
-})();
+});
 
 SQUARESCAPE.COMPONENT.SOUNDS = {};
 
@@ -60989,11 +60990,20 @@ SQUARESCAPE.COMPONENT.SOUNDS.music = function(audio) {
     var Music = function() {
         this.name = "music";
     }, instance;
+
+    var loop;
+
     Music.prototype.stop = function() {
         audio.stop(this.name);
+        // clearInterval(loop);
     };
     Music.prototype.play = function() {
         audio.play(this.name, true);
+        // clearInterval(loop);
+        // loop = setInterval(function () {
+        //     instance.stop();
+        //     instance.play();
+        // }, 40 * 1000);
     };
     return function() {
         if (!instance) {
@@ -61008,11 +61018,19 @@ SQUARESCAPE.COMPONENT.SOUNDS.intro = function(audio) {
     var Intro = function() {
         this.name = "intro";
     }, instance;
+    var loop;
+
     Intro.prototype.stop = function() {
         audio.stop(this.name);
+        // clearInterval(loop);
     };
     Intro.prototype.play = function() {
         audio.play(this.name, true);
+        // clearInterval(loop);
+        // loop = setInterval(function () {
+        //     instance.stop();
+        //     instance.play();
+        // }, 44 * 1000);
     };
     return function() {
         if (!instance) {
@@ -61062,6 +61080,7 @@ SQUARESCAPE.GAME.SCENE.main = function(Scene, event, music, intro, LevelManager,
         event.broadcast("game.start");
         intro().stop();
         music().play();
+        setInterval(function () {music().stop(); music().play();}, 40 * 1000);
     };
     var onHide = function(clean) {
         currentLevel.destroy();
