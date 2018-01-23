@@ -1,6 +1,7 @@
 # Live demo: 
 https://tiriana.github.io/squarescape-rip/
 
+# Description
 Just a rip from built version of my very first game - squarescape. Made during Global Game Jam 2015 https://globalgamejam.org/2015/games/squarescape.
 
 
